@@ -4957,5 +4957,6482 @@
     ],
     "emoji": "🐦",
     "difficulty": "medium"
+  },
+  "claude": {
+    "term": "Claude",
+    "aliases": [
+      "Claude AI",
+      "Anthropic Claude"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "Anthropic 公司做的 AI 助手，跟 ChatGPT 类似，擅长长文本理解和写作，被很多人认为回答更有深度、更安全。",
+      "intermediate": "由 Anthropic 开发的 LLM 系列，包括 Claude 3.5 Sonnet/Haiku/Opus 等版本。以长上下文窗口（200K tokens）、安全对齐和指令遵循能力著称。",
+      "advanced": "Claude 基于 Constitutional AI 训练方法，通过 RLHF 和 CAI 双重对齐机制减少有害输出。支持 extended thinking 模式，内部使用更长的推理链。架构细节未公开，但据推测为稀疏激活的 MoE 变体。"
+    },
+    "relatedTerms": [
+      "chatgpt",
+      "llm",
+      "constitutional-ai",
+      "rlhf"
+    ],
+    "contexts": [
+      "ai-assistant",
+      "coding",
+      "writing"
+    ],
+    "emoji": "🤖",
+    "difficulty": "low"
+  },
+  "chatgpt": {
+    "term": "ChatGPT",
+    "aliases": [
+      "Chat GPT",
+      "ChatGPT-4"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "OpenAI 做的 AI 聊天机器人，是现在最知名的 AI 产品，可以聊天、写代码、写文章，几乎什么都能问。",
+      "intermediate": "OpenAI 推出的对话式 AI 产品，底层使用 GPT 系列模型。支持插件、代码解释器、图片生成（DALL-E）等功能，有免费版和 Plus 订阅版。",
+      "advanced": "ChatGPT 是 GPT 模型的对话封装，通过 RLHF 进行指令对齐。系统架构包含安全过滤层、工具调用层和多模态处理层。ChatGPT Plus 使用 GPT-4o，支持实时语音、视觉输入。"
+    },
+    "relatedTerms": [
+      "gpt",
+      "llm",
+      "claude",
+      "gpt-4o"
+    ],
+    "contexts": [
+      "ai-assistant",
+      "general-purpose"
+    ],
+    "emoji": "💬",
+    "difficulty": "low"
+  },
+  "gpt-4o": {
+    "term": "GPT-4o",
+    "aliases": [
+      "GPT4o",
+      "gpt4o",
+      "omni"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "OpenAI 最新的旗舰模型，\"o\"代表\"omni（全能）\"，能同时理解文字、图片和声音，反应速度也更快。",
+      "intermediate": "OpenAI 的多模态旗舰模型，原生支持文本、图像、音频输入输出，延迟大幅降低。相比 GPT-4 Turbo，速度快 2 倍，价格降低 50%。",
+      "advanced": "GPT-4o 是首个端到端原生多模态模型，音频不再经过 Whisper+TTS 中转，而是直接在统一模型内处理，减少了信息损耗和延迟。支持实时对话和情感感知。"
+    },
+    "relatedTerms": [
+      "gpt",
+      "chatgpt",
+      "multimodal"
+    ],
+    "contexts": [
+      "multimodal",
+      "ai-assistant"
+    ],
+    "emoji": "⚡",
+    "difficulty": "low"
+  },
+  "gemini": {
+    "term": "Gemini",
+    "aliases": [
+      "Gemini AI",
+      "Google Gemini",
+      "Bard"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "Google 做的 AI 助手，原来叫 Bard，现在改名叫 Gemini。内置在 Google 搜索和 Gmail 等产品里，用起来很方便。",
+      "intermediate": "Google DeepMind 开发的多模态大模型系列，包括 Gemini Ultra/Pro/Flash/Nano。原生支持文本、图像、音频、视频输入，上下文窗口可达 1M tokens。",
+      "advanced": "Gemini 1.5 采用 MoE 架构，实现百万 token 长上下文。通过 ALiBi 位置编码改进解决长距离依赖问题。Gemini 2.0 支持原生工具调用和多模态输出，是 Google 的 Agent 核心底座。"
+    },
+    "relatedTerms": [
+      "llm",
+      "multimodal",
+      "chatgpt",
+      "claude"
+    ],
+    "contexts": [
+      "ai-assistant",
+      "google-ecosystem"
+    ],
+    "emoji": "💎",
+    "difficulty": "low"
+  },
+  "midjourney": {
+    "term": "Midjourney",
+    "aliases": [
+      "MJ",
+      "mid journey"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "用文字生成图片的 AI 工具，你描述你想要的画面，它就帮你画出来，风格非常精美，是设计师和创作者常用的工具。",
+      "intermediate": "基于 Diffusion 模型的图像生成服务，通过 Discord 机器人操作。以艺术风格强、审美水准高著称，支持 --style、--ar（宽高比）等参数控制。",
+      "advanced": "Midjourney 使用自研的扩散模型，V6 版本引入了更精准的文本理解和图像一致性控制。与开源 Stable Diffusion 不同，其模型和训练数据不公开，以服务订阅形式提供。"
+    },
+    "relatedTerms": [
+      "stable-diffusion",
+      "dall-e",
+      "diffusion-model",
+      "image-generation"
+    ],
+    "contexts": [
+      "image-generation",
+      "creative"
+    ],
+    "emoji": "🎨",
+    "difficulty": "low"
+  },
+  "stable-diffusion": {
+    "term": "Stable Diffusion",
+    "aliases": [
+      "SD",
+      "StableDiffusion",
+      "SDXL"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "开源的 AI 画图工具，和 Midjourney 类似，但可以免费下载在自己电脑上跑，有大量社区风格可选，完全免费。",
+      "intermediate": "由 Stability AI 开源的扩散模型，支持本地部署。生态丰富，有 ControlNet（姿态控制）、LoRA（风格微调）等扩展。SDXL、SD 3.0 是其主要迭代版本。",
+      "advanced": "基于 Latent Diffusion Model（LDM）架构，在压缩的潜空间而非像素空间执行扩散过程，大幅降低计算量。使用 CLIP 文本编码器将 prompt 转为条件向量引导去噪。"
+    },
+    "relatedTerms": [
+      "diffusion-model",
+      "midjourney",
+      "dall-e",
+      "lora"
+    ],
+    "contexts": [
+      "image-generation",
+      "open-source"
+    ],
+    "emoji": "🖼️",
+    "difficulty": "medium"
+  },
+  "dall-e": {
+    "term": "DALL-E",
+    "aliases": [
+      "DALL·E",
+      "DALLE",
+      "DALL-E 3"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "OpenAI 做的 AI 画图工具，ChatGPT Plus 里就内置了，直接在对话里说\"帮我画一只猫\"，它就能生成图片。",
+      "intermediate": "OpenAI 的图像生成模型系列，DALL-E 3 与 ChatGPT 深度集成，文本理解能力强，能准确渲染复杂描述和文字内容。",
+      "advanced": "DALL-E 3 相比前代引入了重新描述（recaptioning）技术，用 GPT-4 自动扩展和优化用户 prompt，大幅提升图文对齐质量。底层基于 Diffusion Transformer 架构。"
+    },
+    "relatedTerms": [
+      "midjourney",
+      "stable-diffusion",
+      "image-generation"
+    ],
+    "contexts": [
+      "image-generation",
+      "chatgpt"
+    ],
+    "emoji": "🎭",
+    "difficulty": "low"
+  },
+  "cursor": {
+    "term": "Cursor",
+    "aliases": [
+      "Cursor IDE",
+      "Cursor Editor"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "一个内置 AI 的代码编辑器，写代码时可以直接跟 AI 对话、让它帮你改代码，是程序员最喜欢的 AI 工具之一。",
+      "intermediate": "基于 VS Code 的 AI 代码编辑器，深度集成 Claude/GPT-4 等模型。支持 Tab 自动补全、Composer 多文件编辑、@codebase 全库问答等功能。",
+      "advanced": "Cursor 通过 LSP 协议获取代码语义信息，结合 RAG 技术检索相关代码上下文，再输入给 LLM 进行推理。Cursor Agent 模式可自主执行终端命令，实现端到端的编码任务。"
+    },
+    "relatedTerms": [
+      "copilot",
+      "claude",
+      "llm",
+      "code-interpreter"
+    ],
+    "contexts": [
+      "coding",
+      "development"
+    ],
+    "emoji": "⌨️",
+    "difficulty": "low"
+  },
+  "copilot": {
+    "term": "Copilot",
+    "aliases": [
+      "GitHub Copilot",
+      "Microsoft Copilot"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "GitHub（微软）做的 AI 编程助手，装在代码编辑器里，写代码时它会自动猜你接下来要写什么，帮你补全代码。",
+      "intermediate": "GitHub 推出的 AI 代码补全服务，基于 OpenAI Codex 模型。支持 VS Code、JetBrains 等主流 IDE，可补全函数、生成注释、编写测试。",
+      "advanced": "GitHub Copilot 使用针对代码微调的 GPT 模型，通过 FIM（Fill-in-the-Middle）技术同时利用光标前后的上下文进行补全。Copilot Workspace 进一步向 Agent 化演进，支持从 Issue 到 PR 的全流程自动化。"
+    },
+    "relatedTerms": [
+      "cursor",
+      "gpt",
+      "code-interpreter",
+      "github-actions"
+    ],
+    "contexts": [
+      "coding",
+      "development"
+    ],
+    "emoji": "🚁",
+    "difficulty": "low"
+  },
+  "perplexity-ai": {
+    "term": "Perplexity",
+    "aliases": [
+      "Perplexity AI",
+      "perplexity.ai"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "一个 AI 搜索引擎，和 Google 不同的是，它不只给你链接，而是直接整合多个网页的信息给你一个完整的答案，还附带来源。",
+      "intermediate": "AI 原生搜索引擎，结合了实时网络检索和 LLM 生成能力。每次回答都附带引用来源，支持追问，适合需要信息聚合的研究场景。",
+      "advanced": "Perplexity 采用 RAG 架构：先用搜索引擎检索实时网页，再将检索结果作为上下文输入 LLM 生成答案。相比传统 RAG，其检索是实时互联网级别而非私有知识库。"
+    },
+    "relatedTerms": [
+      "rag",
+      "llm",
+      "web-browsing",
+      "embedding"
+    ],
+    "contexts": [
+      "search",
+      "research"
+    ],
+    "emoji": "🔍",
+    "difficulty": "low"
+  },
+  "runway": {
+    "term": "Runway",
+    "aliases": [
+      "Runway ML",
+      "RunwayML",
+      "Gen-3"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "一个 AI 视频生成工具，可以把文字或图片变成视频，是现在最热门的 AI 视频创作平台之一，常被影视人用来做创意原型。",
+      "intermediate": "Runway 提供 Gen-2、Gen-3 等视频生成模型，支持文生视频、图生视频、视频风格转换等功能，是专业创作者常用的 AI 视频工具。",
+      "advanced": "Runway Gen-3 采用 Diffusion Transformer 架构，在时序一致性和运动流畅度上有显著提升。支持精细的摄像机控制（运镜指令），适合专业影视制作流程集成。"
+    },
+    "relatedTerms": [
+      "suno",
+      "video-generation",
+      "diffusion-model",
+      "image-generation"
+    ],
+    "contexts": [
+      "video-generation",
+      "creative"
+    ],
+    "emoji": "🎬",
+    "difficulty": "low"
+  },
+  "suno": {
+    "term": "Suno",
+    "aliases": [
+      "Suno AI",
+      "Suno Music"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "用 AI 生成完整歌曲的工具，你输入一句歌词或描述风格，它就能生成带人声的完整歌曲，非常神奇，人人都能做音乐了。",
+      "intermediate": "Suno 是领先的 AI 音乐生成平台，支持文字描述生成完整歌曲（含人声、旋律、伴奏）。可指定风格、情绪、语言，也支持上传歌词。",
+      "advanced": "Suno 使用自回归 Transformer 架构处理音频 token，将连续音频离散化为 token 序列再生成。与图像生成不同，音乐生成需要处理时序依赖、和声逻辑等额外约束。"
+    },
+    "relatedTerms": [
+      "elevenlabs",
+      "runway",
+      "text-to-speech"
+    ],
+    "contexts": [
+      "music-generation",
+      "creative"
+    ],
+    "emoji": "🎵",
+    "difficulty": "low"
+  },
+  "elevenlabs": {
+    "term": "ElevenLabs",
+    "aliases": [
+      "Eleven Labs",
+      "11labs"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "做 AI 语音的工具，可以克隆声音、把文字转成逼真的语音，质量在同类产品里是最好的之一，常用于播客和有声书。",
+      "intermediate": "ElevenLabs 提供高质量文本转语音（TTS）和语音克隆服务，支持 29 种语言，情感表达自然。API 友好，常用于播客、有声书、游戏配音等场景。",
+      "advanced": "ElevenLabs 使用基于 Diffusion 的 TTS 模型，通过少量样本（约 1 分钟）即可克隆说话人音色。V3 版本引入了 Turbo 模式，将延迟降至实时对话可接受范围。"
+    },
+    "relatedTerms": [
+      "suno",
+      "text-to-speech",
+      "speech-to-text"
+    ],
+    "contexts": [
+      "voice",
+      "tts"
+    ],
+    "emoji": "🎙️",
+    "difficulty": "low"
+  },
+  "replicate": {
+    "term": "Replicate",
+    "aliases": [
+      "replicate.com"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "一个可以直接在网上运行各种 AI 模型的平台，不用自己配置环境，按使用量付费，开发者非常喜欢用，几行代码就能调用。",
+      "intermediate": "云端 AI 模型托管平台，提供数千个开源模型（图像、视频、音频、LLM）的 API 访问。按 GPU 秒数计费，支持自定义模型部署（Cog 容器）。",
+      "advanced": "Replicate 的 Cog 框架将模型打包成标准化容器，底层使用 Kubernetes 动态调度 GPU 资源。冷启动时间是主要痛点，通过 warmup 机制可缓解。"
+    },
+    "relatedTerms": [
+      "stable-diffusion",
+      "api",
+      "serverless",
+      "gpu"
+    ],
+    "contexts": [
+      "model-hosting",
+      "api"
+    ],
+    "emoji": "🔁",
+    "difficulty": "medium"
+  },
+  "groq": {
+    "term": "Groq",
+    "aliases": [
+      "Groq AI",
+      "GroqCloud",
+      "LPU"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "一个跑 AI 模型特别快的平台，比一般的 AI 服务快很多倍，适合需要极低延迟的应用，比如实时对话和语音助手。",
+      "intermediate": "Groq 使用自研的 LPU（Language Processing Unit）芯片运行开源 LLM（如 Llama、Mixtral），推理速度极快（可达 500+ tokens/秒），适合实时对话场景。",
+      "advanced": "Groq LPU 采用 SIMD 向量处理架构，避免了 GPU 的内存带宽瓶颈。通过编译时确定数据流（无动态调度），实现确定性延迟。代价是灵活性低，只支持固定模型架构。"
+    },
+    "relatedTerms": [
+      "gpu",
+      "inference",
+      "llm",
+      "latency"
+    ],
+    "contexts": [
+      "inference",
+      "low-latency"
+    ],
+    "emoji": "⚡",
+    "difficulty": "medium"
+  },
+  "mistral": {
+    "term": "Mistral",
+    "aliases": [
+      "Mistral AI",
+      "Mistral 7B",
+      "Mixtral"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "法国 AI 公司 Mistral AI 做的开源大模型，性能很强但体积小，可以在普通电脑上跑，是开源模型里的明星选手。",
+      "intermediate": "Mistral AI 的旗舰开源模型系列，包括 Mistral 7B、Mixtral 8x7B（MoE 架构）等。以小参数量实现高性能著称，商业友好的 Apache 2.0 许可证。",
+      "advanced": "Mistral 7B 使用 Grouped Query Attention（GQA）和 Sliding Window Attention（SWA）优化长序列处理效率。Mixtral 使用 8 个专家的 MoE，每次推理只激活 2 个，有效参数量相当于 13B。"
+    },
+    "relatedTerms": [
+      "llm",
+      "mixture-of-experts",
+      "open-source-llm",
+      "llama"
+    ],
+    "contexts": [
+      "open-source",
+      "efficient-model"
+    ],
+    "emoji": "🌪️",
+    "difficulty": "medium"
+  },
+  "llama": {
+    "term": "Llama",
+    "aliases": [
+      "LLaMA",
+      "Llama 2",
+      "Llama 3",
+      "Meta Llama"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "Meta（Facebook 母公司）做的开源 AI 大模型，因为是开源免费的，所以很多公司和研究者都基于它来开发自己的 AI 产品。",
+      "intermediate": "Meta 发布的开源 LLM 系列，Llama 2/3 支持商业使用。是目前最流行的开源基础模型，Ollama、vLLM 等本地部署工具都以 Llama 为核心支持对象。",
+      "advanced": "Llama 3 采用 GQA（Grouped Query Attention）减少 KV Cache 内存占用，使用 128K 词表（较 Llama 2 的 32K 大幅扩展）。通过 RLHF 和 DPO 进行指令对齐，发布了 8B、70B、405B 不同规模版本。"
+    },
+    "relatedTerms": [
+      "llm",
+      "open-source-llm",
+      "mistral",
+      "ollama",
+      "fine-tuning"
+    ],
+    "contexts": [
+      "open-source",
+      "local-deployment"
+    ],
+    "emoji": "🦙",
+    "difficulty": "low"
+  },
+  "deepseek": {
+    "term": "DeepSeek",
+    "aliases": [
+      "DeepSeek AI",
+      "DeepSeek-R1",
+      "DeepSeek-V3",
+      "深度求索"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "中国 AI 公司深度求索做的大模型，性能接近 GPT-4 但成本极低，2025 年初震惊了全球 AI 圈，是开源领域的重大突破。",
+      "intermediate": "DeepSeek 是深度求索（中国）开发的高性价比 LLM 系列，DeepSeek-V3 和 R1 在多个基准测试上媲美 GPT-4o，训练成本仅为竞争对手的 1/10，引发全球关注。",
+      "advanced": "DeepSeek-V3 使用 MoE 架构（671B 总参数，37B 激活），配合 Multi-Head Latent Attention（MLA）压缩 KV Cache。DeepSeek-R1 使用纯 RL 训练推理能力，无需人工监督数据，是推理模型的重要突破。"
+    },
+    "relatedTerms": [
+      "llm",
+      "mixture-of-experts",
+      "open-source-llm"
+    ],
+    "contexts": [
+      "open-source",
+      "efficient-model"
+    ],
+    "emoji": "🌊",
+    "difficulty": "low"
+  },
+  "qwen": {
+    "term": "Qwen",
+    "aliases": [
+      "通义千问",
+      "千问",
+      "Qwen2",
+      "Alibaba Qwen"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "阿里巴巴做的 AI 大模型，叫\"通义千问\"，是国内最强的开源大模型之一，中文理解能力特别好，有免费版可以用。",
+      "intermediate": "阿里云发布的 LLM 系列（通义千问），包括 Qwen2.5 等版本，中文能力突出。开源版本广泛支持本地部署，商业版通过阿里云 API 访问。",
+      "advanced": "Qwen2.5 在中文 benchmark 上达到 SOTA，使用了大量中文预训练语料和针对性的指令微调数据。支持 7B 到 72B 多个规模，并有专门的 Qwen-Coder、Qwen-VL 等专用版本。"
+    },
+    "relatedTerms": [
+      "llm",
+      "open-source-llm",
+      "wenxin",
+      "kimi"
+    ],
+    "contexts": [
+      "chinese-ai",
+      "open-source"
+    ],
+    "emoji": "🌐",
+    "difficulty": "low"
+  },
+  "wenxin": {
+    "term": "文心一言",
+    "aliases": [
+      "ERNIE Bot",
+      "ErnieBot",
+      "文心",
+      "ERNIE"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "百度做的 AI 聊天助手，是国内最早上线的大模型产品之一，和 ChatGPT 类似，可以聊天、写作、回答问题。",
+      "intermediate": "百度推出的对话式 AI 产品，基于 ERNIE（文心）大模型。深度集成百度搜索和知识图谱，对中文语境和时事信息理解较好。",
+      "advanced": "文心大模型基于 ERNIE（Enhanced Representation through kNowledge IntEgration）架构，通过知识增强预训练融合百度知识图谱。ERNIE 4.0 引入多模态能力和工具调用。"
+    },
+    "relatedTerms": [
+      "llm",
+      "qwen",
+      "kimi",
+      "doubao"
+    ],
+    "contexts": [
+      "chinese-ai",
+      "baidu"
+    ],
+    "emoji": "📝",
+    "difficulty": "low"
+  },
+  "kimi": {
+    "term": "Kimi",
+    "aliases": [
+      "Kimi AI",
+      "月之暗面",
+      "Moonshot AI",
+      "Kimi k1.5"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "月之暗面公司做的 AI 助手，最大的特点是能处理超长文档，你可以把整本书发给它来分析，非常适合做资料整理和文献阅读。",
+      "intermediate": "由月之暗面（Moonshot AI）开发的 LLM 产品，以超长上下文处理著称（支持 200K+ tokens），适合长文档分析、PDF 阅读等任务。",
+      "advanced": "Kimi 在长上下文处理上做了专项优化，通过改进的注意力机制和内存管理支持超长输入。Kimi k1.5 采用强化学习提升推理能力，是国内首批推理模型之一。"
+    },
+    "relatedTerms": [
+      "llm",
+      "context-window",
+      "wenxin",
+      "qwen"
+    ],
+    "contexts": [
+      "chinese-ai",
+      "long-context"
+    ],
+    "emoji": "🌙",
+    "difficulty": "low"
+  },
+  "doubao": {
+    "term": "豆包",
+    "aliases": [
+      "Doubao",
+      "字节跳动AI",
+      "ByteDance AI"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "字节跳动（抖音母公司）做的 AI 助手，功能全面，有网页版和手机 App，是国内用户增长最快的 AI 产品之一，完全免费。",
+      "intermediate": "字节跳动推出的 AI 助手产品，基于自研 Doubao 模型。支持对话、写作、搜索、图片生成等功能，与抖音生态深度整合。",
+      "advanced": "Doubao 模型在字节内部大规模工程化部署，针对高并发、低成本推理做了专项优化。字节同时开放了 Doubao API 供开发者使用，定价极具竞争力。"
+    },
+    "relatedTerms": [
+      "llm",
+      "wenxin",
+      "qwen",
+      "kimi"
+    ],
+    "contexts": [
+      "chinese-ai",
+      "bytedance"
+    ],
+    "emoji": "🫘",
+    "difficulty": "low"
+  },
+  "coze": {
+    "term": "Coze",
+    "aliases": [
+      "扣子",
+      "ByteDance Coze",
+      "Coze平台"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "字节跳动做的 AI 机器人搭建平台，不用写代码就能创建自己的 AI 助手，可以发布到微信、飞书等平台使用，门槛很低。",
+      "intermediate": "字节跳动的 Agent/Bot 构建平台，提供可视化工作流编排、插件市场、知识库集成等功能，支持发布到多渠道（飞书、抖音、Discord 等）。",
+      "advanced": "Coze 采用 Workflow + Plugin 架构，Workflow 是 DAG（有向无环图）编排，Plugin 封装外部 API 调用。底层模型可选 Doubao 或 GPT 系列，支持 RAG 知识库注入。"
+    },
+    "relatedTerms": [
+      "dify",
+      "langchain",
+      "agent",
+      "rag"
+    ],
+    "contexts": [
+      "no-code",
+      "agent-platform"
+    ],
+    "emoji": "🤖",
+    "difficulty": "low"
+  },
+  "dify": {
+    "term": "Dify",
+    "aliases": [
+      "Dify AI",
+      "dify.ai"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "一个开源的 AI 应用搭建平台，可以把 AI 模型和你自己的数据结合起来做成专属的 AI 工具，不需要太多技术基础，非常适合创业者。",
+      "intermediate": "开源的 LLM 应用开发平台，提供 RAG 管道、Prompt 管理、工作流编排、模型对接等功能。支持自托管，内置 100+ 模型适配器。",
+      "advanced": "Dify 采用模块化架构，核心组件包括：Dataset（向量存储抽象）、LLMNode（模型调用）、Tool（工具集成）和 Workflow（流程编排）。API 网关层统一处理鉴权、限流、日志。"
+    },
+    "relatedTerms": [
+      "langchain",
+      "coze",
+      "rag",
+      "agent"
+    ],
+    "contexts": [
+      "llm-platform",
+      "open-source"
+    ],
+    "emoji": "🔧",
+    "difficulty": "medium"
+  },
+  "crewai": {
+    "term": "CrewAI",
+    "aliases": [
+      "Crew AI",
+      "crew ai"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "一个让多个 AI Agent 协作完成任务的框架，就像组建一个 AI 团队，每个成员负责不同的工作，最后合力完成目标。",
+      "intermediate": "Python 框架，用于构建多 Agent 协作系统。通过定义 Agent（角色、工具）和 Task（任务）来组建 AI 团队，支持顺序、并行等执行模式。",
+      "advanced": "CrewAI 的 Crew 对象协调多个 Agent 的任务分配和结果传递，底层通过 LLM 实现任务理解和工具调用。相比 LangGraph，CrewAI 更偏向声明式角色定义，适合业务流程自动化。"
+    },
+    "relatedTerms": [
+      "multi-agent",
+      "langchain",
+      "agent",
+      "orchestrator"
+    ],
+    "contexts": [
+      "multi-agent",
+      "automation"
+    ],
+    "emoji": "👥",
+    "difficulty": "medium"
+  },
+  "autogpt": {
+    "term": "AutoGPT",
+    "aliases": [
+      "Auto-GPT",
+      "AutoGPT Agent"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "最早流行的自主 AI Agent 项目，你给它一个目标，它会自己拆解任务、搜索资料、写代码去完成，不需要你一步步指挥。",
+      "intermediate": "早期著名的 Autonomous Agent 项目，基于 GPT-4 实现自主任务分解和工具调用。虽然实际效果有限，但推动了 Agent 领域的公众认知，是里程碑式产品。",
+      "advanced": "AutoGPT 采用 ReAct 框架，每个循环包括 Thought（思考）、Action（工具调用）、Observation（结果观察）。其失败案例揭示了 LLM 长期规划能力不足、错误累积等核心 Agent 挑战。"
+    },
+    "relatedTerms": [
+      "autonomous-agent",
+      "agent",
+      "planning",
+      "task-decomposition"
+    ],
+    "contexts": [
+      "autonomous-agent",
+      "early-agent"
+    ],
+    "emoji": "🤖",
+    "difficulty": "medium"
+  },
+  "one-shot": {
+    "term": "One-shot",
+    "aliases": [
+      "1-shot",
+      "one shot learning"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "在问 AI 时只给它看一个例子，它就能按照这个格式或方式来回答，比\"零样本\"多了一个参考案例，理解起来更准确。",
+      "intermediate": "提示策略：在 prompt 中提供一个示例（输入-输出对），让模型理解期望的格式或风格后再完成任务。效果介于 zero-shot 和 few-shot 之间。",
+      "advanced": "One-shot 属于 in-context learning 的特殊情况。单个示例的选择对结果影响较大——示例的质量、格式和领域相关性都会影响模型的类比推理效果。"
+    },
+    "relatedTerms": [
+      "few-shot",
+      "zero-shot",
+      "in-context-learning",
+      "prompt-engineering"
+    ],
+    "contexts": [
+      "prompt-design",
+      "in-context-learning"
+    ],
+    "emoji": "1️⃣",
+    "difficulty": "low"
+  },
+  "user-prompt": {
+    "term": "User Prompt",
+    "aliases": [
+      "用户提示词",
+      "用户消息",
+      "user input"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "你发给 AI 的那条消息，就是你在对话框里输入的内容，是人机对话中\"用户说的话\"。怎么问决定了 AI 怎么答。",
+      "intermediate": "对话中用户角色发送的消息，区别于 system prompt（全局设置）和 assistant message（AI 回复）。好的 user prompt 应清晰、具体，提供足够上下文。",
+      "advanced": "在 Chat Completions API 中，消息列表按 role 区分（system/user/assistant）。user prompt 的工程化重点：任务描述 + 约束条件 + 输出格式 + 示例，形成结构化 prompt 模板。"
+    },
+    "relatedTerms": [
+      "system-prompt",
+      "prompt-engineering",
+      "assistant-message",
+      "prompt-template"
+    ],
+    "contexts": [
+      "prompt-design",
+      "conversation"
+    ],
+    "emoji": "💬",
+    "difficulty": "low"
+  },
+  "top-k": {
+    "term": "Top-k",
+    "aliases": [
+      "topk",
+      "top_k",
+      "top k sampling"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "控制 AI 每次选词时\"候选池大小\"的参数。设置 k=50 意味着 AI 从概率最高的 50 个词里随机选一个，k 越小 AI 越保守谨慎。",
+      "intermediate": "生成参数，限制每个 token 的候选池大小，只从概率最高的 k 个 token 中采样。k 小则输出更保守、可预测；k 大则更多样。通常与 top-p 配合使用。",
+      "advanced": "Top-k 截断在 logit 空间操作：将前 k 名之外的 token 概率置零后重新归一化。缺点是 k 是固定数量，无法适应概率分布形态变化。Top-p 更动态，实践中更常用，两者可叠加使用。"
+    },
+    "relatedTerms": [
+      "top-p",
+      "temperature",
+      "token"
+    ],
+    "contexts": [
+      "generation",
+      "inference"
+    ],
+    "emoji": "🎯",
+    "difficulty": "medium"
+  },
+  "prompt-template": {
+    "term": "Prompt Template",
+    "aliases": [
+      "提示词模板",
+      "提示模板"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "可以重复使用的 AI 提示词格式，像填空题一样，把变量部分换成不同的内容就能得到不同的回答，省去每次重新写提示词的麻烦。",
+      "intermediate": "包含变量占位符的结构化 prompt，通过动态填充变量实现复用。例如\"请把以下{language}代码翻译成{target_language}\"。LangChain 等框架对此有完整的模板管理支持。",
+      "advanced": "Prompt Template 工程化时需考虑：变量转义（防注入）、条件分支（jinja2 等模板语法）、token 预算管理。结合 LLMChain 可形成可组合的 prompt 流水线。"
+    },
+    "relatedTerms": [
+      "prompt-engineering",
+      "langchain",
+      "prompt-chaining",
+      "few-shot"
+    ],
+    "contexts": [
+      "prompt-design",
+      "automation"
+    ],
+    "emoji": "📋",
+    "difficulty": "medium"
+  },
+  "prompt-chaining": {
+    "term": "Prompt Chaining",
+    "aliases": [
+      "提示词链",
+      "chain prompting"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "把一个复杂任务拆成多步，每一步的输出作为下一步的输入，像流水线一样让 AI 分步完成，比一次性让它做完效果更好更准确。",
+      "intermediate": "将复杂任务分解为多个子 prompt，每步的输出作为下一步的输入。可提高准确率，便于中间结果检查和错误定位。是构建 LLM Pipeline 的基础模式。",
+      "advanced": "Prompt Chaining 本质是将单次超复杂推理分解为多次简单推理，降低每步出错概率。结合条件判断可形成分支流程，结合工具调用可形成 ReAct 风格的 Agent 循环。"
+    },
+    "relatedTerms": [
+      "chain-of-thought",
+      "prompt-template",
+      "agent",
+      "task-decomposition"
+    ],
+    "contexts": [
+      "prompt-design",
+      "automation"
+    ],
+    "emoji": "⛓️",
+    "difficulty": "medium"
+  },
+  "role-prompting": {
+    "term": "Role Prompting",
+    "aliases": [
+      "角色提示",
+      "角色扮演提示",
+      "persona prompting"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "让 AI 扮演某个角色来回答问题的技巧，比如\"你是一个资深医生，请回答...\"，这样能让 AI 的回答更专业、更有针对性。",
+      "intermediate": "通过在 prompt 中为模型设定角色/专家身份，引导其以特定视角和风格生成回复。有效利用了模型在预训练中积累的角色相关知识。",
+      "advanced": "Role prompting 通过激活与特定角色相关的神经网络激活模式来影响生成。研究显示，专家角色提示能小幅提升专业领域任务表现，但效果受限于基础模型的领域知识深度。"
+    },
+    "relatedTerms": [
+      "system-prompt",
+      "prompt-engineering",
+      "few-shot"
+    ],
+    "contexts": [
+      "prompt-design",
+      "chatbot"
+    ],
+    "emoji": "🎭",
+    "difficulty": "low"
+  },
+  "instruction-tuning": {
+    "term": "Instruction Tuning",
+    "aliases": [
+      "指令微调",
+      "instruction fine-tuning",
+      "FLAN"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "让 AI 学会\"听指令\"的训练方式，用大量\"指令→回答\"的例子来训练，让模型更好地理解和执行各种要求，变得更\"听话\"。",
+      "intermediate": "用指令格式（任务描述 + 输入 + 期望输出）的数据集对预训练模型进行微调，使模型能泛化地遵循新指令，而不只是做特定任务。Google 的 FLAN 是代表性工作。",
+      "advanced": "指令微调使模型从\"补全下一个 token\"转变为\"理解并执行指令\"。关键发现：在多样化任务上做指令微调能提升对未见任务的泛化能力（跨任务泛化）。通常与 RLHF 结合，先 SFT 再 RL 对齐。"
+    },
+    "relatedTerms": [
+      "fine-tuning",
+      "rlhf",
+      "prompt-engineering"
+    ],
+    "contexts": [
+      "training",
+      "alignment"
+    ],
+    "emoji": "📚",
+    "difficulty": "medium"
+  },
+  "prompt-leaking": {
+    "term": "Prompt Leaking",
+    "aliases": [
+      "提示词泄露",
+      "system prompt leaking"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "通过特殊方式让 AI 说出它被要求保密的系统提示词的攻击方法，很多 AI 产品的\"秘密配方\"就是这么被人发现的。",
+      "intermediate": "攻击者通过精心构造的 prompt 诱导模型输出系统提示词内容，暴露产品的 prompt 设计、安全边界等敏感信息。属于 Prompt Injection 的一种变体。",
+      "advanced": "Prompt Leaking 利用 LLM 对指令边界的模糊处理。防御手段：在系统提示中明确禁止；输出过滤层检测泄露模式；避免在系统提示中放置真正机密信息（正确做法是通过后端鉴权控制）。"
+    },
+    "relatedTerms": [
+      "jailbreak",
+      "prompt-injection",
+      "system-prompt",
+      "red-teaming"
+    ],
+    "contexts": [
+      "security",
+      "prompt-attack"
+    ],
+    "emoji": "🔓",
+    "difficulty": "medium"
+  },
+  "prompt-compression": {
+    "term": "Prompt Compression",
+    "aliases": [
+      "提示词压缩",
+      "context compression"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "把很长的 AI 上下文压缩变短的技术，既节省费用（按 token 数计费），又能避免超出模型的长度限制，很实用。",
+      "intermediate": "在不显著损失信息的前提下减少 prompt 的 token 数量，降低推理成本和延迟。方法包括：摘要、关键信息提取、LLMLingua 等专用压缩模型。",
+      "advanced": "LLMLingua 等工具通过小模型计算每个 token 的\"信息量\"（基于困惑度），删除低信息量 token。Selective Context 则通过句子级别的语义相似度过滤冗余内容。"
+    },
+    "relatedTerms": [
+      "context-window",
+      "context-compression",
+      "token",
+      "rag"
+    ],
+    "contexts": [
+      "optimization",
+      "cost"
+    ],
+    "emoji": "🗜️",
+    "difficulty": "medium"
+  },
+  "tree-of-thought": {
+    "term": "Tree of Thought",
+    "aliases": [
+      "ToT",
+      "思维树"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "比\"思维链\"更强的 AI 推理方式，让 AI 同时探索多条解题路径，像下棋一样提前想好几步，然后选出最优的一条。",
+      "intermediate": "在 Chain of Thought 基础上扩展，让模型并行探索多个推理路径，通过启发式评估剪枝，适合需要规划和搜索的复杂任务。",
+      "advanced": "ToT 框架将问题求解形式化为树搜索：节点是中间思维状态，边是推理步骤，搜索算法（BFS/DFS）探索解空间，评估器（LLM 或外部函数）对节点打分。代价是推理成本大幅增加（多次 LLM 调用）。"
+    },
+    "relatedTerms": [
+      "chain-of-thought",
+      "react-prompting",
+      "planning",
+      "self-consistency"
+    ],
+    "contexts": [
+      "reasoning",
+      "planning"
+    ],
+    "emoji": "🌳",
+    "difficulty": "high"
+  },
+  "react-prompting": {
+    "term": "ReAct",
+    "aliases": [
+      "ReAct Prompting",
+      "Reasoning and Acting"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "让 AI 边思考边行动的方法，AI 先想\"我该做什么\"，然后去查资料或调用工具，看到结果后再继续想，循环直到完成任务。",
+      "intermediate": "Reasoning + Acting 的结合，模型交替生成 Thought（推理）和 Action（工具调用），通过 Observation（工具返回）形成闭环。是现代 LLM Agent 的核心架构模式。",
+      "advanced": "ReAct 解决了纯推理（幻觉）和纯行动（无方向）的缺陷。实现上每个 step 包括 [Thought] [Action] [Observation] 三个标记段，通过 few-shot 示例告知模型格式，外层 while 循环执行工具调用。"
+    },
+    "relatedTerms": [
+      "chain-of-thought",
+      "tool-use",
+      "agent",
+      "function-calling"
+    ],
+    "contexts": [
+      "agent",
+      "reasoning"
+    ],
+    "emoji": "⚡",
+    "difficulty": "medium"
+  },
+  "self-consistency": {
+    "term": "Self-consistency",
+    "aliases": [
+      "自一致性",
+      "self consistency decoding"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "让 AI 对同一个问题回答多次，然后选大多数答案一致的那个，就像\"少数服从多数\"，能有效提高 AI 的准确率。",
+      "intermediate": "对同一 prompt 进行多次采样生成（temperature > 0），对所有输出的答案做多数投票，选择最一致的答案。在数学推理任务上能显著提升准确率。",
+      "advanced": "Self-consistency 基于假设：正确的推理路径多种多样，但都指向同一答案；错误的路径则各有各的错法。通过边际化推理路径（而非贪心选最优路径），得到更鲁棒的答案。"
+    },
+    "relatedTerms": [
+      "chain-of-thought",
+      "tree-of-thought",
+      "temperature"
+    ],
+    "contexts": [
+      "reasoning",
+      "accuracy"
+    ],
+    "emoji": "🔄",
+    "difficulty": "medium"
+  },
+  "json-mode": {
+    "term": "JSON Mode",
+    "aliases": [
+      "JSON 模式",
+      "structured output mode"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "让 AI 的回答一定是 JSON 格式的模式，这样程序可以直接读取和处理 AI 的输出，不需要再手动整理格式，开发者必备。",
+      "intermediate": "API 参数，强制模型输出合法的 JSON 格式，避免模型输出额外的解释文字导致 JSON 解析失败。不同于 structured output（需提供 JSON Schema），JSON Mode 只保证格式合法。",
+      "advanced": "JSON Mode 底层通过 logit bias 将非 JSON 结构的 token 概率降为 0，强制语法合规。Structured Output（OpenAI）进一步利用 CFG（Context-Free Grammar）约束输出符合特定 JSON Schema，实现字段级别的类型保证。"
+    },
+    "relatedTerms": [
+      "structured-output",
+      "response-format",
+      "json",
+      "api"
+    ],
+    "contexts": [
+      "api",
+      "development"
+    ],
+    "emoji": "📊",
+    "difficulty": "medium"
+  },
+  "sdk": {
+    "term": "SDK",
+    "aliases": [
+      "Software Development Kit",
+      "软件开发工具包"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "开发者用来构建应用的\"工具箱\"，包含了调用某个服务所需的代码库、文档和示例，比自己从头写省很多事。",
+      "intermediate": "Software Development Kit，提供特定平台/服务的封装库、API 客户端、文档和示例代码。区别于 API（通信接口），SDK 是具体语言的客户端实现，简化了直接调用 API 的工作。",
+      "advanced": "SDK 通常包含：客户端库（封装 HTTP/gRPC 调用）、类型定义（TypeScript types/Pydantic models）、错误处理、重试逻辑、流式输出支持等。AI SDK（如 OpenAI Python SDK、Anthropic SDK）还封装了 SSE streaming 解析。"
+    },
+    "relatedTerms": [
+      "api",
+      "npm",
+      "langchain"
+    ],
+    "contexts": [
+      "development",
+      "integration"
+    ],
+    "emoji": "🧰",
+    "difficulty": "low"
+  },
+  "frontend": {
+    "term": "Frontend",
+    "aliases": [
+      "前端",
+      "前端开发",
+      "Front-end"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "网站或 App 上你能看到、能点击的那部分，就是\"前端\"。前端开发者负责做出好看好用的界面，让用户能操作。",
+      "intermediate": "负责用户界面的开发，主要技术栈包括 HTML（结构）、CSS（样式）、JavaScript（交互），以及 React、Vue 等现代框架。",
+      "advanced": "现代前端工程化涉及：构建工具（Vite/Webpack）、状态管理（Redux/Zustand）、SSR/SSG（Next.js）、Web性能优化（代码分割、懒加载、Web Vitals）等。在 AI 应用中，前端还需处理 SSE streaming 渲染。"
+    },
+    "relatedTerms": [
+      "backend",
+      "api",
+      "javascript"
+    ],
+    "contexts": [
+      "development",
+      "web"
+    ],
+    "emoji": "🖥️",
+    "difficulty": "low"
+  },
+  "backend": {
+    "term": "Backend",
+    "aliases": [
+      "后端",
+      "后端开发",
+      "Back-end",
+      "服务端"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "网站或 App 背后看不见的部分，负责处理数据、运行逻辑、存储信息。前端是展示，后端是真正\"干活\"的地方。",
+      "intermediate": "负责服务器端逻辑、数据库交互和 API 提供的开发层。常用语言包括 Python、Node.js、Go、Java 等，负责业务逻辑、数据持久化、鉴权等核心功能。",
+      "advanced": "现代后端架构涵盖：RESTful/GraphQL API 设计、数据库选型（关系型/NoSQL/向量数据库）、消息队列（Kafka/Redis）、缓存策略、容器化部署（Docker/K8s）、微服务拆分等。"
+    },
+    "relatedTerms": [
+      "frontend",
+      "api",
+      "database",
+      "server"
+    ],
+    "contexts": [
+      "development",
+      "server"
+    ],
+    "emoji": "⚙️",
+    "difficulty": "low"
+  },
+  "database": {
+    "term": "Database",
+    "aliases": [
+      "数据库",
+      "DB",
+      "数据存储"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "专门存储和管理数据的系统，就像一个超级有组织的表格，可以快速查找、增加、修改和删除数据，是几乎所有 App 的核心。",
+      "intermediate": "数据存储和管理系统，分为关系型数据库（MySQL、PostgreSQL，用表格和 SQL 查询）和非关系型数据库（MongoDB、Redis，更灵活的数据结构）。",
+      "advanced": "数据库选型需考虑：ACID 特性（原子性/一致性/隔离性/持久性）、CAP 定理权衡、读写负载模式、分片和复制策略。AI 时代还出现了向量数据库（Pinecone/Chroma）用于语义检索。"
+    },
+    "relatedTerms": [
+      "backend",
+      "vector-database",
+      "sql",
+      "supabase"
+    ],
+    "contexts": [
+      "development",
+      "data"
+    ],
+    "emoji": "🗄️",
+    "difficulty": "low"
+  },
+  "server": {
+    "term": "Server",
+    "aliases": [
+      "服务器",
+      "服务端",
+      "主机"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "一台一直开着的电脑，专门用来处理其他人发来的请求、提供网站或 API 服务。你访问的每个网站背后都有服务器在运行。",
+      "intermediate": "提供服务的计算机或软件程序。硬件服务器是高性能机器；软件服务器（如 Nginx、Express）是监听端口、处理请求的程序。两者经常一起被提到。",
+      "advanced": "服务器架构从传统单机演进到分布式集群，再到容器化和无服务器（Serverless）。AI 推理服务器（如 vLLM、TGI）专门优化了 LLM 的批处理和内存管理，以提升吞吐量。"
+    },
+    "relatedTerms": [
+      "backend",
+      "cloud-computing",
+      "docker",
+      "serverless"
+    ],
+    "contexts": [
+      "infrastructure",
+      "deployment"
+    ],
+    "emoji": "🖥️",
+    "difficulty": "low"
+  },
+  "cloud-computing": {
+    "term": "Cloud Computing",
+    "aliases": [
+      "云计算",
+      "云服务",
+      "cloud"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "把电脑的算力、存储、软件放到\"云端\"（互联网上的远程服务器），按需使用、按量付费，不需要自己买硬件。AWS、阿里云都是云计算服务商。",
+      "intermediate": "通过互联网提供计算资源（服务器、存储、数据库、AI 服务等）的模式。主要分为 IaaS（基础设施）、PaaS（平台）、SaaS（软件）三层。代表厂商：AWS、Azure、GCP、阿里云。",
+      "advanced": "云计算核心技术包括：虚拟化（Hypervisor/容器）、分布式存储（对象存储/块存储）、弹性伸缩（Auto Scaling）、全球 CDN 分发。AI 云服务还专门提供 GPU 集群和 MLOps 平台。"
+    },
+    "relatedTerms": [
+      "iaas",
+      "paas",
+      "saas",
+      "serverless",
+      "docker"
+    ],
+    "contexts": [
+      "infrastructure",
+      "deployment"
+    ],
+    "emoji": "☁️",
+    "difficulty": "low"
+  },
+  "saas": {
+    "term": "SaaS",
+    "aliases": [
+      "Software as a Service",
+      "软件即服务"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "直接在网上用的软件，不需要下载安装，按月或按年订阅，比如 Google Docs、Notion、ChatGPT Plus 都是 SaaS 产品。",
+      "intermediate": "软件即服务，是云计算的交付模式之一。用户通过浏览器访问软件，提供商负责维护基础设施、更新、安全。商业模式通常是订阅制（月费/年费）。",
+      "advanced": "SaaS 的核心挑战：多租户架构（数据隔离）、订阅计费系统、客户成功（降低流失率/Churn）。AI SaaS 还需考虑 LLM 推理成本控制，通常通过用量限制和分层定价来平衡毛利。"
+    },
+    "relatedTerms": [
+      "paas",
+      "iaas",
+      "cloud-computing",
+      "subscription"
+    ],
+    "contexts": [
+      "business",
+      "product"
+    ],
+    "emoji": "💻",
+    "difficulty": "low"
+  },
+  "paas": {
+    "term": "PaaS",
+    "aliases": [
+      "Platform as a Service",
+      "平台即服务"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "一种云服务，提供了开发和部署应用所需的平台环境，开发者不用操心服务器、操作系统等底层问题，专注写代码就行。Heroku、Vercel 都是 PaaS。",
+      "intermediate": "平台即服务，在 IaaS 之上提供了完整的开发部署环境（运行时、中间件、数据库、构建工具）。开发者只负责代码，平台负责运维。",
+      "advanced": "PaaS 和 IaaS 的核心区别是控制粒度：PaaS 抽象了操作系统和中间件层，但灵活性较低；IaaS 提供虚拟机，控制权更高但运维负担大。Kubernetes 托管服务（GKE/EKS）模糊了二者边界。"
+    },
+    "relatedTerms": [
+      "saas",
+      "iaas",
+      "cloud-computing",
+      "serverless"
+    ],
+    "contexts": [
+      "infrastructure",
+      "deployment"
+    ],
+    "emoji": "🏗️",
+    "difficulty": "medium"
+  },
+  "iaas": {
+    "term": "IaaS",
+    "aliases": [
+      "Infrastructure as a Service",
+      "基础设施即服务"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "云服务的最底层，提供虚拟服务器、网络、存储等基础硬件资源，你可以在上面自己装系统、部署应用，灵活但需要自己管理。",
+      "intermediate": "基础设施即服务，提供虚拟化的计算（VM/裸金属）、网络（VPC/负载均衡）、存储（块存储/对象存储）资源。代表：AWS EC2、Azure VM、阿里云 ECS。",
+      "advanced": "IaaS 的核心是虚拟化技术（KVM/Xen）和软件定义网络（SDN）。GPU 实例（A100/H100）是 AI 训练的标准 IaaS 形态，定价按小时或按需 spot 实例，成本优化是 MLOps 的核心课题。"
+    },
+    "relatedTerms": [
+      "saas",
+      "paas",
+      "cloud-computing",
+      "docker"
+    ],
+    "contexts": [
+      "infrastructure",
+      "deployment"
+    ],
+    "emoji": "🏭",
+    "difficulty": "medium"
+  },
+  "open-source": {
+    "term": "Open Source",
+    "aliases": [
+      "开源",
+      "开放源代码",
+      "OSS"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "代码公开让所有人免费查看、使用、修改的软件。很多优秀的 AI 工具（如 Llama、Stable Diffusion）都是开源的，人人都可以下载和修改。",
+      "intermediate": "以公开源代码为核心的软件开发模式，通常通过 License（MIT/Apache/GPL）授权使用。相对于闭源软件，开源软件透明可审计，生态由社区共建。",
+      "advanced": "开源许可证分类：宽松型（MIT/Apache 2.0，可商用、无需开放修改）和 Copyleft 型（GPL，修改后的代码也需开源）。AI 模型的\"开源\"有争议——仅开放权重但不开放训练数据/代码的称为\"开放权重\"（如 Llama）。"
+    },
+    "relatedTerms": [
+      "github",
+      "git",
+      "license",
+      "fork"
+    ],
+    "contexts": [
+      "development",
+      "community"
+    ],
+    "emoji": "🔓",
+    "difficulty": "low"
+  },
+  "repository": {
+    "term": "Repository",
+    "aliases": [
+      "仓库",
+      "repo",
+      "git repo",
+      "代码仓库"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "存放项目代码的地方，就像代码的\"档案室\"，记录了所有文件和每次修改的历史，可以放在 GitHub 上和别人共享。",
+      "intermediate": "版本控制系统（如 Git）中存储项目代码、历史记录和元数据的存储单元。本地仓库（local repo）和远程仓库（remote repo，如 GitHub/GitLab）同步协作。",
+      "advanced": "Git 仓库的底层是对象数据库（objects），存储 blob（文件内容）、tree（目录结构）、commit（提交记录）和 tag（标签）四种对象，以 SHA-1/SHA-256 内容寻址，天然去重。"
+    },
+    "relatedTerms": [
+      "git",
+      "github",
+      "open-source",
+      "pull-request"
+    ],
+    "contexts": [
+      "development",
+      "version-control"
+    ],
+    "emoji": "📦",
+    "difficulty": "low"
+  },
+  "terminal": {
+    "term": "Terminal",
+    "aliases": [
+      "终端",
+      "命令行终端",
+      "Console",
+      "控制台"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "那个黑色窗口，通过输入文字命令来控制电脑，不用鼠标点界面。程序员每天都在用，很多 AI 工具也需要在这里操作。",
+      "intermediate": "命令行界面程序，提供文本输入输出的交互方式。macOS 用 Terminal/iTerm2，Windows 用 CMD/PowerShell/Windows Terminal，Linux 用各种终端模拟器。",
+      "advanced": "终端（Terminal Emulator）模拟了历史上的物理终端设备，通过 PTY（伪终端）与 Shell 进程通信。现代 AI 工具（如 Claude Code）大量使用终端执行命令，理解 stdin/stdout/stderr 和退出码对 Agent 工具集成至关重要。"
+    },
+    "relatedTerms": [
+      "shell",
+      "cli",
+      "command-line",
+      "ssh"
+    ],
+    "contexts": [
+      "development",
+      "operations"
+    ],
+    "emoji": "⬛",
+    "difficulty": "low"
+  },
+  "command-line": {
+    "term": "Command Line",
+    "aliases": [
+      "命令行",
+      "CLI",
+      "Command Line Interface",
+      "命令行界面"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "通过打字输入命令来操作电脑的方式，和图形界面（鼠标点击）相对。虽然看起来难，但用熟了比图形界面效率高很多。",
+      "intermediate": "基于文本的人机交互界面，通过输入命令字符串执行操作。程序员用它来运行脚本、管理文件、控制服务，效率高于图形界面，也易于自动化。",
+      "advanced": "CLI 应用通常遵循 POSIX 标准：参数解析（flags/options/args）、stdin/stdout/stderr 流、退出码约定（0=成功，非0=失败）。AI Agent 通过调用 CLI 工具扩展能力，工具的 exit code 和 stdout 是 Agent 获取结果的主要方式。"
+    },
+    "relatedTerms": [
+      "terminal",
+      "shell",
+      "script",
+      "ssh"
+    ],
+    "contexts": [
+      "development",
+      "operations"
+    ],
+    "emoji": "💻",
+    "difficulty": "low"
+  },
+  "shell": {
+    "term": "Shell",
+    "aliases": [
+      "bash",
+      "zsh",
+      "sh",
+      "脚本解释器"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "终端里运行命令的程序，你输入的命令都是它来解析执行的。常见的有 bash、zsh（macOS 默认），功能比简单的命令行更强大，可以写自动化脚本。",
+      "intermediate": "命令行解释器，负责解析执行命令。Bash（Bourne Again Shell）是 Linux 标准，zsh 是 macOS 默认。支持变量、条件判断、循环，可编写 Shell Script 自动化任务。",
+      "advanced": "Shell 脚本的核心特性：管道（|）实现进程间通信、重定向（>/>>/<）控制 I/O、子 shell（$()）捕获输出、信号处理（trap）。AI Agent 执行 shell 命令时，沙箱隔离（如 Docker）是防止代码注入的关键安全措施。"
+    },
+    "relatedTerms": [
+      "terminal",
+      "command-line",
+      "script",
+      "sandbox"
+    ],
+    "contexts": [
+      "development",
+      "automation"
+    ],
+    "emoji": "🐚",
+    "difficulty": "low"
+  },
+  "script": {
+    "term": "Script",
+    "aliases": [
+      "脚本",
+      "自动化脚本",
+      "shell script"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "一段写好的代码命令，可以一键执行一系列操作，省去重复手动操作的麻烦。就像录制了一段操作，下次点击就自动执行。",
+      "intermediate": "包含一系列命令的可执行文件，通过解释器（Python/Bash/Node.js）逐行执行而非编译。常用于自动化运维、数据处理、部署流程等场景。",
+      "advanced": "AI 时代脚本的典型应用：LLM API 调用脚本（批处理/并发）、数据预处理 pipeline、部署自动化（CI/CD hooks）。Claude Code 等 AI 工具可自动生成和执行脚本，降低了脚本编写的门槛。"
+    },
+    "relatedTerms": [
+      "shell",
+      "python",
+      "cicd",
+      "automation"
+    ],
+    "contexts": [
+      "development",
+      "automation"
+    ],
+    "emoji": "📜",
+    "difficulty": "low"
+  },
+  "bug": {
+    "term": "Bug",
+    "aliases": [
+      "bug",
+      "程序错误",
+      "缺陷",
+      "漏洞"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "程序里的错误，导致它运行不正常或者产生意外结果。来源于早期计算机故障真的是因为虫子（bug）爬进了机器导致短路的传说。",
+      "intermediate": "软件中导致行为不符合预期的缺陷。分为逻辑错误（算法错误）、运行时错误（空指针/越界）、语法错误（编译失败）等类型，通过调试（Debug）定位和修复。",
+      "advanced": "Bug 的严重程度分级（Critical/High/Medium/Low）影响修复优先级。AI 辅助编程（Cursor/Copilot）降低了 Bug 引入率，但也可能引入更难排查的 AI 幻觉型 bug——代码看起来正确但语义错误。"
+    },
+    "relatedTerms": [
+      "debug",
+      "testing",
+      "code-interpreter"
+    ],
+    "contexts": [
+      "development",
+      "quality"
+    ],
+    "emoji": "🐛",
+    "difficulty": "low"
+  },
+  "debug": {
+    "term": "Debug",
+    "aliases": [
+      "调试",
+      "排错",
+      "debugging"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "找到并修复程序错误的过程，就像当侦探找出代码哪里出了问题，然后修好它。是程序员花时间最多的工作之一。",
+      "intermediate": "定位和修复软件缺陷的过程。主要工具：IDE 断点调试器（逐行执行、查看变量）、日志分析、单元测试、错误追踪系统（Sentry）。",
+      "advanced": "Debug 方法论：二分法缩小范围、最小可复现用例、添加日志打点、使用 profiler 分析性能。AI Agent 的 Debug 更复杂，需追踪 LLM 调用链路、工具调用的输入输出，通常需要专门的 observability 工具（LangSmith/Langfuse）。"
+    },
+    "relatedTerms": [
+      "bug",
+      "testing",
+      "logging"
+    ],
+    "contexts": [
+      "development",
+      "quality"
+    ],
+    "emoji": "🔍",
+    "difficulty": "low"
+  },
+  "deploy": {
+    "term": "Deploy",
+    "aliases": [
+      "部署",
+      "上线",
+      "发布",
+      "deployment"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "把你写好的代码放到服务器上让别人能用的过程，就像把做好的产品从工厂运到商店上架，让用户可以访问。",
+      "intermediate": "将本地开发的代码发布到生产环境（服务器/云）的过程，包括构建、测试、推送镜像、更新服务等步骤。通常通过 CI/CD 流水线自动化完成。",
+      "advanced": "部署策略包括：蓝绿部署（Blue-Green，零停机切换）、金丝雀发布（Canary，按比例灰度）、滚动更新（Rolling Update）。AI 模型部署还需考虑模型版本管理、A/B 测试不同模型版本的效果。"
+    },
+    "relatedTerms": [
+      "cicd",
+      "docker",
+      "kubernetes",
+      "serverless"
+    ],
+    "contexts": [
+      "deployment",
+      "infrastructure"
+    ],
+    "emoji": "🚀",
+    "difficulty": "low"
+  },
+  "agile": {
+    "term": "Agile",
+    "aliases": [
+      "敏捷开发",
+      "敏捷",
+      "Agile Development"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "一种软件开发方式，把大项目拆成小阶段（Sprint），快速做出可用版本，根据反馈不断迭代，而不是花几年做完再发布。",
+      "intermediate": "迭代式软件开发方法论，强调快速交付、持续反馈和灵活响应变化。常见实践包括 Scrum（Sprint 冲刺）、Kanban（看板）、每日站会（Daily Standup）。",
+      "advanced": "敏捷的核心是缩短反馈循环（Feedback Loop）。在 AI 产品开发中，敏捷尤为重要——AI 能力快速迭代，需求频繁变化，快速原型验证比前期完整设计更有价值。"
+    },
+    "relatedTerms": [
+      "sprint",
+      "cicd",
+      "mvp"
+    ],
+    "contexts": [
+      "development",
+      "management"
+    ],
+    "emoji": "🏃",
+    "difficulty": "low"
+  },
+  "sprint": {
+    "term": "Sprint",
+    "aliases": [
+      "冲刺",
+      "Scrum Sprint",
+      "迭代周期"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "敏捷开发里的一个工作周期，通常 1-2 周，在这段时间内完成一批计划好的任务，结束后展示成果，再规划下一个冲刺。",
+      "intermediate": "Scrum 框架中的时间盒（通常 1-4 周），团队在 Sprint 内完成一组 User Story，输出可交付的功能增量。每个 Sprint 包含：计划（Planning）、每日站会（Daily）、评审（Review）、回顾（Retro）。",
+      "advanced": "Sprint 的核心价值是强制交付节奏和定期反馈。Sprint Velocity（速度）是团队的能力基准，用于未来规划。AI 辅助开发工具（Cursor/Copilot）正在改变 Sprint 的 Story Point 估算体系。"
+    },
+    "relatedTerms": [
+      "agile",
+      "mvp",
+      "cicd"
+    ],
+    "contexts": [
+      "development",
+      "management"
+    ],
+    "emoji": "⏱️",
+    "difficulty": "low"
+  },
+  "oauth": {
+    "term": "OAuth",
+    "aliases": [
+      "OAuth 2.0",
+      "授权协议",
+      "Open Authorization"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "允许用第三方账号登录的协议，就是\"用 Google 账号登录\"、\"用微信登录\"背后的技术。让你不用到处注册账号，也不用把密码给第三方应用。",
+      "intermediate": "开放授权标准协议（OAuth 2.0），允许用户授权第三方应用访问其账户资源，而无需共享密码。核心概念：Authorization Code Flow、Access Token、Refresh Token。",
+      "advanced": "OAuth 2.0 的 Authorization Code + PKCE 流程：客户端生成 code_verifier/challenge → 重定向到授权服务器 → 用户授权 → 返回 code → 用 code + verifier 换 token。比隐式流（Implicit Flow）更安全，是 SPA 和移动端的推荐方案。"
+    },
+    "relatedTerms": [
+      "jwt",
+      "auth",
+      "api-key"
+    ],
+    "contexts": [
+      "security",
+      "authentication"
+    ],
+    "emoji": "🔐",
+    "difficulty": "medium"
+  },
+  "jwt": {
+    "term": "JWT",
+    "aliases": [
+      "JSON Web Token",
+      "JSON Web令牌"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "一种用于登录验证的\"通行证\"，登录成功后服务器发给你一个 JWT，之后每次请求带上它，服务器就知道你是谁了，不需要每次重新验密码。",
+      "intermediate": "JSON Web Token，用于无状态身份验证。由 Header.Payload.Signature 三部分组成（Base64 编码），服务器通过验证签名确认 Token 真实性，无需查数据库。",
+      "advanced": "JWT 的签名算法：HS256（HMAC 对称加密，需共享密钥）和 RS256（RSA 非对称，公钥验证，适合微服务）。JWT 的主要风险：过期前无法撤销（需维护黑名单或使用短过期+Refresh Token 模式）。"
+    },
+    "relatedTerms": [
+      "oauth",
+      "auth",
+      "api-key"
+    ],
+    "contexts": [
+      "security",
+      "authentication"
+    ],
+    "emoji": "🎫",
+    "difficulty": "medium"
+  },
+  "dns": {
+    "term": "DNS",
+    "aliases": [
+      "Domain Name System",
+      "域名解析",
+      "域名系统"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "互联网的\"电话簿\"，把网址（如 google.com）翻译成电脑能识别的 IP 地址（如 142.250.80.46），这样你输入域名就能找到网站。",
+      "intermediate": "Domain Name System，将人类可读的域名解析为 IP 地址的分布式系统。包含 A 记录（IPv4）、AAAA 记录（IPv6）、CNAME（别名）、MX（邮件）等记录类型。",
+      "advanced": "DNS 解析链：本地缓存 → 递归解析器 → 根域名服务器 → 顶级域服务器 → 权威域名服务器。TTL 控制缓存时间。DNSSEC 通过数字签名防止 DNS 劫持。CDN 通过 CNAME + Anycast 实现就近访问。"
+    },
+    "relatedTerms": [
+      "cdn",
+      "ssl-tls",
+      "cloud-computing"
+    ],
+    "contexts": [
+      "networking",
+      "infrastructure"
+    ],
+    "emoji": "📖",
+    "difficulty": "medium"
+  },
+  "ssl-tls": {
+    "term": "SSL/TLS",
+    "aliases": [
+      "HTTPS",
+      "SSL",
+      "TLS",
+      "加密传输"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "让网站通信加密的技术，浏览器地址栏里的\"🔒\"和\"https\"就代表启用了。有了它，黑客在网络上截获的数据是乱码，无法偷看你的密码。",
+      "intermediate": "SSL（Secure Sockets Layer）的继任者 TLS（Transport Layer Security），为网络通信提供加密、身份认证和完整性保护。HTTPS = HTTP + TLS，通过数字证书（CA 签发）验证网站身份。",
+      "advanced": "TLS 1.3 握手只需 1-RTT（相比 1.2 的 2-RTT），支持 0-RTT 恢复。密钥交换使用 ECDHE（完美前向保密），加密套件精简为 AEAD 算法。证书的 CT（Certificate Transparency）日志可防止 CA 滥发证书。"
+    },
+    "relatedTerms": [
+      "dns",
+      "cdn",
+      "oauth",
+      "api-key"
+    ],
+    "contexts": [
+      "security",
+      "networking"
+    ],
+    "emoji": "🔒",
+    "difficulty": "medium"
+  },
+  "package-manager": {
+    "term": "Package Manager",
+    "aliases": [
+      "包管理器",
+      "依赖管理器",
+      "npm/pip/brew"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "帮你自动下载和安装代码库的工具，就像 App Store，但是给开发者用的，一条命令就能安装别人写好的代码库，不用自己手动下载。",
+      "intermediate": "管理软件依赖的工具，负责安装、更新、卸载第三方库，并处理依赖关系。常见的有：npm/pnpm/yarn（JavaScript）、pip（Python）、cargo（Rust）、brew（macOS 系统工具）。",
+      "advanced": "包管理器的核心机制：依赖解析（SAT 求解器找到兼容版本集合）、lockfile（锁定精确版本保证可复现构建）、缓存（避免重复下载）。pnpm 通过硬链接共享包内容，大幅减少磁盘占用。"
+    },
+    "relatedTerms": [
+      "npm",
+      "python",
+      "open-source",
+      "repository"
+    ],
+    "contexts": [
+      "development",
+      "tooling"
+    ],
+    "emoji": "📦",
+    "difficulty": "low"
+  },
+  "javascript": {
+    "term": "JavaScript",
+    "aliases": [
+      "JS",
+      "js",
+      "ECMAScript",
+      "ES6"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "网页上实现交互效果的编程语言，比如点击按钮弹出对话框、页面动态更新等都靠它。现在也可以用来做服务器端程序（Node.js）。",
+      "intermediate": "浏览器原生编程语言，也通过 Node.js 运行在服务器端。异步编程（Promise/async-await）是其核心特性，现代框架（React/Vue/Next.js）都基于 JavaScript/TypeScript。",
+      "advanced": "JavaScript 的事件循环（Event Loop）是单线程非阻塞 I/O 模型的关键：Call Stack + Microtask Queue（Promise）+ Macrotask Queue（setTimeout）。V8 引擎通过 JIT 编译优化热点代码，性能接近原生。"
+    },
+    "relatedTerms": [
+      "npm",
+      "frontend",
+      "backend",
+      "typescript"
+    ],
+    "contexts": [
+      "development",
+      "web"
+    ],
+    "emoji": "🟨",
+    "difficulty": "low"
+  },
+  "typescript": {
+    "term": "TypeScript",
+    "aliases": [
+      "TS",
+      "ts",
+      "typed JavaScript"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "JavaScript 的升级版，加了类型检查，就像在代码里贴上标签说明每个变量是数字还是文字，让编辑器能提前发现错误，大项目必备。",
+      "intermediate": "JavaScript 的静态类型超集，编译为 JS 运行。通过类型系统（interface、type、泛型）在编码阶段捕获错误，显著提升大型项目的可维护性。AI SDK 和 LangChain.js 等都用 TS 编写。",
+      "advanced": "TypeScript 的高级类型特性：条件类型（Conditional Types）、映射类型（Mapped Types）、模板字面量类型、infer 关键字。这些特性使得构建类型安全的 AI SDK（如 Anthropic TypeScript SDK）成为可能，LLM 输出的 Zod schema 验证是典型应用。"
+    },
+    "relatedTerms": [
+      "javascript",
+      "npm",
+      "frontend",
+      "backend"
+    ],
+    "contexts": [
+      "development",
+      "web"
+    ],
+    "emoji": "🔷",
+    "difficulty": "medium"
+  },
+  "python": {
+    "term": "Python",
+    "aliases": [
+      "py",
+      "python3"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "AI 领域最流行的编程语言，语法简单像写英文，适合初学者，同时也是数据科学、机器学习的第一语言，几乎所有 AI 框架都支持 Python。",
+      "intermediate": "解释型通用编程语言，以简洁语法著称。在 AI/ML 领域几乎是标准语言：PyTorch、TensorFlow、HuggingFace Transformers、LangChain 等核心库都是 Python 优先。",
+      "advanced": "Python 的 GIL（全局解释器锁）限制了多线程 CPU 并行，AI 计算通过 NumPy/PyTorch 调用 C++/CUDA 扩展绕过 GIL。异步 Python（asyncio）在 AI API 客户端中用于并发请求处理。"
+    },
+    "relatedTerms": [
+      "package-manager",
+      "pytorch",
+      "langchain",
+      "jupyter"
+    ],
+    "contexts": [
+      "development",
+      "ai-ml"
+    ],
+    "emoji": "🐍",
+    "difficulty": "low"
+  },
+  "dataset": {
+    "term": "Dataset",
+    "aliases": [
+      "数据集",
+      "训练数据集",
+      "data set"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "用来训练或测试 AI 的一批数据，就像给学生做的练习题集合。有多少好的训练数据，AI 就能学到多少知识，数据质量决定 AI 水平。",
+      "intermediate": "机器学习中用于训练、验证或测试模型的结构化数据集合。通常分为训练集（Training Set）、验证集（Validation Set）和测试集（Test Set）三部分，比例常为 8:1:1。",
+      "advanced": "高质量数据集的构建是 AI 工程的核心难题，涉及：数据采集、清洗（去重/去噪/格式统一）、标注（人工/半自动）、数据增强（扩充多样性）。现代 LLM 训练使用的 Pre-training 数据集规模达万亿 token（如 FineWeb、RedPajama）。"
+    },
+    "relatedTerms": [
+      "training-data",
+      "annotation",
+      "data-augmentation",
+      "fine-tuning"
+    ],
+    "contexts": [
+      "ml",
+      "training"
+    ],
+    "emoji": "📊",
+    "difficulty": "low"
+  },
+  "training-data": {
+    "term": "Training Data",
+    "aliases": [
+      "训练数据",
+      "训练集",
+      "training set"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "喂给 AI 让它学习的数据，就像人学习需要教材。训练数据的质量和数量直接决定 AI 能力的上限，垃圾数据训练出垃圾模型。",
+      "intermediate": "机器学习模型学习的数据集部分。对于监督学习，训练数据包含输入-标签对；对于 LLM 预训练，是大规模无标注文本；对于 RLHF，是人类偏好标注对。",
+      "advanced": "训练数据的关键属性：规模（token 数量）、多样性（覆盖不同领域/语言/风格）、质量（低噪声、事实准确）。数据 flywheel 是现代 AI 公司的核心护城河：更多用户 → 更多数据 → 更好模型 → 更多用户。"
+    },
+    "relatedTerms": [
+      "dataset",
+      "annotation",
+      "fine-tuning",
+      "synthetic-data"
+    ],
+    "contexts": [
+      "ml",
+      "training"
+    ],
+    "emoji": "📚",
+    "difficulty": "low"
+  },
+  "test-data": {
+    "term": "Test Data",
+    "aliases": [
+      "测试集",
+      "测试数据",
+      "test set",
+      "holdout set"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "留出来测试 AI 表现的数据，模型在训练时完全没见过这些数据，用它来检验 AI 真实水平，就像考试时不能提前看到考题。",
+      "intermediate": "与训练集完全隔离的数据集，用于评估模型的泛化能力（在未见数据上的表现）。不能用于调整模型，否则会造成数据泄露（data leakage）。",
+      "advanced": "测试集设计的关键：时间分割（预测未来的任务需用时间序列后段做测试集，防止未来数据泄露）、分布代表性（测试集分布应与生产分布一致）、对抗测试集（专门设计困难样本评估鲁棒性）。"
+    },
+    "relatedTerms": [
+      "dataset",
+      "training-data",
+      "validation-data",
+      "benchmark"
+    ],
+    "contexts": [
+      "ml",
+      "evaluation"
+    ],
+    "emoji": "🧪",
+    "difficulty": "low"
+  },
+  "validation-data": {
+    "term": "Validation Data",
+    "aliases": [
+      "验证集",
+      "验证数据",
+      "validation set",
+      "dev set"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "训练过程中用来检验学习效果的数据，帮助调整 AI 的各种参数设置，就像做练习题后对答案，但不是最终考试（测试集）。",
+      "intermediate": "训练过程中用于超参数调优和早停（Early Stopping）的数据集。模型不直接学习验证集，但验证集用于监控过拟合和选择最优模型检查点。",
+      "advanced": "K-fold 交叉验证（Cross-validation）通过轮换验证集充分利用有限数据。验证集与测试集的区别：验证集用于模型选择（反复查看），测试集用于最终评估（只查看一次）。数据泄露的常见原因是混淆了两者的用途。"
+    },
+    "relatedTerms": [
+      "dataset",
+      "training-data",
+      "test-data",
+      "cross-validation"
+    ],
+    "contexts": [
+      "ml",
+      "training"
+    ],
+    "emoji": "✅",
+    "difficulty": "medium"
+  },
+  "annotation": {
+    "term": "Annotation",
+    "aliases": [
+      "标注",
+      "数据标注",
+      "labeling",
+      "数据打标"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "人工给数据打标签的工作，比如看一张图片然后标注\"这里是猫\"，AI 通过这些标注来学习怎么识别物体，是 AI 训练的基础工序。",
+      "intermediate": "为机器学习数据添加标签的过程，包括图像分类/标注框/分割、文本分类/NER/情感、语音转写等。高质量标注是有监督学习的前提，也是 RLHF 的核心环节。",
+      "advanced": "标注工程涉及：标注工具（Label Studio/Scale AI）、标注指南设计（减少主观性）、一致性检验（Cohen's Kappa）、主动学习（优先标注信息量大的样本）。LLM 时代出现了\"合成标注\"（用 GPT-4 标注替代人工）降低成本。"
+    },
+    "relatedTerms": [
+      "dataset",
+      "training-data",
+      "rlhf",
+      "synthetic-data"
+    ],
+    "contexts": [
+      "ml",
+      "data"
+    ],
+    "emoji": "🏷️",
+    "difficulty": "medium"
+  },
+  "accuracy": {
+    "term": "Accuracy",
+    "aliases": [
+      "准确率",
+      "正确率",
+      "acc"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "AI 答对题目的比例，比如 100 张图片里正确识别了 90 张，准确率就是 90%。是最直观的评估指标，但不一定是最好的指标。",
+      "intermediate": "分类任务中，预测正确的样本数占总样本数的比例：Accuracy = (TP + TN) / Total。简单直观，但在类别不平衡时（如诈骗检测）会产生误导——全猜\"正常\"也能有 99% 准确率。",
+      "advanced": "当正负样本极度不平衡时，准确率会失去意义，需改用 F1 Score、AUC-ROC 或 Matthews 相关系数（MCC）。在 LLM 评估中，准确率通常用于多选题基准（如 MMLU），但自然语言生成任务需要 BLEU/ROUGE 等专门指标。"
+    },
+    "relatedTerms": [
+      "precision",
+      "recall",
+      "f1-score",
+      "benchmark"
+    ],
+    "contexts": [
+      "ml",
+      "evaluation"
+    ],
+    "emoji": "🎯",
+    "difficulty": "low"
+  },
+  "precision": {
+    "term": "Precision",
+    "aliases": [
+      "精确率",
+      "查准率",
+      "精度"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "AI 说\"是\"的时候有多少是真的\"是\"的比率，就像一个预言家说会下雨，100 次里有多少次真的下了——越高越准。",
+      "intermediate": "在所有被预测为正类的样本中，真正是正类的比例：Precision = TP / (TP + FP)。关注的是\"预测为正的准不准\"，适合误报代价高的场景（如垃圾邮件过滤，误把正常邮件标为垃圾很烦）。",
+      "advanced": "Precision 和 Recall 存在权衡（Precision-Recall Tradeoff）：降低分类阈值可提高 Recall（捕获更多真正例）但降低 Precision（更多误报）。PR 曲线下面积（AUC-PR）在不平衡数据集中比 ROC-AUC 更有意义。"
+    },
+    "relatedTerms": [
+      "recall",
+      "f1-score",
+      "accuracy"
+    ],
+    "contexts": [
+      "ml",
+      "evaluation"
+    ],
+    "emoji": "🎯",
+    "difficulty": "medium"
+  },
+  "recall": {
+    "term": "Recall",
+    "aliases": [
+      "召回率",
+      "查全率",
+      "敏感度",
+      "Sensitivity"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "在所有真正的正例里，AI 找出了多少的比率，就像搜索引擎找资料，相关的东西有多少被找到了——越高漏报越少。",
+      "intermediate": "在所有真正是正类的样本中，被正确预测为正类的比例：Recall = TP / (TP + FN)。关注\"真正的正例有没有被漏掉\"，适合漏报代价高的场景（如癌症筛查，漏诊比误诊更危险）。",
+      "advanced": "Recall 在信息检索（RAG）中有专门含义：检索到的相关文档数 / 所有相关文档数，衡量检索的\"覆盖率\"。在 AI 安全场景，Recall 通常是首要指标（宁可多报也不漏）。"
+    },
+    "relatedTerms": [
+      "precision",
+      "f1-score",
+      "accuracy"
+    ],
+    "contexts": [
+      "ml",
+      "evaluation"
+    ],
+    "emoji": "📡",
+    "difficulty": "medium"
+  },
+  "f1-score": {
+    "term": "F1 Score",
+    "aliases": [
+      "F1分数",
+      "F1值",
+      "F-measure"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "综合了\"精确率\"和\"召回率\"的评分，取两者的平衡值，当你既不想漏报也不想误报时用这个指标来衡量 AI 表现。",
+      "intermediate": "Precision 和 Recall 的调和平均值：F1 = 2 * (P * R) / (P + R)。比算术平均更能体现两者的平衡——只有 P 和 R 都高，F1 才高。常用于 NER、分类、信息检索任务评估。",
+      "advanced": "F1 的推广版本 Fβ 通过 β 参数调整 Recall 的权重：β>1 更重视 Recall，β<1 更重视 Precision。多分类任务需对每个类别计算 F1 再做 Macro/Micro/Weighted 平均，不同平均方式反映不同的性能侧重。"
+    },
+    "relatedTerms": [
+      "precision",
+      "recall",
+      "accuracy",
+      "benchmark"
+    ],
+    "contexts": [
+      "ml",
+      "evaluation"
+    ],
+    "emoji": "⚖️",
+    "difficulty": "medium"
+  },
+  "cross-validation": {
+    "term": "Cross-validation",
+    "aliases": [
+      "交叉验证",
+      "k-fold",
+      "K折交叉验证"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "把数据分成几份，轮流用不同的份来验证模型的方法，能更准确地评估 AI 的真实表现，避免因为运气好选了\"好\"验证集而高估性能。",
+      "intermediate": "将数据集分成 K 份（fold），轮流将其中一份作为验证集，其余 K-1 份做训练集，重复 K 次后取平均评分。在数据量有限时，能更充分利用数据，得到更可靠的性能估计。",
+      "advanced": "常见变体：Stratified K-fold（保持类别比例）、Leave-One-Out（K=N，计算代价高但估计无偏）、Time Series Split（时序数据专用，避免未来数据泄露）。对于 LLM 微调，交叉验证成本极高，通常用单次 train/val split。"
+    },
+    "relatedTerms": [
+      "validation-data",
+      "overfitting",
+      "dataset"
+    ],
+    "contexts": [
+      "ml",
+      "evaluation"
+    ],
+    "emoji": "🔁",
+    "difficulty": "medium"
+  },
+  "feature-engineering": {
+    "term": "Feature Engineering",
+    "aliases": [
+      "特征工程",
+      "特征提取",
+      "feature extraction"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "把原始数据处理成 AI 能更好理解的格式的工作，比如把日期转成\"星期几\"、把文字转成数字，让模型更容易学到规律。",
+      "intermediate": "从原始数据中构造、选择、变换适合机器学习模型的特征的过程。包括：特征选择（删除无用特征）、特征变换（归一化/标准化/对数变换）、特征生成（交叉特征/时间特征）。",
+      "advanced": "在深度学习时代，特征工程的重要性有所降低（模型自动学习特征表示），但对于表格数据和传统 ML 仍至关重要。LLM 的 Embedding 可视为高层次的自动特征工程。在 RAG 中，文本的 Chunking 策略也是一种特征工程。"
+    },
+    "relatedTerms": [
+      "dataset",
+      "training-data",
+      "embedding",
+      "machine-learning"
+    ],
+    "contexts": [
+      "ml",
+      "data"
+    ],
+    "emoji": "🔨",
+    "difficulty": "medium"
+  },
+  "tokenization": {
+    "term": "Tokenization",
+    "aliases": [
+      "分词",
+      "文本分词",
+      "tokenize"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "把文字切成更小单元的过程，比如把\"ChatGPT很厉害\"切成[\"Chat\", \"G\", \"PT\", \"很\", \"厉\", \"害\"]，AI 处理的不是文字本身，而是这些小片段。",
+      "intermediate": "将文本分割为模型可处理的最小单元（Token）的过程。现代 LLM 使用子词分词（如 BPE），英文单词可能对应 1 个 token，中文每个汉字通常对应 1-2 个 token。",
+      "advanced": "Tokenization 的主要算法：BPE（Byte-Pair Encoding，GPT 系列）、WordPiece（BERT）、SentencePiece（T5/Llama）。分词粒度影响词表大小和 OOV（Out-of-Vocabulary）率之间的权衡。Unicode 字节级别的 BBPE 彻底解决了多语言 OOV 问题。"
+    },
+    "relatedTerms": [
+      "tokenizer",
+      "bpe",
+      "token",
+      "llm"
+    ],
+    "contexts": [
+      "nlp",
+      "preprocessing"
+    ],
+    "emoji": "✂️",
+    "difficulty": "medium"
+  },
+  "bpe": {
+    "term": "BPE",
+    "aliases": [
+      "Byte-Pair Encoding",
+      "字节对编码",
+      "Byte Pair Encoding"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "一种把文字切成小片段的算法，通过统计哪些字符组合最常见来决定怎么切，让 AI 能高效处理各种语言的文字。GPT 系列都用这种方式。",
+      "intermediate": "子词分词算法，通过合并频率最高的字符对来学习词表。从字符级别开始，迭代合并直到达到目标词表大小（如 50K）。能平衡词表大小和分词粒度。",
+      "advanced": "BPE 原始是数据压缩算法，被 Sennrich 等人引入 NMT。训练过程：初始化为字符词表 → 统计相邻 token 对频率 → 合并最高频对 → 重复。推理时贪心匹配最长 token。GPT-4 的词表达 100K，Llama 3 达 128K，中文覆盖率因此大幅提升。"
+    },
+    "relatedTerms": [
+      "tokenization",
+      "tokenizer",
+      "token",
+      "vocabulary"
+    ],
+    "contexts": [
+      "nlp",
+      "tokenization"
+    ],
+    "emoji": "🔤",
+    "difficulty": "high"
+  },
+  "sentiment-analysis": {
+    "term": "Sentiment Analysis",
+    "aliases": [
+      "情感分析",
+      "情绪分析",
+      "opinion mining"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "让 AI 判断一段文字是正面还是负面情绪的技术，比如分析商品评论是好评还是差评，是用户研究和舆情监控的常用工具。",
+      "intermediate": "自然语言处理任务，自动识别文本中表达的情感倾向（正面/负面/中性）或情绪类别（喜悦/愤怒/悲伤等）。广泛用于社交媒体监控、客服分析、品牌舆情。",
+      "advanced": "情感分析从粗粒度（文档级）到细粒度（方面级，Aspect-Based SA）不断发展。LLM 时代，few-shot 提示可直接完成复杂情感分析，甚至提取情感原因和目标实体，无需专门训练模型。"
+    },
+    "relatedTerms": [
+      "text-classification",
+      "nlp",
+      "llm"
+    ],
+    "contexts": [
+      "nlp",
+      "analysis"
+    ],
+    "emoji": "😊",
+    "difficulty": "medium"
+  },
+  "ner": {
+    "term": "NER",
+    "aliases": [
+      "Named Entity Recognition",
+      "命名实体识别",
+      "实体识别"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "让 AI 从文字中找出\"人名、地名、公司名\"等具体事物的技术，比如从新闻里自动识别出\"马云\"是人名、\"阿里巴巴\"是公司名。",
+      "intermediate": "序列标注任务，从文本中识别并分类命名实体（人名/地名/组织机构/时间/货币等）。是信息提取、知识图谱构建的基础组件，BERT 类模型在这类任务上表现很好。",
+      "advanced": "NER 的标注格式：BIO/BIOES（B=Begin, I=Inside, O=Outside，标记实体边界）。细粒度 NER（Fine-grained NER）可识别数百种实体类型。LLM 时代，通过 structured output 提示即可完成 NER，无需专门训练序列标注模型。"
+    },
+    "relatedTerms": [
+      "nlp",
+      "text-classification",
+      "knowledge-graph"
+    ],
+    "contexts": [
+      "nlp",
+      "information-extraction"
+    ],
+    "emoji": "🏷️",
+    "difficulty": "medium"
+  },
+  "text-classification": {
+    "term": "Text Classification",
+    "aliases": [
+      "文本分类",
+      "文本分类任务"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "让 AI 给文本打上类别标签的任务，比如把邮件分类为\"垃圾邮件/正常邮件\"，把新闻分类为\"体育/财经/科技\"等。",
+      "intermediate": "NLP 的基础任务，将输入文本分配到预定义的类别中。包括二分类（垃圾邮件过滤）、多分类（新闻分类）、多标签分类（文章可以同时属于多个类别）。",
+      "advanced": "传统方法（TF-IDF + SVM）在小数据上仍有竞争力。BERT 类模型通过 [CLS] token 表示做分类头，在大多数基准上达到 SOTA。现代 LLM 直接 zero-shot 分类，无需标注数据，但延迟较高。"
+    },
+    "relatedTerms": [
+      "nlp",
+      "sentiment-analysis",
+      "fine-tuning",
+      "bert"
+    ],
+    "contexts": [
+      "nlp",
+      "classification"
+    ],
+    "emoji": "📂",
+    "difficulty": "medium"
+  },
+  "machine-translation": {
+    "term": "Machine Translation",
+    "aliases": [
+      "机器翻译",
+      "MT",
+      "Neural Machine Translation"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "AI 自动把一种语言翻译成另一种语言的技术，Google 翻译、DeepL 都是这个。现在的 LLM 翻译质量已经很高，对常见语言对几乎可以商用。",
+      "intermediate": "利用 AI 模型自动翻译文本。从早期的统计机器翻译（SMT）发展到神经机器翻译（NMT，Seq2Seq + Attention），现在 LLM 的翻译能力已全面超越专用翻译模型（对资源丰富的语言对）。",
+      "advanced": "神经机器翻译的里程碑：Seq2Seq + Attention（2015）→ Transformer（2017）→ 大规模预训练（mBART/mT5）→ LLM（GPT/Claude）。BLEU 分数是传统评估指标，但与人类判断相关性有限，现在越来越多用 COMET 等模型评估指标。"
+    },
+    "relatedTerms": [
+      "nlp",
+      "transformer",
+      "multilingual-model"
+    ],
+    "contexts": [
+      "nlp",
+      "translation"
+    ],
+    "emoji": "🌍",
+    "difficulty": "medium"
+  },
+  "text-generation": {
+    "term": "Text Generation",
+    "aliases": [
+      "文本生成",
+      "自然语言生成",
+      "NLG"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "AI 自动写文字的能力，包括写文章、写代码、回答问题、生成邮件等。ChatGPT 的核心能力就是文本生成，本质上是预测\"下一个词最可能是什么\"。",
+      "intermediate": "自然语言生成（NLG），让模型生成流畅、连贯的文本。LLM 通过自回归（Autoregressive）方式逐 token 生成，每次预测下一个 token 的概率分布后采样。",
+      "advanced": "文本生成的关键技术：Greedy Search（贪心，质量低）、Beam Search（束搜索，质量高但多样性低）、Nucleus Sampling（top-p，平衡质量和多样性）。Speculative Decoding 通过小模型草稿+大模型验证大幅提升吞吐量。"
+    },
+    "relatedTerms": [
+      "llm",
+      "token",
+      "temperature",
+      "top-p"
+    ],
+    "contexts": [
+      "nlp",
+      "generation"
+    ],
+    "emoji": "✍️",
+    "difficulty": "medium"
+  },
+  "summarization": {
+    "term": "Summarization",
+    "aliases": [
+      "文本摘要",
+      "摘要生成",
+      "text summarization"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "让 AI 把长文章压缩成短摘要的技术，帮你快速了解文章核心内容，不用从头读到尾。Kimi 和 Claude 都特别擅长处理长文档摘要。",
+      "intermediate": "NLP 任务，将长文档压缩为简短摘要。分为抽取式（Extractive，直接提取原文句子）和生成式（Abstractive，重新生成表述）两类。LLM 擅长生成式摘要。",
+      "advanced": "长文档摘要的挑战：超出上下文窗口时需要分段处理。策略：MapReduce（分段摘要再合并）、Refine（迭代精化）、HierarchicalSummarization（层级摘要）。ROUGE 分数是传统评估指标，衡量与参考摘要的 n-gram 重叠。"
+    },
+    "relatedTerms": [
+      "llm",
+      "rag",
+      "context-window",
+      "context-compression"
+    ],
+    "contexts": [
+      "nlp",
+      "document-processing"
+    ],
+    "emoji": "📋",
+    "difficulty": "medium"
+  },
+  "question-answering": {
+    "term": "Question Answering",
+    "aliases": [
+      "问答",
+      "QA",
+      "智能问答"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "让 AI 回答问题的能力，包括从文档中找答案（阅读理解）和直接回答常识问题（开放域问答），是 ChatGPT 和企业知识库问答的核心功能。",
+      "intermediate": "NLP 任务，分为：①抽取式 QA（从给定段落中抽取答案，如 SQuAD）；②生成式 QA（自由生成答案）；③开放域 QA（结合检索和生成，RAG 的核心应用场景）。",
+      "advanced": "RAG 是当前最主流的 QA 架构：将问题向量化检索相关文档，拼接为上下文输入 LLM 生成答案。评估指标：EM（完全匹配）、F1（词级别匹配）用于抽取式，RAGAS 框架用于 RAG 系统的端到端评估。"
+    },
+    "relatedTerms": [
+      "rag",
+      "llm",
+      "nlp",
+      "knowledge-base"
+    ],
+    "contexts": [
+      "nlp",
+      "qa"
+    ],
+    "emoji": "❓",
+    "difficulty": "medium"
+  },
+  "text-to-speech": {
+    "term": "Text-to-Speech",
+    "aliases": [
+      "TTS",
+      "语音合成",
+      "文字转语音"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "把文字转成语音的技术，手机里的朗读功能、有声书、语音助手的回应都用到它，现在的 AI TTS 已经非常自然，很难分辨是真人还是机器。",
+      "intermediate": "文本转语音技术，将文字自动合成为自然语音。现代 TTS 模型（ElevenLabs、Edge TTS）基于 Diffusion 或自回归 Transformer，支持多语言、多音色，情感表达自然。",
+      "advanced": "TTS 模型架构演进：参数化声码器（Vocoder，如 WaveNet）→ 端到端（Tacotron + WaveNet）→ 基于流的模型（Glow-TTS）→ Diffusion 模型（Grad-TTS）→ 语言模型风格（VALL-E）。零样本语音克隆（Voice Cloning）通过说话人嵌入实现，1 分钟语音即可克隆音色。"
+    },
+    "relatedTerms": [
+      "speech-to-text",
+      "elevenlabs",
+      "suno",
+      "multimodal"
+    ],
+    "contexts": [
+      "nlp",
+      "voice"
+    ],
+    "emoji": "🔊",
+    "difficulty": "medium"
+  },
+  "speech-to-text": {
+    "term": "Speech-to-Text",
+    "aliases": [
+      "STT",
+      "ASR",
+      "语音识别",
+      "自动语音识别",
+      "Automatic Speech Recognition"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "把语音转成文字的技术，就是手机语音输入、会议记录、字幕自动生成背后的技术。OpenAI 的 Whisper 是这个领域最好的开源模型之一。",
+      "intermediate": "自动语音识别（ASR），将音频中的语音转换为文本。Whisper（OpenAI）是目前最广泛使用的开源 ASR 模型，支持 99 种语言，在嘈杂环境和多语言场景下鲁棒性强。",
+      "advanced": "ASR 的评估指标是词错误率（WER）。Whisper 使用 Encoder-Decoder Transformer 架构，将音频 Mel 频谱图作为输入，通过多任务训练同时学习转写、翻译、语言检测。端到端 ASR 已全面取代传统的 AM+LM+发音词典三段式系统。"
+    },
+    "relatedTerms": [
+      "text-to-speech",
+      "whisper",
+      "multimodal",
+      "elevenlabs"
+    ],
+    "contexts": [
+      "nlp",
+      "voice"
+    ],
+    "emoji": "🎙️",
+    "difficulty": "medium"
+  },
+  "ocr": {
+    "term": "OCR",
+    "aliases": [
+      "Optical Character Recognition",
+      "光学字符识别",
+      "文字识别"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "从图片里识别文字的技术，比如拍一张发票照片，AI 自动把上面的数字和文字提取出来变成可编辑的文本，不用手动输入。",
+      "intermediate": "光学字符识别，从图像（扫描文档/拍照/截图）中提取文本内容。传统方案基于图像处理+CNN，现代方案用 Vision Transformer（如 TrOCR）或多模态 LLM（可直接理解图片中的文字）。",
+      "advanced": "OCR 的挑战：手写识别、复杂版式（多栏/表格/公式）、弱光/模糊图像。现代 VLM（如 Claude、GPT-4V）已集成 OCR 能力，直接理解文档图像，无需单独调用 OCR 组件。Document Intelligence（Azure）等服务还能提取文档结构信息。"
+    },
+    "relatedTerms": [
+      "computer-vision",
+      "multimodal",
+      "document-processing"
+    ],
+    "contexts": [
+      "nlp",
+      "vision",
+      "document-processing"
+    ],
+    "emoji": "📷",
+    "difficulty": "medium"
+  },
+  "multilingual-model": {
+    "term": "Multilingual Model",
+    "aliases": [
+      "多语言模型",
+      "跨语言模型",
+      "multilingual LLM"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "能理解和生成多种语言的 AI 模型，不需要为每种语言单独训练一个模型，GPT-4 和 Claude 都是多语言模型，中英文都能很好地回答。",
+      "intermediate": "支持多种语言输入输出的语言模型。代表作：mBERT（104 语言）、XLM-R（100 语言）、mT5（101 语言），以及现代 LLM（GPT-4/Claude/Gemini 等）。多语言能力来自多语言预训练数据的覆盖。",
+      "advanced": "多语言模型的核心挑战：语言不均衡（英语数据多，低资源语言少）导致的\"Curse of Multilinguality\"，以及跨语言迁移（Cross-lingual Transfer）能力——在一种语言上微调能泛化到其他语言。研究发现 LLM 存在统一的\"概念空间\"支撑跨语言理解。"
+    },
+    "relatedTerms": [
+      "llm",
+      "bert",
+      "nlp",
+      "tokenization"
+    ],
+    "contexts": [
+      "nlp",
+      "multilingual"
+    ],
+    "emoji": "🌍",
+    "difficulty": "medium"
+  },
+  "language-model": {
+    "term": "Language Model",
+    "aliases": [
+      "语言模型",
+      "LM",
+      "统计语言模型"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "AI 通过学习大量文字后建立的对语言规律的理解，它知道什么词跟什么词常常出现在一起。大语言模型（LLM）就是特别大的语言模型。",
+      "intermediate": "对文本序列概率分布进行建模的模型，核心任务是预测下一个 token 的概率。从 n-gram 统计模型发展到 RNN，再到 Transformer 架构的现代 LLM，参数规模呈指数增长。",
+      "advanced": "语言模型的训练目标是最小化负对数似然（NLL），等价于最大化文本序列的联合概率。困惑度（Perplexity）是评估语言模型的标准指标。Scaling Law 表明，参数量和训练数据量的增加可预测地降低困惑度、提升下游任务性能。"
+    },
+    "relatedTerms": [
+      "llm",
+      "transformer",
+      "token",
+      "perplexity",
+      "scaling-law"
+    ],
+    "contexts": [
+      "nlp",
+      "foundation"
+    ],
+    "emoji": "📖",
+    "difficulty": "medium"
+  },
+  "computer-vision": {
+    "term": "Computer Vision",
+    "aliases": [
+      "计算机视觉",
+      "CV"
+    ],
+    "category": "计算机视觉",
+    "levels": {
+      "beginner": "让电脑\"看懂\"图片和视频的技术领域，包括识别物体、人脸、文字等。手机解锁人脸识别、自动驾驶、医疗影像分析都用到计算机视觉。",
+      "intermediate": "让机器理解和分析图像/视频内容的 AI 领域。核心任务包括：图像分类、目标检测、图像分割、人脸识别、姿态估计等。从传统的手工特征（HOG/SIFT）发展到 CNN，再到 Vision Transformer。",
+      "advanced": "现代计算机视觉以 ViT（Vision Transformer）为核心架构，将图像分块（patch）后用 Transformer 处理。多模态大模型（如 GPT-4V/Claude Vision）通过对齐视觉和语言表示，实现了统一的视觉理解能力，正在取代专用视觉模型。"
+    },
+    "relatedTerms": [
+      "image-classification",
+      "object-detection",
+      "image-generation",
+      "vision-transformer"
+    ],
+    "contexts": [
+      "vision",
+      "ai"
+    ],
+    "emoji": "👁️",
+    "difficulty": "medium"
+  },
+  "image-classification": {
+    "term": "Image Classification",
+    "aliases": [
+      "图像分类",
+      "图片分类"
+    ],
+    "category": "计算机视觉",
+    "levels": {
+      "beginner": "让 AI 判断一张图片是什么类别的任务，比如识别\"这是猫还是狗\"、\"这是肿瘤还是正常组织\"，是计算机视觉最基础的任务。",
+      "intermediate": "计算机视觉基础任务，为整张图像分配一个（或多个）类别标签。标志性数据集 ImageNet（120 万图像，1000 类）和模型 ResNet/VGG 推动了深度学习革命。",
+      "advanced": "图像分类的发展里程碑：LeNet（1989）→ AlexNet（2012，ImageNet 竞赛深度学习元年）→ VGG/ResNet → EfficientNet → ViT（2020，用 Transformer 做图像分类）。ImageNet Top-1 准确率从 71% 提升到 90%+，已超越人类水平（~95%）。"
+    },
+    "relatedTerms": [
+      "computer-vision",
+      "deep-learning",
+      "cnn",
+      "vision-transformer"
+    ],
+    "contexts": [
+      "vision",
+      "classification"
+    ],
+    "emoji": "🖼️",
+    "difficulty": "medium"
+  },
+  "object-detection": {
+    "term": "Object Detection",
+    "aliases": [
+      "目标检测",
+      "物体检测"
+    ],
+    "category": "计算机视觉",
+    "levels": {
+      "beginner": "让 AI 在图片里找出物体的位置和类别的技术，不只是\"图里有猫\"，而是\"猫在图片的左上角这个框框里\"。自动驾驶用它来识别行人和障碍物。",
+      "intermediate": "同时完成目标分类和定位（输出边界框 BBox）的计算机视觉任务。代表性模型：YOLO 系列（实时检测）、Faster R-CNN（精度高）。评估指标：mAP（mean Average Precision）。",
+      "advanced": "目标检测演进：Two-stage（R-CNN 系列，先提候选框再分类，精度高）→ One-stage（YOLO/SSD，直接预测，速度快）→ Transformer-based（DETR，端到端检测，无需 NMS 后处理）。Anchor-free 方法（CenterNet/FCOS）进一步简化了设计。"
+    },
+    "relatedTerms": [
+      "computer-vision",
+      "image-classification",
+      "image-segmentation"
+    ],
+    "contexts": [
+      "vision",
+      "detection"
+    ],
+    "emoji": "🔍",
+    "difficulty": "medium"
+  },
+  "image-segmentation": {
+    "term": "Image Segmentation",
+    "aliases": [
+      "图像分割",
+      "语义分割",
+      "实例分割"
+    ],
+    "category": "计算机视觉",
+    "levels": {
+      "beginner": "让 AI 精确标出图片里每个区域是什么的技术，比目标检测更精细，不只是画个框，而是像素级别地标出\"这些像素是天空，那些是建筑\"。",
+      "intermediate": "像素级别的图像理解任务。语义分割（Semantic Segmentation）为每个像素分配类别；实例分割（Instance Segmentation）还要区分同类的不同个体。SAM（Segment Anything Model）可以分割任意物体。",
+      "advanced": "分割的经典架构：FCN（全卷积网络）→ U-Net（编解码+跳跃连接，医学图像标准）→ DeepLab（空洞卷积）→ Mask R-CNN（实例分割）→ SAM（通过提示分割任意目标）。SAM 的零样本分割能力标志着通用视觉模型的新范式。"
+    },
+    "relatedTerms": [
+      "computer-vision",
+      "object-detection",
+      "image-classification"
+    ],
+    "contexts": [
+      "vision",
+      "segmentation"
+    ],
+    "emoji": "🔬",
+    "difficulty": "high"
+  },
+  "face-recognition": {
+    "term": "Face Recognition",
+    "aliases": [
+      "人脸识别",
+      "面部识别",
+      "facial recognition"
+    ],
+    "category": "计算机视觉",
+    "levels": {
+      "beginner": "让 AI 识别人脸的技术，手机解锁、刷脸支付、安防监控都用它。现在的人脸识别准确率已经超过人类，但也带来了隐私问题。",
+      "intermediate": "通过面部特征进行身份验证或识别的技术。流程：人脸检测 → 对齐 → 特征提取（人脸嵌入）→ 比对/检索。FaceID（Apple）和微信/支付宝的刷脸功能都是典型应用。",
+      "advanced": "人脸识别的技术演进：LBP/PCA → 深度学习（DeepFace/FaceNet）→ ArcFace（角度间隔损失，大幅提升准确率）。核心挑战：开集识别（未注册人员识别为陌生人）、伦理风险（种族偏见、隐私侵犯）。EU AI Act 对高风险用途有严格监管要求。"
+    },
+    "relatedTerms": [
+      "computer-vision",
+      "deepfake",
+      "privacy",
+      "image-classification"
+    ],
+    "contexts": [
+      "vision",
+      "security"
+    ],
+    "emoji": "👤",
+    "difficulty": "medium"
+  },
+  "image-generation": {
+    "term": "Image Generation",
+    "aliases": [
+      "图像生成",
+      "AI 画图",
+      "文生图",
+      "text-to-image"
+    ],
+    "category": "计算机视觉",
+    "levels": {
+      "beginner": "用 AI 生成图片的技术，你输入文字描述，AI 就画出来。Midjourney、DALL-E、Stable Diffusion 都是这类产品，彻底改变了设计和创意行业。",
+      "intermediate": "AI 生成图像的技术，主要通过 Diffusion 模型实现（文生图、图生图）。代表模型：Stable Diffusion、DALL-E 3、Midjourney。支持通过文字 prompt 精细控制风格、内容、构图。",
+      "advanced": "图像生成的主流范式：GAN（对抗生成，速度快但不稳定）→ Diffusion Model（扩散模型，质量高，现在的主流）。Diffusion 模型通过逐步去噪过程生成图像，ControlNet 通过条件注入实现精细控制（边缘/深度/姿态引导）。"
+    },
+    "relatedTerms": [
+      "diffusion-model",
+      "gan",
+      "stable-diffusion",
+      "midjourney",
+      "dall-e"
+    ],
+    "contexts": [
+      "vision",
+      "creative",
+      "generation"
+    ],
+    "emoji": "🎨",
+    "difficulty": "medium"
+  },
+  "video-generation": {
+    "term": "Video Generation",
+    "aliases": [
+      "视频生成",
+      "AI 视频",
+      "文生视频",
+      "text-to-video"
+    ],
+    "category": "计算机视觉",
+    "levels": {
+      "beginner": "用 AI 生成视频的技术，可以从文字描述生成一段视频，或者把图片变成动态视频。Runway、Sora（OpenAI）是代表性产品，但生成几秒钟视频还需要很大算力。",
+      "intermediate": "AI 生成视频的技术，是图像生成的时序扩展。Sora（OpenAI）、Runway Gen-3、Kling（快手）等产品代表了当前最高水平，支持文生视频和图生视频。",
+      "advanced": "视频生成的核心挑战：时序一致性（物理规律、动作连贯）、长时序生成（当前主流产品限制在 10-20 秒）、高分辨率的计算成本。Sora 使用 Diffusion Transformer（DiT）架构，将视频压缩到\"时空 patch\"进行处理，是视频生成的重要架构创新。"
+    },
+    "relatedTerms": [
+      "image-generation",
+      "diffusion-model",
+      "runway",
+      "computer-vision"
+    ],
+    "contexts": [
+      "vision",
+      "creative",
+      "generation"
+    ],
+    "emoji": "🎬",
+    "difficulty": "high"
+  },
+  "diffusion-model": {
+    "term": "Diffusion Model",
+    "aliases": [
+      "扩散模型",
+      "DDPM",
+      "Denoising Diffusion"
+    ],
+    "category": "计算机视觉",
+    "levels": {
+      "beginner": "当前最流行的 AI 画图技术，原理是先把图片加上噪点变成杂乱的噪声，然后训练 AI 学会反过来\"去噪\"还原图片，生成新图片时就从随机噪声开始反向去噪。",
+      "intermediate": "基于逐步去噪的生成模型，通过正向（加噪）和反向（去噪）过程学习数据分布。Stable Diffusion 在潜空间（Latent Space）进行扩散过程，大幅降低计算成本。已成为图像生成的主流范式，取代了 GAN。",
+      "advanced": "DDPM（Ho et al., 2020）将扩散模型发扬光大，DDIM 加速采样，LDM 引入潜空间大幅提效，CLIP 引导实现文本控制。DiT（Diffusion Transformer）用 Transformer 替换 U-Net 作为去噪网络，是 Sora、FLUX 等新一代模型的架构基础。"
+    },
+    "relatedTerms": [
+      "stable-diffusion",
+      "image-generation",
+      "video-generation",
+      "gan"
+    ],
+    "contexts": [
+      "vision",
+      "generative-model"
+    ],
+    "emoji": "🌫️",
+    "difficulty": "high"
+  },
+  "gan": {
+    "term": "GAN",
+    "aliases": [
+      "Generative Adversarial Network",
+      "生成对抗网络",
+      "generative adversarial"
+    ],
+    "category": "计算机视觉",
+    "levels": {
+      "beginner": "一种让 AI 生成逼真图片的技术，靠两个 AI 互相竞争——一个负责生成（造假），一个负责鉴别（打假），在竞争中越来越强，最终生成以假乱真的图片。",
+      "intermediate": "生成对抗网络，由生成器（Generator）和判别器（Discriminator）组成，通过对抗训练学习生成真实数据。曾是图像合成的主流方法，代表作：StyleGAN（高质量人脸）、CycleGAN（风格迁移）。",
+      "advanced": "GAN 训练不稳定（模式崩溃、训练振荡）是其主要挑战。WGAN 通过 Wasserstein 距离改善了训练稳定性。随着 Diffusion 模型兴起，GAN 在高质量图像生成领域逐渐被取代，但在低延迟场景（如视频实时超分）仍有优势。Deepfake 技术主要基于 GAN。"
+    },
+    "relatedTerms": [
+      "diffusion-model",
+      "image-generation",
+      "deepfake"
+    ],
+    "contexts": [
+      "vision",
+      "generative-model"
+    ],
+    "emoji": "⚔️",
+    "difficulty": "high"
+  },
+  "vision-transformer": {
+    "term": "Vision Transformer",
+    "aliases": [
+      "ViT",
+      "视觉 Transformer",
+      "image transformer"
+    ],
+    "category": "计算机视觉",
+    "levels": {
+      "beginner": "把 NLP 里的 Transformer 技术应用到图像识别上，把图片切成小块，像处理文字一样处理，效果比传统的卷积网络更好，是现在计算机视觉的主流架构。",
+      "intermediate": "将 Transformer 架构应用于计算机视觉的模型（ViT，2020）。将图像分割为固定大小的 patch（如 16×16 像素），展平后输入 Transformer 处理。在 ImageNet 等大规模数据集上性能超越 CNN。",
+      "advanced": "ViT 需要大量训练数据才能超越 CNN，DeiT 通过知识蒸馏降低了数据需求。Swin Transformer 引入局部窗口注意力和层级结构，提升了计算效率和密集预测（分割/检测）性能，成为通用视觉骨干网络。"
+    },
+    "relatedTerms": [
+      "transformer",
+      "computer-vision",
+      "image-classification",
+      "attention"
+    ],
+    "contexts": [
+      "vision",
+      "architecture"
+    ],
+    "emoji": "🔮",
+    "difficulty": "high"
+  },
+  "agent-orchestration": {
+    "term": "Agent Orchestration",
+    "aliases": [
+      "Agent 编排",
+      "智能体编排",
+      "agent coordination"
+    ],
+    "category": "Agent",
+    "levels": {
+      "beginner": "管理多个 AI Agent 协作的方法，就像一个项目经理协调多个专家各自负责不同工作，最后把结果合并。编排系统决定谁做什么、以什么顺序做。",
+      "intermediate": "协调多个 Agent 执行复杂任务的系统层，负责任务分配、结果聚合、错误处理和状态管理。LangGraph、CrewAI、AutoGen 都是 Agent 编排框架。",
+      "advanced": "Agent 编排的核心挑战：状态一致性（多 Agent 共享知识库的写冲突）、错误传播（上游错误影响下游 Agent）、观测性（追踪复杂调用链）。Supervisor-Worker 模式是常见架构：Supervisor Agent 负责任务分解和结果整合，Worker Agent 负责具体执行。"
+    },
+    "relatedTerms": [
+      "multi-agent",
+      "orchestrator",
+      "langchain",
+      "crewai",
+      "planning"
+    ],
+    "contexts": [
+      "agent",
+      "coordination"
+    ],
+    "emoji": "🎼",
+    "difficulty": "medium"
+  },
+  "skills-plugins": {
+    "term": "Skills/Plugins",
+    "aliases": [
+      "技能",
+      "插件",
+      "AI plugins",
+      "Agent skills"
+    ],
+    "category": "Agent",
+    "levels": {
+      "beginner": "给 AI 增加额外能力的扩展，就像给手机装 App，安装后 AI 就能上网搜索、发邮件、查天气等，没有插件前这些事它不能做。",
+      "intermediate": "Agent 的能力扩展单元，封装了特定功能（搜索、计算、数据库查询等）供 Agent 调用。ChatGPT Plugins、OpenAI Actions、MCP Servers 都是这个概念的不同实现。",
+      "advanced": "Plugin/Skill 的技术实现：通过函数定义（JSON Schema）声明接口，Agent 在推理时选择合适的工具并生成调用参数。MCP（Model Context Protocol）是最新的标准化协议，实现了工具的即插即用和生态复用。"
+    },
+    "relatedTerms": [
+      "tool-use",
+      "function-calling",
+      "mcp",
+      "agent"
+    ],
+    "contexts": [
+      "agent",
+      "tools"
+    ],
+    "emoji": "🔌",
+    "difficulty": "medium"
+  },
+  "agent-planning": {
+    "term": "Agent Planning",
+    "aliases": [
+      "Agent 规划",
+      "智能体规划",
+      "task planning"
+    ],
+    "category": "Agent",
+    "levels": {
+      "beginner": "AI Agent 把大目标拆解成可执行小步骤的能力，就像你做旅行计划：先买机票、再订酒店、再查景点，而不是一步就\"完成旅行\"。",
+      "intermediate": "LLM Agent 将复杂目标分解为可执行步骤序列的能力。常见策略：①ReAct（边思考边行动）；②任务分解（Tree of Thought 风格）；③子目标生成（类似 Hierarchical RL）。",
+      "advanced": "Agent 规划的核心难点：长期规划（多步决策的错误累积）、动态重规划（应对工具调用失败或新信息）、可验证性（规划执行的正确性难以保证）。研究表明 LLM 的规划能力是当前 Agent 最大的瓶颈，Reasoning 模型（o1/DeepSeek-R1）通过强化学习显著改善了这一点。"
+    },
+    "relatedTerms": [
+      "planning",
+      "task-decomposition",
+      "react-prompting",
+      "autonomous-agent"
+    ],
+    "contexts": [
+      "agent",
+      "reasoning"
+    ],
+    "emoji": "🗺️",
+    "difficulty": "medium"
+  },
+  "pmf": {
+    "term": "PMF",
+    "aliases": [
+      "Product-Market Fit",
+      "产品市场匹配",
+      "产品契合度"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "产品和市场需求\"对上了\"的状态，用户强烈需要你的产品、用完还会推荐别人用，是创业公司最重要的里程碑。找到 PMF 之前都是探索，找到之后才该大规模增长。",
+      "intermediate": "产品与目标市场需求高度契合的状态，体现为高留存率、自然增长（口碑/病毒传播）、用户强烈依赖。Sean Ellis 测试：40% 以上用户表示\"如果产品消失会非常失望\"即达到 PMF。",
+      "advanced": "PMF 不是一个非此即彼的状态，而是一个谱系。判断维度：Retention Curve（留存曲线是否趋于平稳）、NPS（净推荐值）、Organic Growth Rate。AI 产品 PMF 的特殊性：能力边界不断扩展，用户教育成本高，需持续跟踪 \"PMF 衰减\"（模型更新改变产品形态）。"
+    },
+    "relatedTerms": [
+      "mvp",
+      "saas",
+      "gtm",
+      "arr"
+    ],
+    "contexts": [
+      "product",
+      "startup"
+    ],
+    "emoji": "🎯",
+    "difficulty": "medium"
+  },
+  "mvp": {
+    "term": "MVP",
+    "aliases": [
+      "Minimum Viable Product",
+      "最小可行产品",
+      "最小化可行产品"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "用最少功能验证想法的产品版本，不求完美，只求快速上线验证用户是否真正需要。很多大公司的第一个版本都极其简陋，先验证再打磨。",
+      "intermediate": "最小可行产品，用最小的开发成本验证核心假设和市场需求的产品形态。强调\"先做出来给真实用户用\"而非\"先设计再完善\"，通过真实反馈驱动产品迭代。",
+      "advanced": "MVP 的核心是风险验证优先级：先验证最高风险假设（用户是否有这个痛点）。常见 MVP 类型：Concierge MVP（人工模拟自动化）、Wizard of Oz MVP（手动后端模拟 AI）、Landing Page MVP（验证意愿）。AI 产品的 MVP 应特别注意验证\"AI 能力是否满足用户期待\"而非只验证产品概念。"
+    },
+    "relatedTerms": [
+      "pmf",
+      "agile",
+      "sprint",
+      "gtm"
+    ],
+    "contexts": [
+      "product",
+      "startup"
+    ],
+    "emoji": "🚀",
+    "difficulty": "low"
+  },
+  "arr": {
+    "term": "ARR",
+    "aliases": [
+      "Annual Recurring Revenue",
+      "年度经常性收入",
+      "年化收入"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "订阅制产品每年能收到的稳定收入，是衡量 SaaS 公司规模最重要的指标之一，投资人最爱看这个数字，增长越快说明产品越被市场认可。",
+      "intermediate": "年度经常性收入（ARR = MRR × 12），是订阅制 SaaS 公司的核心健康指标。区别于总收入，ARR 只统计可预期续约的订阅收入，排除一次性收入，更能反映业务可持续性。",
+      "advanced": "ARR 分析维度：Net New ARR（新增+扩展-流失）、Net Revenue Retention（NRR，现有客户的 ARR 变化率，>100% 意味着即使不拉新也在增长）。AI SaaS 公司的 ARR 增长受模型能力提升的影响显著，需跟踪 Usage-based 模型的 ARR 波动。"
+    },
+    "relatedTerms": [
+      "mrr",
+      "saas",
+      "pmf",
+      "churn"
+    ],
+    "contexts": [
+      "business",
+      "metrics"
+    ],
+    "emoji": "📈",
+    "difficulty": "medium"
+  },
+  "mrr": {
+    "term": "MRR",
+    "aliases": [
+      "Monthly Recurring Revenue",
+      "月度经常性收入",
+      "月化收入"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "订阅制产品每个月能收到的稳定收入，是 SaaS 公司每月最关心的数字，就像月薪一样反映公司的\"月收入\"健康状况。",
+      "intermediate": "月度经常性收入，SaaS 公司追踪月度业务健康的核心指标。MRR 的组成：New MRR（新客户）+ Expansion MRR（升级/增购）- Churned MRR（流失）- Contraction MRR（降级）。",
+      "advanced": "MRR × 12 = ARR。MRR Movement 分析（新增/扩展/收缩/流失四个方向）是 SaaS 经营的精细化管理工具。对于 Usage-based SaaS（如 AI API 计费），MRR 的预测难度更高，需跟踪 Committed vs Usage-based 的比例。"
+    },
+    "relatedTerms": [
+      "arr",
+      "saas",
+      "churn",
+      "pmf"
+    ],
+    "contexts": [
+      "business",
+      "metrics"
+    ],
+    "emoji": "💰",
+    "difficulty": "medium"
+  },
+  "churn": {
+    "term": "Churn Rate",
+    "aliases": [
+      "流失率",
+      "用户流失",
+      "churn",
+      "客户流失率"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "用户或收入\"流失掉\"的比率，比如 100 个付费用户这个月走了 5 个，流失率就是 5%。流失率越低，产品留住用户的能力越强。",
+      "intermediate": "在特定时间段内停止付费/使用的用户或收入的比例。用户流失率（Customer Churn）和收入流失率（Revenue Churn）要分开看。低流失率是 PMF 和产品价值的重要信号。",
+      "advanced": "流失分析需区分：自愿流失（用户主动取消）vs 非自愿流失（支付失败）；价值流失（用户不再需要产品）vs 价格流失（觉得贵）。Cohort 分析可以追踪不同时期用户的留存曲线，识别流失时间点。Net Revenue Retention = (MRR + Expansion - Contraction - Churn) / 初始 MRR。"
+    },
+    "relatedTerms": [
+      "arr",
+      "mrr",
+      "pmf",
+      "ltv"
+    ],
+    "contexts": [
+      "business",
+      "metrics"
+    ],
+    "emoji": "📉",
+    "difficulty": "medium"
+  },
+  "ltv": {
+    "term": "LTV",
+    "aliases": [
+      "Lifetime Value",
+      "用户生命周期价值",
+      "CLV",
+      "Customer Lifetime Value"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "一个用户从开始用到离开，总共给你带来多少收入的预估值。LTV 越高，说明用户越忠诚、产品越有价值，获客成本（CAC）低于 LTV 才能盈利。",
+      "intermediate": "用户整个生命周期内贡献的收入总值，常用公式：LTV = ARPU（每用户平均收入）/ Churn Rate。LTV/CAC > 3 通常被认为是健康的商业模型。",
+      "advanced": "LTV 计算需考虑时间价值（折现率）和留存曲线的非线性。分层 LTV 分析（按用户规模/行业/获客渠道）可识别高价值用户群体。AI 产品的 LTV 受到模型能力提升（吸引用户深度使用）和竞争替代（用户切换成本低）的双重影响。"
+    },
+    "relatedTerms": [
+      "churn",
+      "arr",
+      "cac",
+      "pmf"
+    ],
+    "contexts": [
+      "business",
+      "metrics"
+    ],
+    "emoji": "💎",
+    "difficulty": "medium"
+  },
+  "cac": {
+    "term": "CAC",
+    "aliases": [
+      "Customer Acquisition Cost",
+      "用户获取成本",
+      "获客成本"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "获取一个新付费用户需要花多少钱，包括广告费、销售成本等。CAC 要和 LTV 比较，LTV 大于 CAC 才说明你的生意是可持续的。",
+      "intermediate": "获取一个新客户的平均成本：CAC = 总获客支出（市场+销售）/ 新增用户数。行业健康标准：LTV/CAC > 3，CAC 回收期 < 12 个月。PLG（产品驱动增长）的优势在于大幅降低 CAC。",
+      "advanced": "CAC 的精细化分析：按渠道分析（SEO/SEM/社交/销售）找高效获客路径；混合 CAC vs 付费 CAC 的区别（自然增长被稀释导致数字好看但误导决策）。AI 产品通过 API 或 SDK 的 Developer-led Growth 策略，可以实现接近零 CAC 的底层渗透再向上转化。"
+    },
+    "relatedTerms": [
+      "ltv",
+      "arr",
+      "pmf",
+      "plg"
+    ],
+    "contexts": [
+      "business",
+      "metrics"
+    ],
+    "emoji": "💸",
+    "difficulty": "medium"
+  },
+  "freemium": {
+    "term": "Freemium",
+    "aliases": [
+      "免费增值",
+      "免费+付费",
+      "free tier"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "免费提供基础功能，高级功能需要付费的商业模式，比如 ChatGPT 免费版 + Plus 付费版。靠免费用户建立口碑和用户基础，再转化付费。",
+      "intermediate": "商业模式：基础功能免费，高级功能付费。转化率通常较低（2-5%），但规模效应和病毒传播使其成为 PLG 公司的主要增长引擎。关键是设计好免费/付费的功能边界。",
+      "advanced": "Freemium 设计的核心难点：免费太少用户不来，免费太多用户不付费。\"魔法时刻\"（Aha Moment）应在免费层体验到，但\"价值天花板\"需触发付费冲动。对于 AI 产品，Token 用量上限是常见的 Freemium 门槛，但会降低 Power User 的体验。"
+    },
+    "relatedTerms": [
+      "saas",
+      "pmf",
+      "plg",
+      "arr"
+    ],
+    "contexts": [
+      "business",
+      "monetization"
+    ],
+    "emoji": "🆓",
+    "difficulty": "medium"
+  },
+  "plg": {
+    "term": "PLG",
+    "aliases": [
+      "Product-Led Growth",
+      "产品驱动增长"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "靠产品本身好用来驱动增长，用户用了觉得好就分享给别人，不需要大量销售人员推销。Slack、Notion、Figma 都是 PLG 的代表，AI 时代这个模式更流行。",
+      "intermediate": "以产品体验驱动用户获取、激活、留存和付费的增长模式，区别于 SLG（销售驱动）。关键指标：PQL（Product Qualified Lead，产品内识别出的高意向用户）替代传统 MQL。",
+      "advanced": "PLG 的飞轮：产品好用 → 口碑传播/病毒分享（嵌入式增长）→ 更多用户 → 数据反馈 → 产品更好。API-first 和 Developer-led Growth 是 AI 时代 PLG 的新变体：先被开发者使用，再向企业采购渗透（Bottom-up Sales）。"
+    },
+    "relatedTerms": [
+      "pmf",
+      "freemium",
+      "saas",
+      "cac"
+    ],
+    "contexts": [
+      "business",
+      "growth"
+    ],
+    "emoji": "📦",
+    "difficulty": "medium"
+  },
+  "moat": {
+    "term": "Moat",
+    "aliases": [
+      "护城河",
+      "竞争壁垒",
+      "competitive moat"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "让竞争对手难以超越你的优势，就像城堡周围的护城河让敌人难以攻入。数据积累、品牌信任、用户习惯都可以成为护城河。",
+      "intermediate": "企业持续竞争优势的来源。AI 领域的常见护城河：专有数据（数据飞轮）、模型效果领先（短暂优势）、用户习惯/工作流绑定、品牌信任、企业级集成深度。",
+      "advanced": "AI 时代护城河的独特性：模型本身不构成持久护城河（因为开源和快速跟进），真正的护城河是：①专有训练数据（用户行为数据）；②工作流深度集成（切换成本高）；③网络效应（用户越多数据越好）；④分发渠道（如微软 Office 集成 Copilot）。"
+    },
+    "relatedTerms": [
+      "pmf",
+      "plg",
+      "gtm",
+      "saas"
+    ],
+    "contexts": [
+      "business",
+      "strategy"
+    ],
+    "emoji": "🏰",
+    "difficulty": "medium"
+  },
+  "gtm": {
+    "term": "GTM",
+    "aliases": [
+      "Go-to-Market",
+      "市场进入策略",
+      "上市策略"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "产品如何推向市场的策略，包括目标客户是谁、通过什么渠道接触他们、定什么价格、怎么销售，是产品上线前必须想清楚的问题。",
+      "intermediate": "Go-to-Market 策略，规划产品如何触达目标用户并转化为付费客户。核心要素：目标客户（ICP, Ideal Customer Profile）、价值主张、定价策略、渠道选择（直销/合作伙伴/API 分发）、销售动作。",
+      "advanced": "AI 产品 GTM 的特殊考量：技术鸿沟（开发者早期采用 vs 普通用户的跨越）、工作流替代 vs 增强（替代型产品阻力更大）、以 API 为先的 Bottom-up 策略（先获取开发者再企业采购）。成功的 AI GTM 通常从高频痛点的 Point Solution 切入，逐步扩展到平台。"
+    },
+    "relatedTerms": [
+      "pmf",
+      "mvp",
+      "plg",
+      "saas"
+    ],
+    "contexts": [
+      "business",
+      "strategy"
+    ],
+    "emoji": "🗺️",
+    "difficulty": "medium"
+  },
+  "fork": {
+    "term": "Fork",
+    "aliases": [
+      "派生",
+      "分叉",
+      "代码 fork"
+    ],
+    "category": "开源与社区",
+    "levels": {
+      "beginner": "在 GitHub 上复制别人的开源项目到自己账号下，可以在上面自由修改，不影响原项目。很多开源项目都是从别人的 fork 开始的。",
+      "intermediate": "从现有代码库创建独立副本的操作，允许在不影响原项目的情况下自由修改。Fork 是开源协作的基础：贡献者 Fork → 修改 → 提 Pull Request → 被合并回原项目。",
+      "advanced": "Fork 分为两种：GitHub 意义上的 Fork（保持与上游的关联，可提 PR）和社区意义的 Fork（完全独立的项目，如 LibreOffice 是 OpenOffice 的 Fork）。AI 模型也有\"fork\"：基于 Llama 基础模型微调产生的派生模型，如 Vicuna、Alpaca 等。"
+    },
+    "relatedTerms": [
+      "git",
+      "github",
+      "pull-request",
+      "open-source",
+      "repository"
+    ],
+    "contexts": [
+      "open-source",
+      "collaboration"
+    ],
+    "emoji": "🍴",
+    "difficulty": "low"
+  },
+  "pull-request": {
+    "term": "Pull Request",
+    "aliases": [
+      "PR",
+      "Merge Request",
+      "合并请求"
+    ],
+    "category": "开源与社区",
+    "levels": {
+      "beginner": "向开源项目贡献代码的方式，你 Fork 项目、做了修改、然后\"请求\"原作者把你的修改合并进去，就叫 Pull Request，是开源协作的核心流程。",
+      "intermediate": "在 Git 平台（GitHub/GitLab）上请求将某分支的修改合并到目标分支的操作。PR 包含代码变更、描述、Review 流程，是团队代码审查和开源贡献的标准工作流。",
+      "advanced": "PR 工作流的最佳实践：小而聚焦（一个 PR 一个功能）、完善的描述（Why + What + How to test）、CI 自动化（Lint/Test/Build 通过才能合并）。AI 辅助 Code Review（GitHub Copilot/CodeRabbit）正在改变 PR Review 效率。"
+    },
+    "relatedTerms": [
+      "git",
+      "github",
+      "fork",
+      "cicd",
+      "repository"
+    ],
+    "contexts": [
+      "open-source",
+      "collaboration"
+    ],
+    "emoji": "🔃",
+    "difficulty": "low"
+  },
+  "github-issue": {
+    "term": "Issue",
+    "aliases": [
+      "GitHub Issue",
+      "问题反馈",
+      "bug report"
+    ],
+    "category": "开源与社区",
+    "levels": {
+      "beginner": "在 GitHub 上报告 Bug、提建议或讨论功能的地方，就像项目的\"意见箱\"，用户和开发者在这里沟通项目问题。",
+      "intermediate": "GitHub/GitLab 的任务追踪功能，用于记录 Bug 报告、功能请求、任务分配和技术讨论。通过标签（Label）、里程碑（Milestone）、负责人（Assignee）进行管理。",
+      "advanced": "Issue 驱动开发（Issue-Driven Development）：每个功能/修复对应一个 Issue，PR 通过\"Closes #123\"自动关联并关闭 Issue，形成完整的工作追踪链。GitHub Projects 将 Issue 与看板结合，实现敏捷项目管理。"
+    },
+    "relatedTerms": [
+      "github",
+      "pull-request",
+      "repository",
+      "bug"
+    ],
+    "contexts": [
+      "open-source",
+      "collaboration"
+    ],
+    "emoji": "📋",
+    "difficulty": "low"
+  },
+  "license": {
+    "term": "License",
+    "aliases": [
+      "开源许可证",
+      "软件许可证",
+      "MIT",
+      "Apache",
+      "GPL"
+    ],
+    "category": "开源与社区",
+    "levels": {
+      "beginner": "决定别人能不能用你代码的法律文件，不同的许可证规则不同：MIT 最宽松（随便用），GPL 要求修改后也必须开源，Apache 则适合商业使用。",
+      "intermediate": "软件使用权限的法律文件。常见开源许可证：MIT/BSD（最宽松，可商用，无需开放修改）、Apache 2.0（有专利保护条款，商业友好）、GPL（Copyleft，修改后必须以 GPL 开源）、AGPL（最严格，SaaS 也需开源）。",
+      "advanced": "开源许可证的选择影响商业化路径和生态建设：宽松型许可证（MIT/Apache）促进生态采用（Llama 3、Mistral 使用）；限制型许可证（GPL/AGPL）保护开源精神。AI 模型许可证的新趋势：附加\"禁止用于特定用途\"条款（如 Meta Llama License），但这在技术上不符合 OSI 的开源定义。"
+    },
+    "relatedTerms": [
+      "open-source",
+      "repository",
+      "github",
+      "llama"
+    ],
+    "contexts": [
+      "open-source",
+      "legal"
+    ],
+    "emoji": "📄",
+    "difficulty": "medium"
+  },
+  "contributor": {
+    "term": "Contributor",
+    "aliases": [
+      "贡献者",
+      "开源贡献者",
+      "代码贡献者"
+    ],
+    "category": "开源与社区",
+    "levels": {
+      "beginner": "给开源项目贡献代码、文档或其他内容的人，可以是修复一个 Bug，也可以是新增一个功能。参与开源贡献是程序员展示技术能力的重要方式。",
+      "intermediate": "向开源项目提交过代码（PR 被合并）的参与者。贡献形式多样：代码实现、Bug 修复、文档改进、测试用例、翻译等。贡献者徽章（All Contributors）是对多种贡献形式的认可。",
+      "advanced": "开源项目的贡献者层级：Contributor（提过 PR）→ Committer（有代码库写入权限）→ Maintainer（负责项目维护决策）→ Governance（项目治理委员会）。大型 AI 开源项目（如 HuggingFace Transformers）有数百名贡献者，维护者需要严格的 PR 审查流程保证代码质量。"
+    },
+    "relatedTerms": [
+      "open-source",
+      "pull-request",
+      "github",
+      "maintainer"
+    ],
+    "contexts": [
+      "open-source",
+      "community"
+    ],
+    "emoji": "👤",
+    "difficulty": "low"
+  },
+  "maintainer": {
+    "term": "Maintainer",
+    "aliases": [
+      "维护者",
+      "项目维护者",
+      "project maintainer"
+    ],
+    "category": "开源与社区",
+    "levels": {
+      "beginner": "负责维护开源项目的人，审查别人的 Pull Request、决定功能方向、修复重要 Bug。一个健康的开源项目需要有责任心的维护者。",
+      "intermediate": "对开源项目拥有决策权的核心贡献者，负责代码审查、版本发布、社区管理和项目方向把控。通常由 Project Owner 授权或社区投票产生。",
+      "advanced": "维护者面临的核心挑战：Contributor Burnout（维护工作量大但通常无偿）、安全责任（供应链攻击如 XZ Utils 事件）、基金会资助（Apache/Linux Foundation 提供可持续支持）。AI 基础库（如 Transformers）的维护者承担着整个 AI 生态基础设施的稳定性责任。"
+    },
+    "relatedTerms": [
+      "contributor",
+      "open-source",
+      "github",
+      "pull-request"
+    ],
+    "contexts": [
+      "open-source",
+      "community"
+    ],
+    "emoji": "🛡️",
+    "difficulty": "medium"
+  },
+  "ai-alignment": {
+    "term": "AI Alignment",
+    "aliases": [
+      "AI 对齐",
+      "价值对齐",
+      "alignment problem"
+    ],
+    "category": "AI 伦理与治理",
+    "levels": {
+      "beginner": "让 AI 的行为符合人类价值观和意图的研究领域，解决\"如何确保 AI 做的是我们真正想要的事\"这个问题。如果 AI 足够强大但目标不对，后果很严重。",
+      "intermediate": "AI 系统行为与人类意图、价值观保持一致的技术和研究领域。核心方法：RLHF（人类反馈强化学习）、Constitutional AI（宪法式 AI）、DPO 等。对齐不仅是技术问题，也是哲学和伦理问题。",
+      "advanced": "AI 对齐问题的层次：能力对齐（AI 能理解人类意图）vs 价值对齐（AI 真正想要好的结果）。主要研究方向：可解释性（理解模型内部工作原理）、可纠正性（保持人类控制能力）、价值学习（从人类行为推断偏好）。Anthropic、OpenAI 都将对齐研究作为核心使命。"
+    },
+    "relatedTerms": [
+      "alignment",
+      "constitutional-ai",
+      "rlhf",
+      "ai-safety",
+      "hallucination"
+    ],
+    "contexts": [
+      "safety",
+      "ethics"
+    ],
+    "emoji": "⚖️",
+    "difficulty": "high"
+  },
+  "ai-safety": {
+    "term": "AI Safety",
+    "aliases": [
+      "AI 安全",
+      "人工智能安全",
+      "artificial intelligence safety"
+    ],
+    "category": "AI 伦理与治理",
+    "levels": {
+      "beginner": "研究如何让 AI 系统安全可靠的领域，包括防止 AI 出错、被滥用或造成意外伤害。既包括眼下的安全问题（数据隐私、偏见），也包括长期的风险（超强 AI 的控制问题）。",
+      "intermediate": "AI 安全涵盖近期和长期两个维度。近期：模型鲁棒性（对抗攻击）、隐私保护、偏见消除、红队测试。长期：超级智能对齐、递归自我改进的控制问题、AI 系统在关键基础设施中的可靠性。",
+      "advanced": "AI Safety 研究路线分歧：Capabilities 派（认为安全随能力提升自然改善）vs Safety 派（认为需要专项研究）。主要研究机构：Anthropic（Constitutional AI）、DeepMind（Scalable Oversight）、MIRI（数学对齐）。解释性研究（Mechanistic Interpretability）试图从神经网络内部理解安全相关行为的来源。"
+    },
+    "relatedTerms": [
+      "ai-alignment",
+      "alignment",
+      "constitutional-ai",
+      "red-teaming"
+    ],
+    "contexts": [
+      "safety",
+      "ethics"
+    ],
+    "emoji": "🛡️",
+    "difficulty": "high"
+  },
+  "bias-fairness": {
+    "term": "Bias & Fairness",
+    "aliases": [
+      "偏见与公平",
+      "algorithmic bias",
+      "算法偏见",
+      "AI 偏见"
+    ],
+    "category": "AI 伦理与治理",
+    "levels": {
+      "beginner": "AI 模型可能存在的不公平问题，比如人脸识别对深色皮肤准确率更低，贷款审批 AI 歧视特定人群。这些偏见来自训练数据里的历史偏见，需要主动纠正。",
+      "intermediate": "AI 系统在不同人群（种族/性别/年龄等）间的不平等对待。来源：历史偏见的数据（GIGO）、样本不均衡、代理变量（看似中性但与敏感属性相关）。公平性定义本身也有矛盾（统计均等 vs 机会均等）。",
+      "advanced": "公平性度量指标：Demographic Parity（不同群体预测率相同）、Equalized Odds（不同群体 TPR/FPR 相同）、Individual Fairness（相似个体相似对待）。Impossibility Theorem 表明这些指标在一般情况下无法同时满足，需要根据应用场景做权衡。LLM 的偏见来源更复杂，难以通过后处理完全消除。"
+    },
+    "relatedTerms": [
+      "ai-alignment",
+      "ai-safety",
+      "hallucination",
+      "red-teaming"
+    ],
+    "contexts": [
+      "ethics",
+      "fairness"
+    ],
+    "emoji": "⚖️",
+    "difficulty": "medium"
+  },
+  "xai": {
+    "term": "Explainability (XAI)",
+    "aliases": [
+      "可解释性",
+      "XAI",
+      "explainable AI",
+      "可解释 AI",
+      "interpretability"
+    ],
+    "category": "AI 伦理与治理",
+    "levels": {
+      "beginner": "让 AI 解释\"为什么这样决定\"的技术，比如银行 AI 拒绝贷款时，你有权知道原因，不能只接受\"AI 说不行\"。可解释性让 AI 的决策更透明可信。",
+      "intermediate": "使 AI 模型的决策过程透明、可理解的技术领域。方法：SHAP（特征贡献分析）、LIME（局部可解释近似）、Attention 可视化、Grad-CAM（图像区域热力图）。欧盟 GDPR 要求自动决策具有可解释性。",
+      "advanced": "可解释性 vs 可解读性的区分：局部可解释（为什么这个预测）vs 全局可解读（模型整体行为）。LLM 的 Mechanistic Interpretability（机制可解释性）试图从神经元/电路层面理解模型行为，是 Anthropic 的核心研究方向之一，发现了\"特征叠加\"（Superposition）等重要现象。"
+    },
+    "relatedTerms": [
+      "ai-alignment",
+      "ai-safety",
+      "deep-learning",
+      "attention"
+    ],
+    "contexts": [
+      "ethics",
+      "transparency"
+    ],
+    "emoji": "🔍",
+    "difficulty": "high"
+  },
+  "deepfake": {
+    "term": "Deepfake",
+    "aliases": [
+      "深度伪造",
+      "AI 换脸",
+      "synthetic media"
+    ],
+    "category": "AI 伦理与治理",
+    "levels": {
+      "beginner": "用 AI 伪造人脸或声音的技术，可以把一个人的脸换到另一个视频里，以假乱真，已经被用来制造虚假新闻和诈骗，是 AI 时代的严重安全威胁。",
+      "intermediate": "利用深度学习（主要是 GAN）生成高度逼真的虚假图像/视频/音频内容，通常将某人的面部特征合成到他人身上。已被用于虚假信息传播、非法色情内容、金融诈骗。",
+      "advanced": "Deepfake 技术路线：Face Swap（换脸，基于 Encoder-Decoder 架构）→ Face Reenactment（表情驱动）→ Neural Talking Head（任意身份的说话头像）。检测方法：频域分析（GAN 生成留下伪影）、生理信号（rPPG 心跳检测）、数字水印（C2PA 内容溯源标准）。"
+    },
+    "relatedTerms": [
+      "gan",
+      "ai-safety",
+      "bias-fairness",
+      "synthetic-data"
+    ],
+    "contexts": [
+      "ethics",
+      "security"
+    ],
+    "emoji": "🎭",
+    "difficulty": "medium"
+  },
+  "t5": {
+    "term": "T5",
+    "aliases": [
+      "Text-to-Text Transfer Transformer",
+      "T5 model"
+    ],
+    "category": "AI 基础",
+    "levels": {
+      "beginner": "Google 开发的一种 AI 模型，它把所有 NLP 任务都统一成\"输入文字 → 输出文字\"的形式来解决，这种想法后来影响了很多现代 AI 的设计。",
+      "intermediate": "Google 的 Text-to-Text Transfer Transformer，将所有 NLP 任务（分类/翻译/摘要/问答）统一为文本到文本的格式处理。使用 Encoder-Decoder 架构，是现代指令微调范式的先驱。",
+      "advanced": "T5 的关键贡献：将任务统一为文本格式（\"translate English to German: ...\"），这种范式消除了任务特定输出层，为后来的指令微调（Instruction Tuning）和 Few-shot prompting 奠定了基础。T5 的清洁预训练数据（C4）和 Span Corruption 目标函数是主要技术创新。"
+    },
+    "relatedTerms": [
+      "bert",
+      "gpt",
+      "transformer",
+      "instruction-tuning"
+    ],
+    "contexts": [
+      "nlp",
+      "architecture"
+    ],
+    "emoji": "📝",
+    "difficulty": "high"
+  },
+  "mamba": {
+    "term": "Mamba",
+    "aliases": [
+      "Mamba model",
+      "SSM",
+      "State Space Model"
+    ],
+    "category": "AI 基础",
+    "levels": {
+      "beginner": "一种新型 AI 模型架构，据说可以处理更长的文本、速度更快，是最近几年出现的有望挑战 Transformer 地位的新技术路线。",
+      "intermediate": "基于 State Space Model（状态空间模型）的序列模型，计算复杂度与序列长度线性相关（Transformer 是二次方），适合处理超长序列。由 Gu 等人在 2023 年提出，是 Transformer 的潜在替代架构。",
+      "advanced": "Mamba 使用选择性状态空间（Selective SSM），通过输入依赖的状态转移矩阵解决了早期 SSM 无法有效选择相关信息的问题。与 Transformer 的关键区别：推理时内存固定（状态大小恒定），无 KV Cache，天然适合流式推理。但在联想记忆（Associative Recall）等任务上仍弱于 Transformer。"
+    },
+    "relatedTerms": [
+      "transformer",
+      "attention",
+      "llm",
+      "state-space-model"
+    ],
+    "contexts": [
+      "architecture",
+      "research"
+    ],
+    "emoji": "🐍",
+    "difficulty": "high"
+  },
+  "state-space-model": {
+    "term": "State Space Model",
+    "aliases": [
+      "SSM",
+      "状态空间模型"
+    ],
+    "category": "AI 基础",
+    "levels": {
+      "beginner": "一类不同于 Transformer 的 AI 模型架构，通过维护一个\"状态\"来处理序列数据，就像大脑边看书边更新理解，而不是每次都重新看所有内容。",
+      "intermediate": "线性时序模型类别，通过隐藏状态（hidden state）捕捉序列信息，代表模型：S4、Mamba。计算复杂度线性（而非 Transformer 的二次方），适合超长序列。",
+      "advanced": "SSM 的数学基础来自控制理论：离散 SSM 通过矩阵 A（状态转移）、B（输入映射）、C（输出映射）描述系统。HiPPO 初始化（理论指导的 A 矩阵构造）是 S4 高效处理长序列的关键。Mamba 的选择性机制（输入依赖的参数）是对基础 SSM 的关键改进。"
+    },
+    "relatedTerms": [
+      "mamba",
+      "transformer",
+      "attention",
+      "llm"
+    ],
+    "contexts": [
+      "architecture",
+      "research"
+    ],
+    "emoji": "📊",
+    "difficulty": "high"
+  },
+  "clip": {
+    "term": "CLIP",
+    "aliases": [
+      "Contrastive Language-Image Pre-training",
+      "OpenAI CLIP"
+    ],
+    "category": "AI 基础",
+    "levels": {
+      "beginner": "OpenAI 开发的模型，能理解图片和文字之间的关系，比如知道\"一只棕色的狗\"这段文字对应哪种图片，是很多图像生成和搜索工具的基础。",
+      "intermediate": "OpenAI 开发的多模态对比学习模型，通过 4 亿图文对训练，学习对齐图像和文本的语义表示。是 Stable Diffusion 等图像生成模型的文本编码器，也用于零样本图像分类。",
+      "advanced": "CLIP 使用对比损失（InfoNCE）训练：最大化匹配图文对的相似度，最小化不匹配对的相似度。图像编码器（ViT）和文本编码器（Transformer）分别提取特征，投影到共享嵌入空间。CLIP 的零样本迁移能力来源于大规模网络图文对的自监督训练，无需人工标注。"
+    },
+    "relatedTerms": [
+      "multimodal",
+      "vision-transformer",
+      "stable-diffusion",
+      "embedding"
+    ],
+    "contexts": [
+      "vision",
+      "multimodal"
+    ],
+    "emoji": "📎",
+    "difficulty": "high"
+  },
+  "whisper": {
+    "term": "Whisper",
+    "aliases": [
+      "OpenAI Whisper",
+      "whisper ASR"
+    ],
+    "category": "AI 基础",
+    "levels": {
+      "beginner": "OpenAI 开发的开源语音识别模型，可以把语音转成文字，支持 99 种语言，准确率很高，在嘈杂环境下也能工作，很多语音应用都基于它构建。",
+      "intermediate": "OpenAI 开源的自动语音识别模型，在 68 万小时多语言音频上训练，支持转写和翻译。提供 Tiny 到 Large 多个尺寸，在多语言识别和鲁棒性上超越了很多商业 ASR 服务。",
+      "advanced": "Whisper 使用 Encoder-Decoder Transformer：音频编码器处理 Mel 频谱图，文本解码器生成转写结果。多任务训练（转写/翻译/语言检测/时间戳对齐）通过特殊 token 区分任务类型。Whisper 的弱点是幻觉（对静音或噪声生成虚假转写），实际使用需注意 VAD 预处理。"
+    },
+    "relatedTerms": [
+      "speech-to-text",
+      "text-to-speech",
+      "transformer",
+      "multimodal"
+    ],
+    "contexts": [
+      "nlp",
+      "voice"
+    ],
+    "emoji": "🎙️",
+    "difficulty": "medium"
+  },
+  "codex": {
+    "term": "Codex",
+    "aliases": [
+      "OpenAI Codex",
+      "code model"
+    ],
+    "category": "AI 基础",
+    "levels": {
+      "beginner": "OpenAI 专门用来写代码的 AI 模型，GitHub Copilot 背后就是它，能根据注释或描述自动生成代码。现在 GPT-4 已经整合了代码能力，Codex 作为独立模型已退役。",
+      "intermediate": "OpenAI 专为代码任务优化的 GPT 模型（基于 GPT-3 微调），在大量公开代码上训练，支持代码生成、补全、解释、转换。GitHub Copilot 最初基于 Codex，现在已迁移至 GPT-4 系列。",
+      "advanced": "Codex 的训练数据包括 GitHub 上的数十亿行代码，覆盖 12+ 编程语言。代码预训练的独特之处：代码的格式规整、逻辑清晰，代码数据对通用推理能力也有显著提升（Chain of Thought 的涌现可能部分来源于代码训练数据）。"
+    },
+    "relatedTerms": [
+      "gpt",
+      "copilot",
+      "code-interpreter",
+      "llm"
+    ],
+    "contexts": [
+      "coding",
+      "model"
+    ],
+    "emoji": "💻",
+    "difficulty": "medium"
+  },
+  "foundation-model": {
+    "term": "Foundation Model",
+    "aliases": [
+      "基础模型",
+      "大基础模型",
+      "base model"
+    ],
+    "category": "AI 基础",
+    "levels": {
+      "beginner": "用海量数据训练的通用 AI 大模型，可以作为各种 AI 应用的基础，就像地基一样，在上面再做微调就能做各种专业任务。GPT-4、Claude、Llama 都是基础模型。",
+      "intermediate": "在大规模数据上预训练、可通过微调适配各种下游任务的大型 AI 模型。由 Stanford HAI 提出这一术语。相对于专用任务模型，基础模型的优势是泛化能力强、迁移学习效率高。",
+      "advanced": "基础模型的\"涌现能力\"（Emergent Abilities）是重要研究现象——某些能力（如 CoT、算术）在模型达到一定规模后突然出现。基础模型的训练是目前 AI 领域最高的资本密度活动（H100 集群训练一个前沿模型耗资亿级美元），形成了显著的规模壁垒。"
+    },
+    "relatedTerms": [
+      "llm",
+      "fine-tuning",
+      "pre-training",
+      "scaling-law"
+    ],
+    "contexts": [
+      "ai",
+      "model"
+    ],
+    "emoji": "🏛️",
+    "difficulty": "medium"
+  },
+  "slm": {
+    "term": "SLM",
+    "aliases": [
+      "Small Language Model",
+      "小语言模型",
+      "small LM"
+    ],
+    "category": "AI 基础",
+    "levels": {
+      "beginner": "参数量较小、能在普通设备上运行的语言模型，比 GPT-4 这样的大模型小很多，可以在手机或笔记本电脑上运行，适合对速度和隐私有要求的场景。",
+      "intermediate": "参数量较小（通常 1B-13B）的语言模型，可在边缘设备（手机/PC）运行。代表：Phi-3-mini（3.8B）、Gemini Nano、Llama 3.2（1B/3B）。在特定任务上通过指令微调可接近大模型效果。",
+      "advanced": "SLM 的核心技术：知识蒸馏（从大模型蒸馏知识）、高效训练数据（Phi 系列依赖\"教科书级别\"合成数据而非网络爬取数据）、架构优化（GQA/低秩分解减少参数）。在 On-device AI 场景，SLM 的优势：数据不出设备（隐私保护）、低延迟、离线可用。"
+    },
+    "relatedTerms": [
+      "llm",
+      "quantization",
+      "distillation",
+      "edge-computing",
+      "foundation-model"
+    ],
+    "contexts": [
+      "model",
+      "edge"
+    ],
+    "emoji": "📱",
+    "difficulty": "medium"
+  },
+  "git-star": {
+    "term": "Star",
+    "aliases": [
+      "GitHub Star",
+      "star 数"
+    ],
+    "category": "开源与社区",
+    "levels": {
+      "beginner": "在 GitHub 上给项目点的「收藏」，数量越多说明项目越受欢迎。",
+      "intermediate": "GitHub Star 是项目受欢迎程度的重要指标，影响项目曝光和开发者信誉。类似于社交媒体的点赞，但还带有「加入收藏夹」的功能。",
+      "advanced": "Star 数是开源项目的社会信号，影响搜索排名和 Trending 上榜。Stars 并不代表代码质量，需结合 commit 频率、issue 响应速度、维护者活跃度综合评估项目健康度。"
+    },
+    "relatedTerms": [
+      "Fork",
+      "GitHub",
+      "开源"
+    ],
+    "contexts": [
+      "open-source",
+      "community"
+    ],
+    "emoji": "⭐",
+    "difficulty": "low"
+  },
+  "readme": {
+    "term": "README",
+    "aliases": [
+      "README.md",
+      "readme"
+    ],
+    "category": "开源与社区",
+    "levels": {
+      "beginner": "项目的「说明书」，告诉你这个软件是干什么的、怎么安装、怎么用。",
+      "intermediate": "开源项目的门面文档，通常是 Markdown 格式，放在仓库根目录。好的 README 应包含：项目简介、快速开始、安装方式、使用示例和 License 声明。",
+      "advanced": "README 是项目的第一印象，直接影响开发者是否愿意采用。结构设计上可参考：徽章（CI状态/版本/覆盖率）→ 一句话定位 → Demo/截图 → 安装 → 使用 → 贡献指南 → License。"
+    },
+    "relatedTerms": [
+      "CHANGELOG",
+      "License",
+      "开源"
+    ],
+    "contexts": [
+      "open-source",
+      "documentation"
+    ],
+    "emoji": "📄",
+    "difficulty": "low"
+  },
+  "changelog": {
+    "term": "CHANGELOG",
+    "aliases": [
+      "Change Log",
+      "changelog.md",
+      "CHANGELOG.md"
+    ],
+    "category": "开源与社区",
+    "levels": {
+      "beginner": "项目的「更新日志」，记录每个版本改了什么、修了哪些 bug、加了哪些功能。",
+      "intermediate": "版本变更历史文档，遵循 Keep a Changelog 规范，按版本号和日期记录 Added/Changed/Deprecated/Removed/Fixed/Security 六类变更。",
+      "advanced": "良好的 CHANGELOG 面向用户（消费者）而非开发者，需要转化 commit message 为用户可理解的语言。常与 Semantic Versioning (SemVer) 配合使用，自动化工具如 conventional-changelog 可从 commit message 自动生成。"
+    },
+    "relatedTerms": [
+      "SemVer",
+      "Release",
+      "README"
+    ],
+    "contexts": [
+      "open-source",
+      "versioning"
+    ],
+    "emoji": "📋",
+    "difficulty": "low"
+  },
+  "mit-license": {
+    "term": "MIT License",
+    "aliases": [
+      "MIT",
+      "MIT 协议"
+    ],
+    "category": "开源与社区",
+    "levels": {
+      "beginner": "一种最宽松的开源许可证，简单说就是「随便用，但得保留作者名字」。",
+      "intermediate": "MIT 许可证允许任何人自由使用、复制、修改、分发，包括商业用途，唯一要求是保留版权声明。因为简短易懂（约 170 字），成为最流行的开源许可证之一。",
+      "advanced": "MIT 与 Apache 2.0 的主要差异：Apache 2.0 额外提供专利授权和贡献者专利反诉保护，更适合有专利风险的企业级项目。MIT 不含专利条款。与 GPL 对比：MIT 是宽松型（Permissive），GPL 是 Copyleft（传染性）。"
+    },
+    "relatedTerms": [
+      "License",
+      "Apache License",
+      "GPL",
+      "开源"
+    ],
+    "contexts": [
+      "open-source",
+      "legal"
+    ],
+    "emoji": "📜",
+    "difficulty": "low"
+  },
+  "apache-license": {
+    "term": "Apache License",
+    "aliases": [
+      "Apache 2.0",
+      "Apache License 2.0"
+    ],
+    "category": "开源与社区",
+    "levels": {
+      "beginner": "一种开源许可证，比 MIT 多了「如果你修改了代码要说明改了什么」的要求，但仍然允许商业使用。",
+      "intermediate": "Apache License 2.0 允许自由使用、修改和分发，要求保留版权声明、说明修改内容，并提供明确的专利授权。许多企业级开源项目（如 Kubernetes、Kafka）使用此协议。",
+      "advanced": "Apache 2.0 的专利授权条款是关键差异点：贡献者自动将相关专利授权给用户使用，同时包含专利反诉条款——如果用户对贡献者提起专利诉讼，其许可证自动终止。这为企业采用提供了重要保障。"
+    },
+    "relatedTerms": [
+      "MIT License",
+      "License",
+      "GPL",
+      "开源"
+    ],
+    "contexts": [
+      "open-source",
+      "legal"
+    ],
+    "emoji": "📜",
+    "difficulty": "medium"
+  },
+  "gpl": {
+    "term": "GPL",
+    "aliases": [
+      "GNU GPL",
+      "GPLv3",
+      "General Public License",
+      "Copyleft"
+    ],
+    "category": "开源与社区",
+    "levels": {
+      "beginner": "一种「传染性」的开源许可证——你用了 GPL 代码，你的整个项目也必须开源。",
+      "intermediate": "GNU General Public License 是 Copyleft 许可证的代表，要求基于 GPL 代码的衍生作品必须以相同许可证开源。分为 GPLv2（Linux 内核）和 GPLv3（加入专利和 DRM 限制）。",
+      "advanced": "GPL 的「传染性」仅在分发时触发（内部使用不受限）。LGPL 是弱化版，允许私有软件动态链接 LGPL 库。AGPL 是加强版，SaaS 场景（网络使用）也触发开源义务，用于防止「云厂商」不回馈社区。"
+    },
+    "relatedTerms": [
+      "MIT License",
+      "Apache License",
+      "License",
+      "开源"
+    ],
+    "contexts": [
+      "open-source",
+      "legal"
+    ],
+    "emoji": "🔒",
+    "difficulty": "medium"
+  },
+  "code-review": {
+    "term": "Code Review",
+    "aliases": [
+      "代码审查",
+      "CR",
+      "review"
+    ],
+    "category": "开源与社区",
+    "levels": {
+      "beginner": "提交代码之前，让别人帮你检查一遍——像作文被老师批改，找出问题、提出改进意见。",
+      "intermediate": "代码审查是软件开发中的质量保障环节，通常通过 Pull Request 进行。审查内容包括：逻辑正确性、代码风格、安全漏洞、性能问题和可维护性。",
+      "advanced": "高效 Code Review 需要明确关注层次：架构层（是否解决正确问题）→ 设计层（接口、抽象是否合理）→ 实现层（逻辑、边界条件）→ 风格层（命名、注释）。现代 AI Code Review 工具（如 CodeRabbit）可自动化低层次检查，让人力集中在高层次判断。"
+    },
+    "relatedTerms": [
+      "Pull Request",
+      "Fork",
+      "GitHub"
+    ],
+    "contexts": [
+      "open-source",
+      "development"
+    ],
+    "emoji": "👀",
+    "difficulty": "low"
+  },
+  "git-release": {
+    "term": "Release",
+    "aliases": [
+      "版本发布",
+      "GitHub Release"
+    ],
+    "category": "开源与社区",
+    "levels": {
+      "beginner": "软件的正式「出版」——把某个时间点的代码打包好，贴上版本号（如 v1.2.0），让用户可以下载使用。",
+      "intermediate": "Release 是项目的里程碑节点，通常包含：版本号（遵循 SemVer）、CHANGELOG 片段、编译好的二进制文件或包。GitHub Release 可以附带 Assets（附件）供用户直接下载。",
+      "advanced": "Release 流程可以完全自动化：通过 CI/CD（如 GitHub Actions）在 tag push 时触发构建、测试、打包、发布到 npm/PyPI/Docker Hub，同时自动生成 Release Notes。语义化发版工具（如 semantic-release）可根据 commit message 自动确定版本号。"
+    },
+    "relatedTerms": [
+      "CHANGELOG",
+      "SemVer",
+      "CI/CD"
+    ],
+    "contexts": [
+      "open-source",
+      "versioning"
+    ],
+    "emoji": "🚀",
+    "difficulty": "low"
+  },
+  "semver": {
+    "term": "SemVer",
+    "aliases": [
+      "Semantic Versioning",
+      "语义化版本",
+      "x.y.z"
+    ],
+    "category": "开源与社区",
+    "levels": {
+      "beginner": "给软件版本号定规则：三个数字（如 1.2.3），分别代表大改/小改/修 bug，让用户知道更新了多大。",
+      "intermediate": "语义化版本规范（MAJOR.MINOR.PATCH）：MAJOR 版本有不向后兼容的 API 改变；MINOR 版本新增向后兼容的功能；PATCH 版本修复向后兼容的 bug。Pre-release 标识如 1.0.0-alpha.1。",
+      "advanced": "SemVer 的核心价值是机器可读的变更信号。npm、Cargo、pip 等包管理器依赖 SemVer 实现版本范围解析（如 ^1.2.0 匹配 1.x.x）。但 SemVer 承诺难以完全兑现——「向后兼容」的判断往往主观，导致生态中存在大量不规范 bump。"
+    },
+    "relatedTerms": [
+      "CHANGELOG",
+      "Release",
+      "MIT License"
+    ],
+    "contexts": [
+      "open-source",
+      "versioning"
+    ],
+    "emoji": "🔢",
+    "difficulty": "medium"
+  },
+  "ai-red-teaming": {
+    "term": "Red Teaming",
+    "aliases": [
+      "红队测试",
+      "红队",
+      "AI Red Teaming"
+    ],
+    "category": "AI 伦理与治理",
+    "levels": {
+      "beginner": "让一组人专门去「攻击」AI 系统，找出它的漏洞和危险行为，就像雇佣黑客来测试自家防盗系统。",
+      "intermediate": "Red Teaming 是通过模拟对抗性攻击来发现 AI 系统安全漏洞的方法论。测试人员扮演恶意用户，尝试让模型产生有害输出、绕过安全限制或泄露敏感信息。",
+      "advanced": "AI Red Teaming 分为自动化（使用另一个 LLM 生成攻击 prompt）和人工（专家手动测试）两种路径。NIST AI RMF 将 Red Teaming 纳入 AI 风险管理标准流程，覆盖：越狱（Jailbreak）、提示注入（Prompt Injection）、数据投毒（Data Poisoning）等攻击向量。"
+    },
+    "relatedTerms": [
+      "Prompt Injection",
+      "AI Safety",
+      "Jailbreak",
+      "AI Alignment"
+    ],
+    "contexts": [
+      "ai-safety",
+      "security"
+    ],
+    "emoji": "🔴",
+    "difficulty": "medium"
+  },
+  "ai-watermarking": {
+    "term": "AI Watermarking",
+    "aliases": [
+      "水印",
+      "AI 水印",
+      "Watermark"
+    ],
+    "category": "AI 伦理与治理",
+    "levels": {
+      "beginner": "在 AI 生成的内容里藏一个「隐形标记」，让人能辨别「这是 AI 写的/画的」，就像货币上的防伪水印。",
+      "intermediate": "AI 水印技术通过在生成内容中嵌入不可见的统计信号来标识 AI 来源。文本水印可以通过调整词汇选择概率实现；图像水印通常嵌入到像素频域。",
+      "advanced": "主流方案（如 Google 的 SynthID）在推理时通过偏置采样分布植入统计模式，检测时用统计假设检验识别。挑战在于鲁棒性（paraphrase、翻译后是否仍可检测）和误报率控制。C2PA 推动了元数据级的内容溯源标准，与隐写术水印互补。"
+    },
+    "relatedTerms": [
+      "Deepfake",
+      "Synthetic Data",
+      "AI 伦理"
+    ],
+    "contexts": [
+      "ai-safety",
+      "content-authenticity"
+    ],
+    "emoji": "🔏",
+    "difficulty": "hard"
+  },
+  "ai-copyright": {
+    "term": "AI 版权",
+    "aliases": [
+      "AI Copyright",
+      "AI 著作权",
+      "版权归属"
+    ],
+    "category": "AI 伦理与治理",
+    "levels": {
+      "beginner": "AI 生成的图片、文章算谁的？目前法律上还没有定论，是个正在争论的问题。",
+      "intermediate": "AI 版权涉及两个核心问题：①训练数据版权（用他人作品训练模型是否侵权）；②生成物版权（AI 创作物是否受版权保护，归谁所有）。各国法律正在快速演进中。",
+      "advanced": "美国版权局（USCO）裁定纯 AI 生成内容不受版权保护（需有足够的人类创作投入）。训练数据版权方面，NYT 诉 OpenAI 等案件将确立关键判例。Fair Use 的四因素测试在 AI 场景下争议巨大。欧盟 AI Act 要求披露训练数据来源。"
+    },
+    "relatedTerms": [
+      "Deepfake",
+      "AI 伦理",
+      "Synthetic Data"
+    ],
+    "contexts": [
+      "ai-ethics",
+      "legal"
+    ],
+    "emoji": "⚖️",
+    "difficulty": "hard"
+  },
+  "fair-use": {
+    "term": "Fair Use",
+    "aliases": [
+      "合理使用",
+      "Fair Dealing"
+    ],
+    "category": "AI 伦理与治理",
+    "levels": {
+      "beginner": "允许在特定情况下使用他人受版权保护的作品不需要获得许可——比如教育、评论、研究目的的引用。",
+      "intermediate": "美国版权法中的「合理使用」原则，允许在以下四个因素综合判断后使用受版权内容：①使用目的（商业/教育）②作品性质 ③使用比例 ④对市场价值的影响。AI 公司通常主张训练属于合理使用。",
+      "advanced": "AI 训练的 Fair Use 主张核心在于「变革性使用」（Transformative Use）——训练不是复制内容本身，而是提取统计规律。欧盟的 TDM（Text and Data Mining）例外条款提供了类似机制，但允许版权人「选择退出」。"
+    },
+    "relatedTerms": [
+      "AI 版权",
+      "AI 伦理",
+      "License"
+    ],
+    "contexts": [
+      "ai-ethics",
+      "legal"
+    ],
+    "emoji": "⚖️",
+    "difficulty": "hard"
+  },
+  "ai-governance": {
+    "term": "AI Governance",
+    "aliases": [
+      "AI 治理",
+      "AI 监管",
+      "AI 政策"
+    ],
+    "category": "AI 伦理与治理",
+    "levels": {
+      "beginner": "制定规则来管理 AI 如何被开发和使用，就像交通规则管理汽车一样，确保 AI 对社会是安全的。",
+      "intermediate": "AI 治理涵盖法律法规（如欧盟 AI Act）、技术标准（如 NIST AI RMF）、行业自律（如 Frontier Model Forum）等多个层面，目标是在促进创新和防范风险之间取得平衡。",
+      "advanced": "主要治理框架对比：欧盟 AI Act（基于风险分级，高风险 AI 需强制审计）、美国（以行政令和自愿承诺为主）、中国（算法推荐+生成式 AI 专项法规）。「AI 监管捕获」风险是指大公司通过游说使监管有利于自身，值得关注。"
+    },
+    "relatedTerms": [
+      "AI Safety",
+      "AI Alignment",
+      "AI 伦理"
+    ],
+    "contexts": [
+      "ai-ethics",
+      "policy"
+    ],
+    "emoji": "🏛️",
+    "difficulty": "medium"
+  },
+  "responsible-ai": {
+    "term": "Responsible AI",
+    "aliases": [
+      "负责任 AI",
+      "RAI",
+      "可信 AI"
+    ],
+    "category": "AI 伦理与治理",
+    "levels": {
+      "beginner": "开发 AI 时要考虑它会不会对人造成伤害，要公平、透明、安全——「有良知」地做 AI。",
+      "intermediate": "Responsible AI 是关于 AI 开发和部署的原则框架，核心维度包括：公平性（Fairness）、透明性（Transparency）、可问责性（Accountability）、隐私保护、安全性和包容性。",
+      "advanced": "微软、Google、Anthropic 等主要 AI 公司都发布了 Responsible AI 框架。实践层面包括：模型卡（Model Card）披露模型局限性、数据表（Datasheet for Datasets）、影响评估（Impact Assessment）。NIST AI RMF 提供了实操性的风险管理方法论。"
+    },
+    "relatedTerms": [
+      "AI 伦理",
+      "AI Governance",
+      "Bias & Fairness",
+      "Explainability (XAI)"
+    ],
+    "contexts": [
+      "ai-ethics",
+      "policy"
+    ],
+    "emoji": "🤝",
+    "difficulty": "medium"
+  },
+  "model-card": {
+    "term": "Model Card",
+    "aliases": [
+      "模型卡",
+      "模型说明书"
+    ],
+    "category": "AI 伦理与治理",
+    "levels": {
+      "beginner": "AI 模型的「产品说明书」，告诉你这个模型是干什么的、在哪些情况下可靠、有哪些局限性。",
+      "intermediate": "Model Card 是 Google 提出的模型文档标准，包含：模型用途、训练数据、评测结果（分人群/场景）、局限性、伦理考量和使用建议。HuggingFace 已将其标准化为平台默认文档格式。",
+      "advanced": "Model Card 是 AI 透明度和问责制的重要工具。关键字段包括：intended use（预期用途）、out-of-scope use（不适用场景）、evaluation results（分 slice 的细粒度评测）、ethical considerations。配合 Datasheet for Datasets，共同构成 AI 系统的完整技术披露体系。"
+    },
+    "relatedTerms": [
+      "Responsible AI",
+      "Explainability (XAI)",
+      "AI 伦理"
+    ],
+    "contexts": [
+      "ai-ethics",
+      "documentation"
+    ],
+    "emoji": "📋",
+    "difficulty": "medium"
+  },
+  "defi": {
+    "term": "DeFi",
+    "aliases": [
+      "Decentralized Finance",
+      "去中心化金融"
+    ],
+    "category": "Web3",
+    "levels": {
+      "beginner": "用区块链做金融服务（借贷、交易、理财），不需要银行或券商，代码自动执行，全程透明。",
+      "intermediate": "DeFi 通过智能合约在区块链上重建金融系统，核心原语包括：DEX（去中心化交易所，如 Uniswap）、借贷协议（如 Aave）、稳定币（如 DAI）、流动性挖矿（Yield Farming）。",
+      "advanced": "DeFi 的核心创新是「可组合性」（Composability/Money Lego）——协议之间可以任意组合调用。风险包括：智能合约漏洞、预言机操纵、流动性危机和监管压力。"
+    },
+    "relatedTerms": [
+      "Smart Contract",
+      "Blockchain",
+      "dApp",
+      "DAO"
+    ],
+    "contexts": [
+      "web3",
+      "finance"
+    ],
+    "emoji": "🏦",
+    "difficulty": "hard"
+  },
+  "nft": {
+    "term": "NFT",
+    "aliases": [
+      "Non-Fungible Token",
+      "非同质化代币"
+    ],
+    "category": "Web3",
+    "levels": {
+      "beginner": "区块链上的「数字收藏品」，每一个都独一无二，有唯一的所有权记录，就像限量版球鞋有序列号。",
+      "intermediate": "NFT（Non-Fungible Token）是基于区块链（主要是以太坊 ERC-721 标准）的唯一性数字资产。与加密货币（同质化）不同，每个 NFT 不可互换。常见应用：数字艺术、游戏道具、会员权益。",
+      "advanced": "NFT 的核心误解：NFT 本身只存储元数据和指向内容的链接，内容通常存储在 IPFS 或中心化服务器上（存在「链接腐烂」风险）。ERC-1155 是半同质化标准，支持批量铸造。"
+    },
+    "relatedTerms": [
+      "Blockchain",
+      "Smart Contract",
+      "Web3 Wallet",
+      "DeFi"
+    ],
+    "contexts": [
+      "web3",
+      "digital-assets"
+    ],
+    "emoji": "🖼️",
+    "difficulty": "medium"
+  },
+  "dao": {
+    "term": "DAO",
+    "aliases": [
+      "Decentralized Autonomous Organization",
+      "去中心化自治组织"
+    ],
+    "category": "Web3",
+    "levels": {
+      "beginner": "用区块链和代码管理的「网络公司」，没有 CEO，成员用代币投票做决策，规则写在智能合约里。",
+      "intermediate": "DAO 是通过智能合约实现治理规则的去中心化组织。成员持有治理代币，可对提案投票（资金分配、协议参数调整等）。典型案例：MakerDAO（管理 DAI 稳定币）、Uniswap DAO。",
+      "advanced": "DAO 面临的核心挑战：①投票率低（治理冷漠）②大户控制（代币集中度高）③执行效率低（链上投票慢）。解决方案包括：委托投票（Liquid Democracy）、多签（Multisig）快速执行、时间锁（Timelock）保障安全。"
+    },
+    "relatedTerms": [
+      "Smart Contract",
+      "DeFi",
+      "Blockchain",
+      "dApp"
+    ],
+    "contexts": [
+      "web3",
+      "governance"
+    ],
+    "emoji": "🏛️",
+    "difficulty": "hard"
+  },
+  "web3-token": {
+    "term": "Token",
+    "aliases": [
+      "代币",
+      "加密代币",
+      "Crypto Token"
+    ],
+    "category": "Web3",
+    "levels": {
+      "beginner": "区块链上的「积分」或「股票」，代表某种权益或价值，可以转让和交易。",
+      "intermediate": "Token 是区块链上的数字资产单位，分为：①同质化代币（FT，如 ERC-20，各个完全相同）②非同质化代币（NFT，ERC-721，各个唯一）。功能上分为：支付型、治理型、实用型、证券型。",
+      "advanced": "Token 经济学（Tokenomics）是 Web3 项目的核心设计：总供应量、发行/解锁曲线、销毁机制、激励分配（团队/投资人/社区的比例和锁定期）。设计不良的 Tokenomics 会导致「挖提卖」螺旋崩溃。"
+    },
+    "relatedTerms": [
+      "NFT",
+      "DeFi",
+      "DAO",
+      "Blockchain"
+    ],
+    "contexts": [
+      "web3",
+      "digital-assets"
+    ],
+    "emoji": "🪙",
+    "difficulty": "medium"
+  },
+  "web3-oracle": {
+    "term": "Oracle",
+    "aliases": [
+      "预言机",
+      "区块链预言机",
+      "Chainlink"
+    ],
+    "category": "Web3",
+    "levels": {
+      "beginner": "把现实世界的信息（如比特币价格、天气）传递给区块链智能合约的「信使」，因为区块链本身无法访问外部数据。",
+      "intermediate": "Oracle 是连接区块链（链上）和真实世界（链下）数据的中间层，解决「区块链的信息孤岛」问题。Chainlink 是最主流的去中心化 Oracle 网络，提供价格喂价（Price Feed）和随机数（VRF）等服务。",
+      "advanced": "Oracle 问题是区块链领域的经典难题：如何确保链下数据在链上的真实性和抗操纵性。去中心化 Oracle 通过多节点聚合和质押惩罚（Slashing）提升可信度。「Oracle 操纵」是 DeFi 最主要的攻击向量之一。"
+    },
+    "relatedTerms": [
+      "Smart Contract",
+      "DeFi",
+      "Blockchain"
+    ],
+    "contexts": [
+      "web3",
+      "infrastructure"
+    ],
+    "emoji": "🔮",
+    "difficulty": "hard"
+  },
+  "confusion-matrix": {
+    "term": "Confusion Matrix",
+    "aliases": [
+      "混淆矩阵",
+      "错误矩阵"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "把模型预测结果分成四格的表格：猜对了几个、猜错了哪些，一眼看出模型哪里好哪里差。",
+      "intermediate": "混淆矩阵是分类模型的评估工具，2x2 矩阵包含：TP（真正例）、TN（真负例）、FP（假正例/误报）、FN（假负例/漏报）。由此可计算 Accuracy、Precision、Recall、F1 等指标。",
+      "advanced": "实际应用中需根据场景权衡 FP 和 FN 的代价：医疗诊断中漏报（FN）代价远高于误报（FP），应优化 Recall；垃圾邮件过滤中误报（FP）代价高，应优化 Precision。多分类的混淆矩阵是 N×N 方阵，热图可视化便于发现类间混淆规律。"
+    },
+    "relatedTerms": [
+      "Precision",
+      "Recall",
+      "F1 Score",
+      "ROC-AUC"
+    ],
+    "contexts": [
+      "ml-evaluation",
+      "classification"
+    ],
+    "emoji": "📊",
+    "difficulty": "medium"
+  },
+  "roc-auc": {
+    "term": "ROC-AUC",
+    "aliases": [
+      "AUC",
+      "ROC",
+      "ROC Curve",
+      "AUC-ROC"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "衡量分类模型好坏的一个分数，0.5 相当于随机猜，1.0 是完美，越接近 1 说明模型越强。",
+      "intermediate": "ROC（受试者工作特征）曲线描绘了不同阈值下 TPR（真阳率/召回率）vs FPR（假阳率）的关系。AUC（曲线下面积）是汇总指标，代表「随机正样本分数高于随机负样本」的概率。",
+      "advanced": "AUC 的优势是阈值无关，适合不平衡数据集评估。但在极度不平衡的场景（如欺诈检测，正负样本 1:1000），PR-AUC（精确率-召回率曲线下面积）比 ROC-AUC 更具区分力，因为 ROC 在大量 TN 存在时会过于乐观。"
+    },
+    "relatedTerms": [
+      "Precision",
+      "Recall",
+      "Confusion Matrix",
+      "Accuracy"
+    ],
+    "contexts": [
+      "ml-evaluation",
+      "classification"
+    ],
+    "emoji": "📈",
+    "difficulty": "medium"
+  },
+  "regression": {
+    "term": "Regression",
+    "aliases": [
+      "回归",
+      "线性回归",
+      "Regression Analysis"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "预测数字的方法。比如根据房子大小预测房价，画一条最贴近数据点的线，用这条线预测新数据。",
+      "intermediate": "回归是预测连续值的监督学习任务。线性回归假设输出与输入特征呈线性关系（y = wx + b）；逻辑回归用 Sigmoid 函数预测概率；多项式回归可拟合非线性关系。",
+      "advanced": "线性回归的关键假设（OLS 成立条件）：误差项正态分布、同方差性、无自相关。正则化版本：Ridge（L2，缩小系数）和 Lasso（L1，产生稀疏解，自动选特征）解决过拟合。非线性场景用 Gradient Boosting（XGBoost/LightGBM）或神经网络替代。"
+    },
+    "relatedTerms": [
+      "Classification",
+      "Overfitting",
+      "Feature Engineering"
+    ],
+    "contexts": [
+      "machine-learning",
+      "supervised-learning"
+    ],
+    "emoji": "📉",
+    "difficulty": "medium"
+  },
+  "classification": {
+    "term": "Classification",
+    "aliases": [
+      "分类",
+      "分类任务",
+      "分类模型"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "让模型把东西分到不同的类别里——比如判断一封邮件是不是垃圾邮件、这张图里是猫还是狗。",
+      "intermediate": "分类是监督学习的基本任务，输出是离散类别标签。二分类（Binary）如情感分析；多分类（Multi-class）如图像识别；多标签（Multi-label）如文章打多个标签。常用算法：逻辑回归、SVM、决策树、随机森林、神经网络。",
+      "advanced": "评估分类模型时需考虑类别不平衡（Class Imbalance）：采用过采样（SMOTE）/欠采样/类别权重调整。Calibration（校准）确保模型输出的概率值有实际含义——未校准的模型可能输出 0.9 概率但实际准确率只有 70%。"
+    },
+    "relatedTerms": [
+      "Regression",
+      "Confusion Matrix",
+      "F1 Score",
+      "Precision"
+    ],
+    "contexts": [
+      "machine-learning",
+      "supervised-learning"
+    ],
+    "emoji": "🏷️",
+    "difficulty": "low"
+  },
+  "clustering": {
+    "term": "Clustering",
+    "aliases": [
+      "聚类",
+      "无监督聚类"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "把相似的数据自动归到一组，不需要提前告诉模型有哪些类别——像整理相册时自动按人脸分组。",
+      "intermediate": "聚类是无监督学习的核心任务，不依赖标签数据。K-Means：指定 K 个簇中心，迭代分配数据点；DBSCAN：基于密度，可发现任意形状的簇并标记离群点；层次聚类：构建树状谱系图。",
+      "advanced": "选择最优 K 值：肘部法则（Elbow Method）、轮廓系数（Silhouette Score）。K-Means 的局限：只能发现球形簇，对离群点敏感，需标准化数据。在 LLM 应用中，对 embedding 做聚类可发现语义主题。"
+    },
+    "relatedTerms": [
+      "PCA",
+      "Embedding",
+      "Outlier"
+    ],
+    "contexts": [
+      "machine-learning",
+      "unsupervised-learning"
+    ],
+    "emoji": "🫧",
+    "difficulty": "medium"
+  },
+  "pca": {
+    "term": "PCA",
+    "aliases": [
+      "Principal Component Analysis",
+      "主成分分析",
+      "降维"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "把高维复杂数据「压缩」成少数几个关键维度，就像把一个 3D 物体投影成 2D 图，保留最重要的形状信息。",
+      "intermediate": "PCA（主成分分析）是线性降维方法，通过找到数据方差最大的方向（主成分），将高维数据投影到低维空间。常用于：数据可视化（降到2D/3D）、特征压缩、去噪、加速训练。",
+      "advanced": "PCA 基于特征值分解（或 SVD）协方差矩阵。主成分按解释方差比例排序，累积解释方差≥95% 为常用截断标准。局限：只捕获线性结构，对非线性数据效果差（改用 t-SNE/UMAP）。在 NLP 中可用于压缩 embedding 维度。"
+    },
+    "relatedTerms": [
+      "Embedding",
+      "Clustering",
+      "Feature Engineering"
+    ],
+    "contexts": [
+      "machine-learning",
+      "dimensionality-reduction"
+    ],
+    "emoji": "📐",
+    "difficulty": "hard"
+  },
+  "normalization": {
+    "term": "Normalization",
+    "aliases": [
+      "归一化",
+      "标准化",
+      "Standardization",
+      "Scaling"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "把不同范围的数据「统一刻度」，比如把年龄（0-100）和收入（0-100万）变成同一量级，让模型不偏心。",
+      "intermediate": "数据归一化是特征预处理的核心步骤。Min-Max 归一化：将值缩放到 [0,1]；Z-score 标准化：转换为均值 0、标准差 1 的分布。对距离敏感的算法（KNN、SVM、K-Means）必须做归一化。",
+      "advanced": "深度学习中的归一化层（Layer Norm、Batch Norm）是不同概念——它们在网络内部对激活值归一化，稳定训练。Batch Norm 对批次维度归一化（依赖大 batch size）；Layer Norm 对特征维度归一化（适合 NLP 和小 batch）。Transformer 架构中普遍使用 Layer Norm。"
+    },
+    "relatedTerms": [
+      "Feature Engineering",
+      "PCA"
+    ],
+    "contexts": [
+      "machine-learning",
+      "data-preprocessing"
+    ],
+    "emoji": "📏",
+    "difficulty": "medium"
+  },
+  "outlier": {
+    "term": "Outlier",
+    "aliases": [
+      "离群值",
+      "异常值",
+      "Anomaly"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "数据里的「异类」——和大多数数据明显不同的值，可能是真实的极端情况，也可能是数据错误。",
+      "intermediate": "离群值检测方法：统计方法（超出 3σ 范围、IQR 规则）、基于距离（孤立森林 Isolation Forest）、基于密度（Local Outlier Factor）。处理方式：删除、替换（均值/中位数填充）、保留（若代表真实极端）。",
+      "advanced": "离群值检测是异常检测（Anomaly Detection）的基础，在欺诈检测、故障预测、网络安全中有核心应用。无监督方法（Isolation Forest、AutoEncoder）适合无标签场景。时序数据的异常检测需考虑季节性和趋势。"
+    },
+    "relatedTerms": [
+      "Clustering",
+      "Feature Engineering",
+      "Normalization"
+    ],
+    "contexts": [
+      "machine-learning",
+      "data-quality"
+    ],
+    "emoji": "⚠️",
+    "difficulty": "medium"
+  },
+  "mse": {
+    "term": "MSE",
+    "aliases": [
+      "均方误差",
+      "Mean Squared Error",
+      "RMSE",
+      "MAE"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "衡量预测值和真实值差距的分数，差距越小越好，就像考试对答案看差了几分。",
+      "intermediate": "MSE（均方误差）= 预测值与真实值差值的平方均值。对大误差惩罚更重（因为平方）。RMSE 是 MSE 开方（与原始数据同单位，更直观）。MAE（平均绝对误差）对离群点更鲁棒。回归任务的核心评估指标。",
+      "advanced": "损失函数选择影响模型行为：MSE 假设误差正态分布，对离群点敏感；MAE 假设拉普拉斯分布，更鲁棒。Huber Loss 结合两者，误差小时用 MSE、误差大时用 MAE。R²（决定系数）衡量模型解释的方差比例，是回归任务的另一关键指标。"
+    },
+    "relatedTerms": [
+      "Regression",
+      "Loss Function"
+    ],
+    "contexts": [
+      "ml-evaluation",
+      "regression"
+    ],
+    "emoji": "📐",
+    "difficulty": "medium"
+  },
+  "ab-test": {
+    "term": "A/B Test",
+    "aliases": [
+      "A/B 测试",
+      "对照实验",
+      "Split Test"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "把用户随机分成两组，一组看 A 版本，一组看 B 版本，比较哪个效果更好——让数据说话而不是靠感觉。",
+      "intermediate": "A/B 测试是产品决策的核心工具，通过随机对照实验（RCT）验证假设。关键要素：样本量计算（统计功效）、最小显著差异（MDE）设定、显著性水平（通常 p<0.05）、测试时长（避免新奇效应）。",
+      "advanced": "A/B 测试的常见陷阱：多重检验问题（同时跑多个实验需校正 p 值）、网络效应干扰（用户之间相互影响导致对照组污染）、辛普森悖论。Bandits 算法（如 Thompson Sampling）是探索-利用权衡的替代方案。"
+    },
+    "relatedTerms": [
+      "Conversion Rate",
+      "DAU/MAU"
+    ],
+    "contexts": [
+      "product",
+      "data-driven"
+    ],
+    "emoji": "🔬",
+    "difficulty": "medium"
+  },
+  "conversion-rate": {
+    "term": "Conversion Rate",
+    "aliases": [
+      "转化率",
+      "CVR",
+      "转换率"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "访客中真正完成目标动作（购买/注册/订阅）的比例——100 人来了 5 人买了，转化率就是 5%。",
+      "intermediate": "转化率是漏斗分析的核心指标，分层追踪：访问→注册→激活→付费→留存各环节的转化。优化方向：落地页优化（CRO）、减少摩擦（简化注册流程）、个性化推荐、A/B 测试。",
+      "advanced": "转化率分析需注意归因模型：首次接触、末次接触、线性、时间衰减、数据驱动归因各有适用场景。多触点归因（Multi-touch Attribution）是电商的核心难题。LTV:CAC 比值与转化率联动——转化率高但 LTV 低的用户可能不值得获取。"
+    },
+    "relatedTerms": [
+      "DAU/MAU",
+      "Churn Rate",
+      "A/B Test",
+      "LTV"
+    ],
+    "contexts": [
+      "product",
+      "growth"
+    ],
+    "emoji": "📊",
+    "difficulty": "medium"
+  },
+  "retention": {
+    "term": "Retention",
+    "aliases": [
+      "留存率",
+      "用户留存",
+      "Retention Rate"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "用户用了产品之后还愿意继续用的比例——今天来了 100 人，一周后还有多少人在用？",
+      "intermediate": "留存率是产品健康度的核心指标，分为：次日留存（D1）、7日留存（D7）、30日留存（D30）。留存曲线若能趋于水平（而非持续下降），说明产品有真实价值。Cohort 分析按注册时间分组观察各批次留存差异。",
+      "advanced": "留存优化的框架：确保用户快速到达「Aha Moment」（价值顿悟时刻）、建立使用习惯（Hook 模型：触发→行动→奖励→投入）、降低流失（定义流失预警信号，主动干预）。Zombie 留存是假象——用户还在 DAU 里但已无真实使用，需结合深度使用指标判断。"
+    },
+    "relatedTerms": [
+      "Churn Rate",
+      "DAU/MAU",
+      "LTV",
+      "PMF"
+    ],
+    "contexts": [
+      "product",
+      "growth"
+    ],
+    "emoji": "🪝",
+    "difficulty": "medium"
+  },
+  "dau-mau": {
+    "term": "DAU/MAU",
+    "aliases": [
+      "日活",
+      "月活",
+      "DAU",
+      "MAU",
+      "Stickiness"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "DAU 是每天有多少人用，MAU 是每月有多少人用。两者之比（DAU/MAU）衡量用户有多「粘」。",
+      "intermediate": "DAU（Daily Active Users）和 MAU（Monthly Active Users）是互联网产品的基础规模指标。DAU/MAU 比值（粘性）反映使用频率：>50% 为高频产品（如微信）；20-50% 中频；<20% 低频（如旅游 App）。",
+      "advanced": "活跃定义（Active Definition）是 DAU/MAU 的关键——不同产品需定义「有意义的活跃」。L7/L28（过去28天中活跃的天数分布）是更细粒度的参与度指标。对于 AI 产品，「交互深度」（如对话轮次、任务完成率）比纯粹的 DAU 更能反映产品价值。"
+    },
+    "relatedTerms": [
+      "Retention",
+      "Churn Rate",
+      "Conversion Rate"
+    ],
+    "contexts": [
+      "product",
+      "analytics"
+    ],
+    "emoji": "📈",
+    "difficulty": "low"
+  },
+  "burn-rate": {
+    "term": "Burn Rate",
+    "aliases": [
+      "烧钱速度",
+      "现金消耗率",
+      "Monthly Burn"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "创业公司每个月花多少钱。如果账上有 100 万，每月烧 10 万，那还能撑 10 个月。",
+      "intermediate": "Burn Rate 是初创公司的核心财务指标，分为：Gross Burn（总支出）和 Net Burn（支出减去收入）。与 Runway（现金储备÷Net Burn）配合使用，帮助决策融资时机和成本控制节奏。",
+      "advanced": "Burn Multiple（= Net Burn / Net New ARR）衡量每增加 1 美元 ARR 需要烧多少钱，是 2022 年后投资人评估效率的核心指标（<1x 优秀，>2x 需优化）。AI 创业公司的独特挑战：模型推理成本（COGS）占比高，毛利率可能只有 40-60%，影响 Burn Rate 的可持续性。"
+    },
+    "relatedTerms": [
+      "ARR",
+      "Unit Economics",
+      "PMF"
+    ],
+    "contexts": [
+      "startup",
+      "finance"
+    ],
+    "emoji": "🔥",
+    "difficulty": "medium"
+  },
+  "pivot": {
+    "term": "Pivot",
+    "aliases": [
+      "转型",
+      "战略转型",
+      "业务转型"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "创业公司发现原来的方向走不通，换一个方向重新尝试——不是放弃，是调整。",
+      "intermediate": "Pivot 是基于验证学习的战略转变，保留已积累的资源（团队、技术、用户）同时改变商业模式或目标市场。类型包括：客群 Pivot（同产品换客户）、产品 Pivot（同客户换产品）、技术 Pivot。成功案例：YouTube（视频约会→视频分享）、Slack（游戏公司→企业通讯）。",
+      "advanced": "判断是否该 Pivot 的信号：增长停滞且实验无法突破瓶颈、核心假设被数据证伪、竞争格局根本改变。「Pivot vs. Persevere」决策框架（Lean Startup）：在资源耗尽前找到可重复、可扩展的商业模式。"
+    },
+    "relatedTerms": [
+      "PMF",
+      "MVP",
+      "Unit Economics"
+    ],
+    "contexts": [
+      "startup",
+      "product"
+    ],
+    "emoji": "🔄",
+    "difficulty": "medium"
+  },
+  "unit-economics": {
+    "term": "Unit Economics",
+    "aliases": [
+      "单元经济学",
+      "单位经济学"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "每个客户或每笔交易赚不赚钱——即使公司整体亏损，单个用户层面的经济账是否算得过来。",
+      "intermediate": "Unit Economics 分析单个客户的经济效益，核心公式：LTV（客户生命周期价值）> CAC（获客成本）。LTV:CAC > 3:1 是 SaaS 的健康标准。毛利率（Gross Margin）决定 LTV 的上限。",
+      "advanced": "AI 产品的 Unit Economics 挑战：每次 LLM API 调用产生直接推理成本（COGS），用量越高成本越高，与传统软件的边际成本递减相反。分析需分解：用户级别的 API 调用频次 × Token 用量 × 单价，建立可持续的定价策略。"
+    },
+    "relatedTerms": [
+      "LTV",
+      "CAC",
+      "ARR",
+      "Burn Rate"
+    ],
+    "contexts": [
+      "startup",
+      "finance"
+    ],
+    "emoji": "💰",
+    "difficulty": "hard"
+  },
+  "scale-startup": {
+    "term": "Scale",
+    "aliases": [
+      "规模化",
+      "扩张",
+      "Scaling"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "把一个运作良好的模式快速放大——从服务 100 个用户到 100 万个用户，让增长飞起来。",
+      "intermediate": "Scale 是验证 PMF 后的核心任务，涉及：增长飞轮设计（病毒传播/内容/渠道）、组织扩张（招聘、流程化）、基础设施扩容（服务器、客服、数据系统）、单位经济学可持续性验证。",
+      "advanced": "「过早规模化」（Premature Scaling）是初创公司失败的头号原因——PMF 未验证就加速增长会放大所有问题。AI 产品规模化还需应对推理成本随用量线性增长的压力，需要批处理、缓存、模型蒸馏等手段降低边际成本。"
+    },
+    "relatedTerms": [
+      "PMF",
+      "Unit Economics",
+      "ARR",
+      "PLG"
+    ],
+    "contexts": [
+      "startup",
+      "growth"
+    ],
+    "emoji": "🚀",
+    "difficulty": "medium"
+  },
+  "product-funnel": {
+    "term": "Funnel",
+    "aliases": [
+      "漏斗",
+      "转化漏斗",
+      "增长漏斗"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "把用户从「第一次听说」到「付钱买」的过程分成几步，每步都会流失一些人，像漏斗一样越来越细。",
+      "intermediate": "漏斗分析是增长的核心分析方法，典型阶段：Awareness→Acquisition→Activation→Retention→Revenue→Referral（AARRR 海盗指标）。找出最大漏失节点（瓶颈）集中优化。",
+      "advanced": "漏斗优化需区分「量」（流量）和「率」（转化率）问题：量的问题靠渠道扩展，率的问题靠产品和体验优化。非线性漏斗（用户可能跳步或回流）需要事件流分析（Mixpanel 等工具）而非简单的阶段统计。AI 产品的独特漏斗节点：首次成功体验（First Success Moment）的时间长短直接决定 D1 留存。"
+    },
+    "relatedTerms": [
+      "Conversion Rate",
+      "Retention",
+      "DAU/MAU",
+      "A/B Test"
+    ],
+    "contexts": [
+      "product",
+      "growth"
+    ],
+    "emoji": "🌀",
+    "difficulty": "medium"
+  },
+  "rag-prompt": {
+    "term": "RAG Prompt",
+    "aliases": [
+      "检索增强生成提示",
+      "RAG 提示词",
+      "Retrieval Augmented Prompt"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "把从数据库里查到的相关资料「塞进」给 AI 的提示词里，让 AI 回答时有据可查，不瞎编。",
+      "intermediate": "RAG Prompt 是检索增强生成的提示词设计，将检索到的上下文片段（Chunks）与用户问题组合成结构化提示。典型结构：系统指令 + 检索文档（Context）+ 用户问题。关键设计：如何组织多个文档片段、如何指示模型处理冲突信息。",
+      "advanced": "RAG Prompt 工程的关键挑战：①Context 窗口限制下的 Chunk 优先级排序（Lost in the Middle 问题——模型更关注开头和结尾）；②引导模型「不确定时说不知道」而非幻觉；③多跳推理（Multi-hop）场景下需要分步检索和推理；④引用溯源（Citation）的 Prompt 设计。"
+    },
+    "relatedTerms": [
+      "RAG",
+      "Prompt Template",
+      "Embedding",
+      "Vector DB"
+    ],
+    "contexts": [
+      "prompt-engineering",
+      "rag"
+    ],
+    "emoji": "🔍",
+    "difficulty": "medium"
+  },
+  "prompt-injection-defense": {
+    "term": "Prompt Injection Defense",
+    "aliases": [
+      "提示注入防御",
+      "防提示攻击",
+      "Input Sanitization"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "防止用户在输入里「夹带私货」，试图覆盖 AI 的原本指令——就像防止别人在文件里藏暗语来操控你。",
+      "intermediate": "Prompt Injection Defense 是对抗提示注入攻击的技术手段，包括：输入清洗（过滤可疑指令模式）、特权分离（将系统指令与用户输入明确隔离）、输出验证（检查模型输出是否符合预期范围）。",
+      "advanced": "提示注入无法被完全防御（LLM 天然混淆指令和数据），防御策略是分层减轻风险：①架构层：最小权限原则；②Prompt 层：强制 XML 标签隔离用户输入；③监控层：检测异常输出模式；④人工审核层：高风险操作需人工确认（HITL）。"
+    },
+    "relatedTerms": [
+      "Prompt Leaking",
+      "AI Safety",
+      "Red Teaming",
+      "Guardrail"
+    ],
+    "contexts": [
+      "prompt-engineering",
+      "security"
+    ],
+    "emoji": "🛡️",
+    "difficulty": "hard"
+  },
+  "guardrail": {
+    "term": "Guardrail",
+    "aliases": [
+      "防护栏",
+      "AI 护栏",
+      "Safety Filter"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "给 AI 设置的「行为边界」，防止它说有害的话或做不该做的事——就像路边的护栏防止车子冲出去。",
+      "intermediate": "Guardrail 是 AI 应用的安全机制，分为：输入 Guardrail（过滤危险输入）和输出 Guardrail（过滤危险输出）。实现方式：规则过滤、另一个 LLM 做内容审核（LLM-as-a-Judge）、专门训练的分类模型（如 Llama Guard）。",
+      "advanced": "Guardrail 设计需权衡安全性和可用性（过严的 guardrail 拒绝合理请求，降低用户体验）。主要框架：NeMo Guardrails（NVIDIA，基于 Colang 语言声明式定义对话规则）、Guardrails AI（Python，输出格式验证+内容过滤）、Amazon Bedrock Guardrails（托管服务）。"
+    },
+    "relatedTerms": [
+      "Prompt Injection Defense",
+      "AI Safety",
+      "Constitutional AI"
+    ],
+    "contexts": [
+      "prompt-engineering",
+      "ai-safety"
+    ],
+    "emoji": "🚧",
+    "difficulty": "medium"
+  },
+  "word2vec": {
+    "term": "Word2Vec",
+    "aliases": [
+      "词向量",
+      "Word Embedding",
+      "GloVe",
+      "FastText"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "把每个词转换成一串数字来表示其含义，相似的词数字也相近——「猫」和「狗」的数字比「猫」和「汽车」的数字更像。",
+      "intermediate": "Word2Vec 是将词语映射到稠密向量空间的方法（Google 2013），使得语义相似的词在向量空间中距离相近。两种训练方式：CBOW（用上下文预测中心词）和 Skip-gram（用中心词预测上下文）。经典案例：king - man + woman ≈ queen。",
+      "advanced": "Word2Vec 的局限：①一词一义（polysemy 问题）；②词汇表外词（OOV）处理差。后续改进：GloVe（利用全局共现统计）、FastText（子词单元，解决 OOV）。现代 Transformer（BERT、GPT）的上下文化 Embedding 已取代静态词向量，但 Word2Vec 思想仍是 NLP 的基础概念。"
+    },
+    "relatedTerms": [
+      "Embedding",
+      "Tokenization",
+      "Semantic Search"
+    ],
+    "contexts": [
+      "nlp",
+      "embeddings"
+    ],
+    "emoji": "🔤",
+    "difficulty": "medium"
+  },
+  "bleu-score": {
+    "term": "BLEU",
+    "aliases": [
+      "BLEU Score",
+      "ROUGE",
+      "BLEU-4"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "评估机器翻译质量的分数，通过对比机器翻译结果和人工参考答案的重叠程度来打分。",
+      "intermediate": "BLEU（Bilingual Evaluation Understudy）是机器翻译的自动评测指标，通过计算 n-gram 精确率（与参考译文的重叠）来衡量翻译质量。ROUGE 类似但更常用于摘要评估（计算召回率）。",
+      "advanced": "BLEU 的已知缺陷：①只衡量表面 n-gram 重叠，无法捕捉语义等价的不同表达；②对词序不敏感。现代研究倾向于使用 BERTScore（基于 BERT embedding 计算语义相似度）或人类评测。对话系统用 BLEU 效果极差，业界已基本放弃。"
+    },
+    "relatedTerms": [
+      "Machine Translation",
+      "Summarization",
+      "Perplexity"
+    ],
+    "contexts": [
+      "nlp",
+      "evaluation"
+    ],
+    "emoji": "📏",
+    "difficulty": "medium"
+  },
+  "hallucination-detection": {
+    "term": "Hallucination Detection",
+    "aliases": [
+      "幻觉检测",
+      "事实性检测",
+      "Factuality Check"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "发现 AI「编造」信息的方法——AI 有时会一本正经地说出错误或根本不存在的事实，需要专门工具来检测。",
+      "intermediate": "幻觉检测是判断 LLM 生成内容是否与事实/上下文一致的任务。分为：①内在幻觉检测（输出与提供的源文档是否一致）；②外在幻觉检测（输出是否与世界知识一致）。方法：基于 NLI 模型、另一个 LLM 验证、知识图谱比对。",
+      "advanced": "幻觉检测工具链：SelfCheckGPT（通过多次采样一致性评估幻觉）、FActScore（分解为原子事实分别验证）、RAGAS（RAG 系统专用评估框架，含 Faithfulness 指标）。幻觉是 LLM 的固有特性，无法完全消除，只能通过 RAG、Grounding、CoT、工具调用等手段减轻。"
+    },
+    "relatedTerms": [
+      "RAG",
+      "Grounding",
+      "Synthetic Data"
+    ],
+    "contexts": [
+      "nlp",
+      "ai-safety"
+    ],
+    "emoji": "👻",
+    "difficulty": "hard"
+  },
+  "coreference-resolution": {
+    "term": "Coreference Resolution",
+    "aliases": [
+      "指代消解",
+      "共指消解",
+      "代词消解"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "让 AI 理解文章里「他」「它」「这个公司」指的是谁——就像读文章时自动理解「他」是前面提到的张三。",
+      "intermediate": "指代消解（Coreference Resolution）是识别文本中所有指向同一实体的表达式（代词、名词短语）的 NLP 任务。如：「苹果公司发布了新产品，这家公司的CEO说……」中「这家公司」和「苹果公司」指向同一实体。",
+      "advanced": "指代消解是信息提取和知识图谱构建的关键预处理步骤。现代方法主要用神经网络（如 SpanBERT）端到端建模。在 RAG 和长文档理解中，跨段落指代消解是影响检索质量的关键因素。LLM 隐式学习了较强的指代消解能力，但在复杂长文档中仍有挑战。"
+    },
+    "relatedTerms": [
+      "NER",
+      "Text Classification",
+      "Language Model"
+    ],
+    "contexts": [
+      "nlp",
+      "information-extraction"
+    ],
+    "emoji": "🔗",
+    "difficulty": "hard"
+  },
+  "text-embedding": {
+    "term": "Text Embedding",
+    "aliases": [
+      "文本嵌入",
+      "句向量",
+      "Sentence Embedding"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "把一段文字变成一串数字的技术，意思相近的文字会得到相近的数字，可以用来做「找相似内容」。",
+      "intermediate": "Text Embedding 将整段文本（句子/段落）编码为固定长度的稠密向量，相比 Word2Vec 的词级别 Embedding，Text Embedding 捕捉了上下文语义。常用模型：OpenAI text-embedding-3、BGE、E5、sentence-transformers。",
+      "advanced": "Text Embedding 的质量用 MTEB（Massive Text Embedding Benchmark）评估，涵盖检索、分类、聚类等多个任务。长文本 Embedding 的挑战：大多数 Embedding 模型输入长度限制在 512-8192 tokens，超长文本需要分块后再聚合（mean pooling 或加权聚合）。Matryoshka Representation Learning（MRL）支持可变维度 Embedding，允许在精度和效率之间灵活权衡。"
+    },
+    "relatedTerms": [
+      "Word2Vec",
+      "Vector DB",
+      "Semantic Search",
+      "RAG"
+    ],
+    "contexts": [
+      "nlp",
+      "embeddings"
+    ],
+    "emoji": "🧮",
+    "difficulty": "medium"
+  },
+  "information-extraction": {
+    "term": "Information Extraction",
+    "aliases": [
+      "信息抽取",
+      "IE",
+      "关系抽取",
+      "事件抽取"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "从大段文字里自动找出关键信息，比如从新闻里提取「谁在哪里做了什么事」。",
+      "intermediate": "信息抽取（IE）是从非结构化文本中识别结构化信息的任务，包括：NER（命名实体识别）、关系抽取（Relation Extraction，「A 是 B 的创始人」）、事件抽取（Event Extraction，时间、地点、参与者）。",
+      "advanced": "LLM 时代，IE 的主流范式从 Pipeline（分步骤专门模型）转向端到端（直接 prompt 大模型输出 JSON 格式的结构化信息）。挑战：①长文档中的实体边界识别；②低资源语言的 IE；③关系三元组的一致性（同一关系不同表述）。知识图谱构建是 IE 的重要下游应用。"
+    },
+    "relatedTerms": [
+      "NER",
+      "Coreference Resolution",
+      "Text Classification"
+    ],
+    "contexts": [
+      "nlp",
+      "information-extraction"
+    ],
+    "emoji": "⛏️",
+    "difficulty": "medium"
+  },
+  "yolo": {
+    "term": "YOLO",
+    "aliases": [
+      "You Only Look Once",
+      "YOLOv8",
+      "YOLOv5"
+    ],
+    "category": "计算机视觉",
+    "levels": {
+      "beginner": "一种超快的目标检测算法，名字是「只看一次」——把整张图扫一遍就能找出所有物体的位置，速度极快。",
+      "intermediate": "YOLO（You Only Look Once）是单阶段目标检测的代表，将检测问题转化为回归问题，一次前向传播同时预测所有物体的边界框和类别。相比两阶段方法（如 Faster R-CNN）速度快 10 倍以上，适合实时检测。",
+      "advanced": "YOLO 演进：YOLOv1（2016，开创单阶段检测）→YOLOv3（DarkNet 骨干，多尺度预测）→YOLOv5（PyTorch，工程化）→YOLOv8（Ultralytics，集成检测/分割/追踪）→YOLOv10/11（无 NMS）。关键技术：Anchor-based vs Anchor-free、特征金字塔网络（FPN）、多尺度检测头。目前是工业界目标检测的首选方案。"
+    },
+    "relatedTerms": [
+      "Object Detection",
+      "Image Classification",
+      "Computer Vision"
+    ],
+    "contexts": [
+      "computer-vision",
+      "real-time"
+    ],
+    "emoji": "👁️",
+    "difficulty": "medium"
+  },
+  "resnet": {
+    "term": "ResNet",
+    "aliases": [
+      "残差网络",
+      "Residual Network",
+      "VGG",
+      "EfficientNet"
+    ],
+    "category": "计算机视觉",
+    "levels": {
+      "beginner": "一种图像识别的神经网络，通过「走捷径」解决了网络太深时学不会的问题，在各种图像任务上表现很强。",
+      "intermediate": "ResNet（残差网络）通过引入「残差连接」（Shortcut Connection / Skip Connection）解决了深层网络的梯度消失问题，使训练 100+ 层的网络成为可能。2015 年 ImageNet 竞赛冠军，改变了深度学习架构设计。",
+      "advanced": "ResNet 的残差块公式：H(x) = F(x) + x，让网络学习残差 F(x) 而非直接学映射 H(x)。衍生架构：ResNeXt（分组卷积）、DenseNet（密集连接）、EfficientNet（复合缩放）。Transformer 架构中的 Residual Connection 直接继承自 ResNet 的核心设计思想。"
+    },
+    "relatedTerms": [
+      "Image Classification",
+      "Vision Transformer",
+      "Transfer Learning"
+    ],
+    "contexts": [
+      "computer-vision",
+      "architecture"
+    ],
+    "emoji": "🏗️",
+    "difficulty": "hard"
+  },
+  "optical-flow": {
+    "term": "Optical Flow",
+    "aliases": [
+      "光流",
+      "运动估计",
+      "Motion Estimation"
+    ],
+    "category": "计算机视觉",
+    "levels": {
+      "beginner": "让计算机理解视频里物体是怎么动的——追踪每个像素从一帧到下一帧移动了多少距离和方向。",
+      "intermediate": "光流是描述图像像素在相邻帧之间运动场的技术。经典算法：Lucas-Kanade（稀疏光流，追踪关键点）、Farneback（稠密光流，所有像素）。深度学习方法：FlowNet、RAFT（端到端估计，精度大幅提升）。",
+      "advanced": "光流在视频理解中扮演重要角色：动作识别（双流网络，RGB+光流）、视频稳定、3D 重建（SLAM）。在视频生成 AI 中，光流也用于时序一致性保证（确保相邻帧的运动合理）。RAFT 模型已成为密集光流的事实标准。"
+    },
+    "relatedTerms": [
+      "Video Generation",
+      "Computer Vision",
+      "Object Detection"
+    ],
+    "contexts": [
+      "computer-vision",
+      "video"
+    ],
+    "emoji": "🌊",
+    "difficulty": "hard"
+  },
+  "image-to-video": {
+    "term": "Image-to-Video",
+    "aliases": [
+      "图生视频",
+      "I2V",
+      "图像转视频"
+    ],
+    "category": "计算机视觉",
+    "levels": {
+      "beginner": "给 AI 一张静止图片，它能把这张图「动起来」，生成一段短视频——像给照片注入生命。",
+      "intermediate": "Image-to-Video（I2V）是以静态图像为起点，通过生成模型（通常基于 Diffusion）生成连贯视频序列的技术。代表模型：Stable Video Diffusion（SVD）、CogVideoX-I2V、Kling、即梦。",
+      "advanced": "I2V 的核心挑战：①时序一致性（保持图像中物体的外观稳定不变形）；②运动合理性（物理规律遵守）；③首帧条件注入机制（Cross-frame Attention vs. Frame Conditioning）。与 Text-to-Video 相比，I2V 因为有具体参考图像，减少了生成的不确定性，更易控制视觉风格。"
+    },
+    "relatedTerms": [
+      "Video Generation",
+      "Diffusion Model",
+      "Text-to-Video"
+    ],
+    "contexts": [
+      "computer-vision",
+      "generative-ai"
+    ],
+    "emoji": "🎬",
+    "difficulty": "medium"
+  },
+  "gaussian-splatting": {
+    "term": "3D Gaussian Splatting",
+    "aliases": [
+      "3DGS",
+      "Gaussian Splatting",
+      "NeRF",
+      "三维重建"
+    ],
+    "category": "计算机视觉",
+    "levels": {
+      "beginner": "用多张照片让 AI 重建出一个可以任意角度查看的 3D 场景，比看全景照片更真实。",
+      "intermediate": "3D Gaussian Splatting（3DGS）用数百万个 3D 高斯球近似场景的外观，通过可微光栅化实现实时渲染（100+ fps）。NeRF（Neural Radiance Field）是前一代方法，用神经网络表达体积密度，质量好但渲染慢。",
+      "advanced": "3DGS 是 2023 年的重要突破：相比 NeRF 渲染速度提升 100 倍以上，同时保持相当渲染质量。核心：每个高斯球有位置、协方差（控制形状/方向）、透明度、颜色（球谐函数表示视角相关颜色）四类参数，通过 alpha-blending 合成最终图像。4D-GS 进一步支持动态场景重建，是 AR/VR 和影视制作的重要工具。"
+    },
+    "relatedTerms": [
+      "Computer Vision",
+      "Image Generation",
+      "Diffusion Model"
+    ],
+    "contexts": [
+      "computer-vision",
+      "3d"
+    ],
+    "emoji": "🗺️",
+    "difficulty": "hard"
+  },
+  "mixed-precision": {
+    "term": "Mixed Precision Training",
+    "aliases": [
+      "混合精度训练",
+      "FP16 训练",
+      "BF16",
+      "AMP"
+    ],
+    "category": "模型训练",
+    "levels": {
+      "beginner": "训练 AI 时用「低精度」数字（占内存少），关键计算用「高精度」——既快又省内存。",
+      "intermediate": "混合精度训练同时使用 FP32（全精度）和 FP16/BF16（半精度）：前向/反向传播用 FP16（速度快 2-3x，内存减半），梯度累积和权重更新用 FP32（避免数值溢出）。PyTorch 的 autocast 和 GradScaler 自动处理精度切换。",
+      "advanced": "FP16 vs BF16：FP16 精度高但动态范围小（容易溢出）；BF16 动态范围与 FP32 相同（不易溢出），现代 GPU（A100, H100）对 BF16 有硬件加速支持，成为 LLM 训练首选。Loss Scaling 是解决 FP16 梯度下溢（underflow）的关键技术：放大 loss，使梯度进入 FP16 可表示范围，再缩小权重更新量。"
+    },
+    "relatedTerms": [
+      "GPU",
+      "Quantization",
+      "DeepSpeed",
+      "Gradient Checkpointing"
+    ],
+    "contexts": [
+      "model-training",
+      "efficiency"
+    ],
+    "emoji": "⚡",
+    "difficulty": "hard"
+  },
+  "gradient-checkpointing": {
+    "term": "Gradient Checkpointing",
+    "aliases": [
+      "梯度检查点",
+      "激活重计算",
+      "Activation Checkpointing"
+    ],
+    "category": "模型训练",
+    "levels": {
+      "beginner": "训练大模型时节省内存的技巧——不把所有中间计算结果都存着，需要时重新算一遍，用时间换空间。",
+      "intermediate": "Gradient Checkpointing 在反向传播时不保存所有激活值，而是保存关键检查点，反向传播时重新计算（Recomputation）中间激活值。内存使用从 O(n) 减少到 O(sqrt(n))，代价是约 30-40% 的额外计算开销。",
+      "advanced": "在 LLM 训练中，激活值内存占用（与 sequence length × batch size × hidden size 成正比）往往超过参数本身。Gradient Checkpointing 可将序列长度扩展 4-8 倍，是训练长上下文模型（如 128K context）的必要技术。与混合精度和模型并行协同使用。"
+    },
+    "relatedTerms": [
+      "Mixed Precision Training",
+      "DeepSpeed",
+      "GPU",
+      "Fine-tuning"
+    ],
+    "contexts": [
+      "model-training",
+      "memory"
+    ],
+    "emoji": "💾",
+    "difficulty": "hard"
+  },
+  "data-parallelism": {
+    "term": "Data Parallelism",
+    "aliases": [
+      "数据并行",
+      "DP",
+      "DDP",
+      "分布式训练"
+    ],
+    "category": "模型训练",
+    "levels": {
+      "beginner": "把训练数据分成多份，同时用多块 GPU 各自训练一部分，最后把结果合并——人多力量大。",
+      "intermediate": "数据并行（DP）是最常见的分布式训练策略：每个 GPU 持有完整模型副本，处理不同的数据子集，梯度在 All-Reduce 后同步更新。PyTorch DDP（DistributedDataParallel）比 DataParallel 效率更高（ring-allreduce vs 参数服务器）。",
+      "advanced": "数据并行的扩展瓶颈：当模型超过单 GPU 内存时，需要配合模型并行或 ZeRO 优化（DeepSpeed 的 Zero Redundancy Optimizer，通过在 DP 节点间分片参数/梯度/优化器状态，消除内存冗余）。ZeRO Stage 3 = 完全分片，相当于 FSDP（Fully Sharded Data Parallel，PyTorch 原生实现）。"
+    },
+    "relatedTerms": [
+      "Model Parallelism",
+      "DeepSpeed",
+      "GPU",
+      "Mixed Precision Training"
+    ],
+    "contexts": [
+      "model-training",
+      "distributed"
+    ],
+    "emoji": "🖥️",
+    "difficulty": "hard"
+  },
+  "model-parallelism": {
+    "term": "Model Parallelism",
+    "aliases": [
+      "模型并行",
+      "张量并行",
+      "流水线并行",
+      "Tensor Parallelism"
+    ],
+    "category": "模型训练",
+    "levels": {
+      "beginner": "当模型太大、一块 GPU 装不下时，把模型切成几块分别放在不同 GPU 上——把一本大书分成几册。",
+      "intermediate": "模型并行分为：①流水线并行（Pipeline Parallelism）：按层切分，不同 GPU 处理不同层；②张量并行（Tensor Parallelism）：矩阵运算切分到多 GPU，Megatron-LM 的核心方法；③序列并行：长序列切分。训练千亿参数模型时必须组合使用。",
+      "advanced": "3D 并行（Data × Pipeline × Tensor）是训练 GPT-3/4 级模型的标准方案。流水线气泡（Pipeline Bubble）是流水线并行的效率损失，1F1B（One Forward pass + One Backward pass）调度可降低气泡比例。Megatron-LM 的 Sequence Parallelism 在 Attention 层后切分激活值，与张量并行协同消除冗余内存。"
+    },
+    "relatedTerms": [
+      "Data Parallelism",
+      "DeepSpeed",
+      "GPU",
+      "Mixed Precision Training"
+    ],
+    "contexts": [
+      "model-training",
+      "distributed"
+    ],
+    "emoji": "🔀",
+    "difficulty": "hard"
+  },
+  "deepspeed": {
+    "term": "DeepSpeed",
+    "aliases": [
+      "ZeRO",
+      "微软 DeepSpeed",
+      "ZeRO-3"
+    ],
+    "category": "模型训练",
+    "levels": {
+      "beginner": "微软开发的训练大模型的工具库，让你用更少的 GPU 训练更大的模型，是大模型训练的「标配」。",
+      "intermediate": "DeepSpeed 是微软开源的大规模深度学习优化库，核心技术：ZeRO（Zero Redundancy Optimizer）通过分片技术消除训练中的内存冗余，最高可将模型训练规模扩大 8x。支持混合精度、Offload（将参数卸载到 CPU/NVMe）等特性。",
+      "advanced": "ZeRO 三个阶段：Stage 1（分片优化器状态，内存 4x）→Stage 2（+分片梯度，内存 8x）→Stage 3（+分片参数，内存 64x，但通信量增加）。DeepSpeed-Chat 提供完整的 RLHF 训练流程。ZeRO-Infinity 通过 NVMe Offload 支持在有限 GPU 上训练万亿参数模型。"
+    },
+    "relatedTerms": [
+      "Data Parallelism",
+      "Model Parallelism",
+      "Mixed Precision Training",
+      "GPU"
+    ],
+    "contexts": [
+      "model-training",
+      "distributed"
+    ],
+    "emoji": "🚄",
+    "difficulty": "hard"
+  },
+  "megatron-lm": {
+    "term": "Megatron-LM",
+    "aliases": [
+      "Megatron",
+      "NeMo",
+      "张量并行框架"
+    ],
+    "category": "模型训练",
+    "levels": {
+      "beginner": "NVIDIA 开发的训练超大 Transformer 模型的专用框架，用于训练 GPT、BERT 等千亿参数级别的语言模型。",
+      "intermediate": "Megatron-LM 是 NVIDIA 的大规模 Transformer 训练框架，实现了高效的张量并行（Tensor Parallelism）和流水线并行（Pipeline Parallelism）。被用于训练 GPT-3 规模的模型，集成了 Flash Attention、Sequence Parallelism 等优化。",
+      "advanced": "Megatron-LM 的张量并行将注意力头和 FFN 的矩阵运算切分到多 GPU，每个 GPU 持有矩阵的一部分，通过 All-Reduce 通信同步。关键创新：Sequence Parallelism（在 LayerNorm 和 Dropout 层切分序列维度，进一步减少激活内存）；选择性激活重计算（只对部分高内存层做 checkpointing）。"
+    },
+    "relatedTerms": [
+      "Model Parallelism",
+      "DeepSpeed",
+      "Mixed Precision Training",
+      "GPU"
+    ],
+    "contexts": [
+      "model-training",
+      "distributed"
+    ],
+    "emoji": "🦾",
+    "difficulty": "hard"
+  },
+  "clawhub": {
+    "term": "ClawHub",
+    "aliases": [
+      "Claw Hub",
+      "技能市场"
+    ],
+    "category": "OpenClaw",
+    "levels": {
+      "beginner": "OpenClaw 的 Skill 市场，就像手机的应用商店——你可以在这里发现、分享、安装各种 AI 技能。",
+      "intermediate": "ClawHub 是 OpenClaw 生态的 Skill 分发和发现平台，允许开发者发布 Skill 包，用户一键安装到自己的 CC 实例中。支持版本管理、依赖解析、评分和评论系统。",
+      "advanced": "ClawHub 通过标准化 Skill 打包格式（SKILL.md + scripts/ + 配置文件）降低 Skill 创建门槛。Skill 的「层级」系统（Layer 0-4）定义了技能的自主程度和风险级别，影响安装时的权限请求策略。ClawHub 是 OpenClaw 生态形成网络效应的关键基础设施。"
+    },
+    "relatedTerms": [
+      "OpenClaw",
+      "Skill",
+      "Persistent Memory"
+    ],
+    "contexts": [
+      "openclaw",
+      "ecosystem"
+    ],
+    "emoji": "🏪",
+    "difficulty": "medium"
+  },
+  "personal-ai": {
+    "term": "Personal AI",
+    "aliases": [
+      "私人 AI",
+      "个人 AI",
+      "AI 搭档"
+    ],
+    "category": "OpenClaw",
+    "levels": {
+      "beginner": "属于你个人的 AI 助手，记得你的习惯和偏好，越用越了解你——不是通用工具，而是专属搭档。",
+      "intermediate": "Personal AI 是与个人深度绑定的 AI 系统，核心差异化：持久记忆（跨会话保留上下文）、个性化配置（适应用户工作流）、私有化部署（数据不离开本地）。OpenClaw 的愿景是通过 CC 实现真正的 Personal AI。",
+      "advanced": "Personal AI 的技术挑战：①长期记忆的组织和检索（个人知识图谱 vs 向量检索 vs 摘要压缩）；②个性化 vs 泛化的权衡（过度个性化的 AI 可能强化偏见）；③隐私与便利性平衡（云端服务 vs 本地运行）。与企业 AI 的根本差异：Personal AI 的对齐目标是个体用户，不是平台或企业。"
+    },
+    "relatedTerms": [
+      "Persistent Memory",
+      "Agent",
+      "OpenClaw"
+    ],
+    "contexts": [
+      "openclaw",
+      "ai-agent"
+    ],
+    "emoji": "🤝",
+    "difficulty": "medium"
+  },
+  "agent-runtime": {
+    "term": "Agent Runtime",
+    "aliases": [
+      "Agent 运行时",
+      "AI Agent 框架",
+      "运行环境"
+    ],
+    "category": "OpenClaw",
+    "levels": {
+      "beginner": "Agent 工作的「操作系统」，负责管理它用哪些工具、怎么执行任务、结果怎么保存。",
+      "intermediate": "Agent Runtime 是 AI Agent 的执行环境，提供：工具注册和调用机制、任务循环（Plan-Execute-Observe）管理、状态持久化、权限控制和安全沙箱。OpenClaw 的 Skill 系统本质上是一套 Agent Runtime 规范。",
+      "advanced": "Agent Runtime 的设计维度：①同步 vs 异步执行（长任务后台运行）；②单 Agent vs 多 Agent 协调；③状态管理（无状态 API 调用 vs 有状态持久 Agent）；④工具调用安全（权限最小化、沙箱隔离）；⑤可观测性（日志、追踪、Debug）。ZeroClaw（Rust 实现）代表极致轻量化 Agent Runtime 的方向。"
+    },
+    "relatedTerms": [
+      "Agent",
+      "MCP",
+      "OpenClaw",
+      "Tool Use"
+    ],
+    "contexts": [
+      "openclaw",
+      "agent-infrastructure"
+    ],
+    "emoji": "⚙️",
+    "difficulty": "hard"
+  },
+  "skill-market": {
+    "term": "Skill Market",
+    "aliases": [
+      "技能市场",
+      "Skill Store",
+      "插件市场"
+    ],
+    "category": "OpenClaw",
+    "levels": {
+      "beginner": "一个可以找到、安装、分享 AI 技能的地方，就像应用商店一样，让 AI 能做更多事情。",
+      "intermediate": "Skill Market 是 Agent 生态的核心基础设施，允许开发者封装能力（Skill）并分享给他人复用。类似 npm 之于 Node.js、PyPI 之于 Python，Skill Market 是 Personal AI 能力扩展的生态枢纽。",
+      "advanced": "Skill Market 的治理挑战：①质量保证（如何评估 Skill 的可靠性和安全性）；②版本兼容（Skill 间依赖管理）；③货币化模式（免费/付费/订阅）；④发现机制（语义搜索 vs 分类浏览）。与传统软件商店的差异：Skill 在执行时有 LLM 推理参与，测试更难确定性，评估需要语义层面的质量指标。"
+    },
+    "relatedTerms": [
+      "ClawHub",
+      "OpenClaw",
+      "Agent Runtime",
+      "Persistent Memory"
+    ],
+    "contexts": [
+      "openclaw",
+      "ecosystem"
+    ],
+    "emoji": "🏬",
+    "difficulty": "medium"
+  },
+  "voice-clone": {
+    "term": "Voice Clone",
+    "aliases": [
+      "声音克隆",
+      "语音克隆",
+      "Voice Cloning"
+    ],
+    "category": "音视频 AI",
+    "levels": {
+      "beginner": "用 AI 复制一个人的声音，只需要几秒钟的原声样本，就能让 AI 用这个声音说任何话。",
+      "intermediate": "Voice Clone（声音克隆）通过 TTS 模型从少量音频样本（1-30秒）学习说话人的音色特征，生成与原声相似的语音。代表产品：ElevenLabs、微软 Azure Voice、OpenAI Voice Engine。技术基础：Speaker Embedding + 神经网络 TTS。",
+      "advanced": "声音克隆分为：①Zero-shot 克隆（仅凭几秒参考音频，实时推理）②Few-shot 微调（数分钟音频，质量更高，需训练时间）。Zero-shot 克隆的核心是 Speaker Encoder（提取音色特征为 embedding）和条件化 TTS 解码器。伦理风险显著：深度伪造语音可用于诈骗、政治操纵，导致各国相继立法限制。"
+    },
+    "relatedTerms": [
+      "Text-to-Speech",
+      "Deepfake",
+      "AI Watermarking"
+    ],
+    "contexts": [
+      "audio-ai",
+      "generative-ai"
+    ],
+    "emoji": "🎙️",
+    "difficulty": "medium"
+  },
+  "music-generation": {
+    "term": "Music Generation",
+    "aliases": [
+      "AI 作曲",
+      "音乐生成",
+      "AI Music"
+    ],
+    "category": "音视频 AI",
+    "levels": {
+      "beginner": "让 AI 自动创作音乐——输入几个字描述你想要的风格，AI 就能生成一段完整的歌曲或背景音乐。",
+      "intermediate": "AI 音乐生成通过大型语言/音频模型从文本描述、旋律草图或情绪关键词生成完整音乐。代表产品：Suno（直接生成含人声的歌曲）、Udio、Meta MusicGen（开源）、Google Lyria。",
+      "advanced": "音乐生成的技术路线分为：①基于语言模型（将音频 tokenize 后用 Transformer 生成，如 MusicLM、Suno）②基于 Diffusion（在频谱或波形域扩散，如 MusicGen）。版权问题是最大挑战：训练数据是否包含受版权保护的音乐正在多起诉讼中审理。高质量音乐生成的最后难关是长时结构一致性和情感表达的细腻度。"
+    },
+    "relatedTerms": [
+      "Text-to-Speech",
+      "Video Generation",
+      "Diffusion Model"
+    ],
+    "contexts": [
+      "audio-ai",
+      "generative-ai"
+    ],
+    "emoji": "🎵",
+    "difficulty": "medium"
+  },
+  "lip-sync": {
+    "term": "Lip Sync",
+    "aliases": [
+      "唇形同步",
+      "Lip Synchronization",
+      "嘴型同步"
+    ],
+    "category": "音视频 AI",
+    "levels": {
+      "beginner": "让视频里人物的嘴型和说话内容对上——或者把一个人的嘴型换成说另一段话的样子。",
+      "intermediate": "Lip Sync 技术通过 AI 驱动视频中人物的嘴部运动与目标音频完美对齐，主要应用：①影视后期（补录台词时同步嘴型）②数字人（AI 虚拟形象播报）③视频配音（翻译后替换嘴型）。代表模型：Wav2Lip、SadTalker、HeyGen。",
+      "advanced": "Lip Sync 的技术核心是学习音频特征（音素、韵律）到唇部动作（关键点或像素级）的映射。Wav2Lip 通过专门的「唇形专家鉴别器」确保生成唇形与真实唇形的一致性。在数字人应用中，Lip Sync 需要与 Face Reenactment（头部动作驱动）结合，保持整体自然感。深度伪造（Deepfake）的核心技术之一，受到严格的使用场景限制。"
+    },
+    "relatedTerms": [
+      "Video Generation",
+      "Deepfake",
+      "Voice Clone",
+      "Text-to-Video"
+    ],
+    "contexts": [
+      "audio-ai",
+      "video-ai"
+    ],
+    "emoji": "👄",
+    "difficulty": "hard"
+  },
+  "text-to-video": {
+    "term": "Text-to-Video",
+    "aliases": [
+      "文生视频",
+      "T2V",
+      "文字转视频"
+    ],
+    "category": "音视频 AI",
+    "levels": {
+      "beginner": "输入一段文字描述，AI 自动生成对应的视频——就像画图 AI，但输出的是动态视频。",
+      "intermediate": "Text-to-Video（T2V）是从自然语言描述直接生成视频的技术，代表模型：Sora（OpenAI）、Gen-3 Alpha（Runway）、可灵（快手）、即梦（字节跳动）。基于 Diffusion Transformer 架构，在时序维度上扩展了图像生成能力。",
+      "advanced": "T2V 的关键挑战：①时序一致性（物体/人物在帧间保持外观一致）②物理合理性（重力、碰撞等物理规律遵守）③长视频生成（超过 10 秒质量急剧下降）④文本语义对齐（复杂描述的精确理解）。Sora 采用的 Spacetime Patch 将视频分解为时空块，用统一 Transformer 建模，是当前质量最高的方案。"
+    },
+    "relatedTerms": [
+      "Video Generation",
+      "Diffusion Model",
+      "Image-to-Video"
+    ],
+    "contexts": [
+      "video-ai",
+      "generative-ai"
+    ],
+    "emoji": "🎬",
+    "difficulty": "medium"
+  },
+  "audio-generation": {
+    "term": "Audio Generation",
+    "aliases": [
+      "音频生成",
+      "AI 音效",
+      "Sound Generation"
+    ],
+    "category": "音视频 AI",
+    "levels": {
+      "beginner": "让 AI 生成各种声音效果——雨声、脚步声、爆炸声，不需要真实录制，AI 直接创作。",
+      "intermediate": "AI 音频生成涵盖：环境音效生成（Foley AI）、语音合成（TTS）、音乐生成。代表工具：ElevenLabs Sound Effects、Adobe Project Sound Lift、Meta AudioCraft（包含 AudioGen 和 MusicGen 两个模型）。",
+      "advanced": "音频生成的技术栈分为：①波形域（直接生成音频波形，如 WaveNet、WaveGlow）②频谱域（生成 Mel 频谱再通过声码器转换，效率更高）③Token 域（将音频离散化为 token 序列，用 LM 建模，如 EnCodec+AudioLM）。AudioCraft 的 EnCodec 使用向量量化（VQ）将音频压缩为离散 token，AudioGen 在 token 上做语言模型建模，实现文本条件的音效生成。"
+    },
+    "relatedTerms": [
+      "Text-to-Speech",
+      "Music Generation",
+      "Voice Clone"
+    ],
+    "contexts": [
+      "audio-ai",
+      "generative-ai"
+    ],
+    "emoji": "🔊",
+    "difficulty": "medium"
+  },
+  "speaker-diarization": {
+    "term": "Speaker Diarization",
+    "aliases": [
+      "说话人分离",
+      "声纹分割",
+      "Speaker Segmentation"
+    ],
+    "category": "音视频 AI",
+    "levels": {
+      "beginner": "自动识别一段录音里「谁在说话」——把多人对话中每个人的发言自动分开标注。",
+      "intermediate": "Speaker Diarization 解决「谁在何时说话」（Who spoke when）的问题，将音频流分割为单一说话人的片段。常与 ASR（自动语音识别）结合使用，输出带说话人标签的逐字稿。代表工具：pyannote.audio、WhisperX。",
+      "advanced": "Diarization 的技术流程：Voice Activity Detection（VAD，检测有人说话的段落）→ Speaker Embedding 提取（x-vector/d-vector）→ 聚类（将相同说话人的片段归组）。主要挑战：①重叠语音（多人同时说话）②新说话人适应（开放集问题）③跨会议追踪同一说话人。与 ASR 的端到端联合建模（Joint Diarization & Recognition）是当前研究热点。"
+    },
+    "relatedTerms": [
+      "Speech-to-Text",
+      "Voice Clone",
+      "Audio Generation"
+    ],
+    "contexts": [
+      "audio-ai",
+      "speech"
+    ],
+    "emoji": "🎤",
+    "difficulty": "hard"
+  },
+  "video-understanding": {
+    "term": "Video Understanding",
+    "aliases": [
+      "视频理解",
+      "视频内容分析",
+      "Video Analysis"
+    ],
+    "category": "音视频 AI",
+    "levels": {
+      "beginner": "让 AI「看懂」视频——不只是看图，而是理解视频里发生了什么，比如动作识别、场景理解。",
+      "intermediate": "Video Understanding 是 AI 分析和理解视频内容的能力，核心任务：动作识别（Action Recognition）、视频字幕生成（Video Captioning）、时序动作定位（Temporal Action Localization）、视频问答（Video QA）。",
+      "advanced": "Video Understanding 的核心挑战是时间维度建模：如何高效提取帧间的运动和因果关系。主流方法：①双流网络（RGB 帧 + 光流）②3D CNN（I3D、SlowFast）③Video Transformer（TimeSformer、VideoMAE）。多模态 LLM（如 GPT-4o、Gemini 1.5）已具备直接输入视频帧理解的能力，是 Video QA 的 SOTA 方案。"
+    },
+    "relatedTerms": [
+      "Computer Vision",
+      "Video Generation",
+      "Optical Flow"
+    ],
+    "contexts": [
+      "video-ai",
+      "computer-vision"
+    ],
+    "emoji": "📹",
+    "difficulty": "hard"
+  },
+  "asr": {
+    "term": "ASR",
+    "aliases": [
+      "Automatic Speech Recognition",
+      "自动语音识别",
+      "Whisper",
+      "语音转文字"
+    ],
+    "category": "音视频 AI",
+    "levels": {
+      "beginner": "把语音自动转成文字的技术——就像手机语音输入，但更强大，能处理各种口音和噪音环境。",
+      "intermediate": "ASR（Automatic Speech Recognition）将音频信号转为文字。OpenAI Whisper 是目前最具影响力的开源 ASR 模型，支持 99 种语言，Zero-shot 多语言识别，端到端 Transformer 架构。",
+      "advanced": "现代 ASR 架构以 CTC（Connectionist Temporal Classification）和 Attention-based Encoder-Decoder 为主。Whisper 使用纯 Seq2Seq Transformer，训练数据达 68 万小时（含自动生成标签）。关键挑战：①实时流式识别（延迟 vs 准确率权衡）②复杂背景噪音鲁棒性③专业领域术语识别（医疗、法律）。Whisper.cpp 的出现使边端部署成为可能，WhisperX 解决了时间戳精度问题。"
+    },
+    "relatedTerms": [
+      "Speech-to-Text",
+      "Speaker Diarization",
+      "Text-to-Speech"
+    ],
+    "contexts": [
+      "audio-ai",
+      "speech"
+    ],
+    "emoji": "🗣️",
+    "difficulty": "medium"
+  },
+  "triton-server": {
+    "term": "Triton Inference Server",
+    "aliases": [
+      "Triton",
+      "NVIDIA Triton",
+      "推理服务器"
+    ],
+    "category": "模型部署与推理",
+    "levels": {
+      "beginner": "NVIDIA 开发的 AI 模型服务框架，让你可以同时部署多个模型、处理大量推理请求，像 AI 的「服务台」。",
+      "intermediate": "Triton Inference Server 是开源的生产级模型服务平台，支持 TensorFlow、PyTorch、ONNX、TensorRT 等多种框架，提供 HTTP/gRPC API、动态批处理（Dynamic Batching）、并发模型执行、GPU 内存管理等特性。",
+      "advanced": "Triton 的核心特性：①模型集成（Model Ensemble/Pipeline）：将预处理+推理+后处理串联为单一端点；②并发模型实例：同一 GPU 同时运行多个模型副本；③Sequence Batching：保持有状态推理的会话一致性；④Business Logic Scripting（BLS）：使用 Python 实现复杂路由逻辑。在 LLM 服务场景，Triton + TensorRT-LLM 是 NVIDIA 推荐的完整部署栈。"
+    },
+    "relatedTerms": [
+      "TensorRT",
+      "ONNX",
+      "Batching",
+      "KV Cache"
+    ],
+    "contexts": [
+      "inference",
+      "deployment"
+    ],
+    "emoji": "🖥️",
+    "difficulty": "hard"
+  },
+  "batching": {
+    "term": "Batching",
+    "aliases": [
+      "批处理",
+      "Dynamic Batching",
+      "推理批处理"
+    ],
+    "category": "模型部署与推理",
+    "levels": {
+      "beginner": "把多个推理请求「打包」一起处理，就像餐厅等到一桌客人都点完菜再一起上，比一道道上更省事。",
+      "intermediate": "Batching 是将多个独立的推理请求合并为一个 batch 同时处理，充分利用 GPU 的并行计算能力。静态批处理（Static Batching）需要等到 batch 填满才开始；动态批处理（Dynamic Batching）设置最大等待时间，自动在延迟和吞吐量之间权衡。",
+      "advanced": "连续批处理（Continuous Batching / Iteration-level Batching）是 LLM 推理的关键优化：不等整个序列生成完，一旦某个请求的 token 生成完毕，立即将新请求插入 batch，极大提升 GPU 利用率（从 20-30% 提升到 70-90%）。与 PagedAttention 结合，是 vLLM 高吞吐量的核心原因。"
+    },
+    "relatedTerms": [
+      "Model Serving",
+      "KV Cache",
+      "Triton Inference Server",
+      "GPU"
+    ],
+    "contexts": [
+      "inference",
+      "efficiency"
+    ],
+    "emoji": "📦",
+    "difficulty": "medium"
+  },
+  "kv-cache": {
+    "term": "KV Cache",
+    "aliases": [
+      "键值缓存",
+      "Key-Value Cache",
+      "Attention Cache"
+    ],
+    "category": "模型部署与推理",
+    "levels": {
+      "beginner": "让 AI 记住之前算过的东西、不用重复计算——每生成一个新词，只计算新词部分，之前的结果直接复用。",
+      "intermediate": "KV Cache（键值缓存）缓存 Transformer 注意力机制中的 Key 和 Value 矩阵，避免在生成每个新 token 时重复计算所有历史 token 的 KV。没有 KV Cache，推理复杂度为 O(n²)；有了 KV Cache，增量推理复杂度降至 O(n)。",
+      "advanced": "KV Cache 的内存占用随上下文长度线性增长，是 LLM 推理的主要内存瓶颈。PagedAttention（vLLM）借鉴操作系统虚拟内存的分页思想，将 KV Cache 分配为固定大小的物理块，通过块表映射实现动态分配，消除内存碎片。MLA（Multi-head Latent Attention，DeepSeek 提出）通过低秩分解压缩 KV Cache，在保持性能的同时大幅减少内存占用。"
+    },
+    "relatedTerms": [
+      "Batching",
+      "Speculative Decoding",
+      "Model Serving",
+      "Transformer"
+    ],
+    "contexts": [
+      "inference",
+      "memory"
+    ],
+    "emoji": "🗝️",
+    "difficulty": "hard"
+  },
+  "continuous-batching": {
+    "term": "Continuous Batching",
+    "aliases": [
+      "连续批处理",
+      "Iteration-level Batching",
+      "动态插入批处理"
+    ],
+    "category": "模型部署与推理",
+    "levels": {
+      "beginner": "让 AI 服务器不需要等一组请求全部完成才接新活——一个请求做完马上塞入新请求，持续满负荷工作。",
+      "intermediate": "Continuous Batching 是 LLM 推理服务的核心优化，不同于传统的请求级批处理（等一批请求全部生成完再接新批次），连续批处理在每个迭代步（每生成一个 token）就检查是否有请求完成，立即插入等待队列中的新请求。",
+      "advanced": "Continuous Batching 的实现关键：①序列长度参差不齐（不同请求生成不同数量的 token）需要处理 batch 中的稀疏性；②需要与 PagedAttention 结合，因为 KV Cache 的动态增长不再对齐；③调度策略（FCFS/Priority/等待时间权衡）影响整体 SLA。vLLM 将 Continuous Batching 与 PagedAttention 结合，在 LLaMA-7B 上相比 Hugging Face Transformers 实现 23 倍吞吐量提升。"
+    },
+    "relatedTerms": [
+      "KV Cache",
+      "Batching",
+      "Model Serving"
+    ],
+    "contexts": [
+      "inference",
+      "efficiency"
+    ],
+    "emoji": "🔄",
+    "difficulty": "hard"
+  },
+  "speculative-decoding-inference": {
+    "term": "Speculative Decoding",
+    "aliases": [
+      "投机解码",
+      "推测解码",
+      "Draft-Verify Decoding"
+    ],
+    "category": "模型部署与推理",
+    "levels": {
+      "beginner": "用小模型「预猜」大模型要说什么，大模型一次性验证多个猜测——像助手先写初稿，老板快速批改，比从头到尾一字一字写快多了。",
+      "intermediate": "Speculative Decoding 使用小型草稿模型（Draft Model）快速生成多个候选 token，再由大型目标模型（Target Model）并行验证，接受与目标模型分布一致的 token，拒绝不一致的。在 2-3 倍加速的同时，输出分布与纯目标模型完全等价（无质量损失）。",
+      "advanced": "Speculative Decoding 的理论保证：使用拒绝采样（Rejection Sampling）机制，数学上等价于目标模型的输出分布，无需折中质量。加速比依赖草稿接受率（Acceptance Rate），接受率越高加速越大。变体：Self-Speculative Decoding、Medusa（模型并行预测多个未来 token）、EAGLE（使用 feature-level 预测的高效草稿模型）。"
+    },
+    "relatedTerms": [
+      "KV Cache",
+      "Batching",
+      "Model Serving",
+      "Quantization"
+    ],
+    "contexts": [
+      "inference",
+      "efficiency"
+    ],
+    "emoji": "🔮",
+    "difficulty": "hard"
+  },
+  "quantization-inference": {
+    "term": "Post-Training Quantization",
+    "aliases": [
+      "PTQ",
+      "训练后量化",
+      "INT8 量化",
+      "GPTQ",
+      "AWQ"
+    ],
+    "category": "模型部署与推理",
+    "levels": {
+      "beginner": "把模型的精度「降低」来减小模型大小——把本来要 16 位数字表示的权重换成 8 位或 4 位，让大模型能跑在小显卡上。",
+      "intermediate": "训练后量化（PTQ）在不重新训练的情况下降低模型精度：W8A8（权重和激活值都量化到 INT8）、W4A16（权重量化到 INT4，激活值保持 FP16）。代表方法：GPTQ（逐层最小化量化误差）、AWQ（激活感知权重量化，保护重要权重）。",
+      "advanced": "LLM 量化的技术难点：LLM 中存在大量「异常值」（Outlier activations），直接量化会导致严重精度损失。AWQ 的关键洞察：保护 1% 的重要权重（基于激活值大小判断）可保持大部分精度。GGUF 格式（llama.cpp 使用）支持混合精度量化（不同层用不同位宽），是边端部署的主流格式。"
+    },
+    "relatedTerms": [
+      "Quantization",
+      "ONNX",
+      "TensorRT",
+      "Model Serving"
+    ],
+    "contexts": [
+      "inference",
+      "efficiency"
+    ],
+    "emoji": "🔬",
+    "difficulty": "hard"
+  },
+  "prefill-decode": {
+    "term": "Prefill & Decode",
+    "aliases": [
+      "预填充",
+      "解码阶段",
+      "LLM 推理两阶段"
+    ],
+    "category": "模型部署与推理",
+    "levels": {
+      "beginner": "LLM 生成文字分两步：先「读题」（处理你的问题），再逐字「写答案」——两步速度不同，优化方式也不同。",
+      "intermediate": "LLM 推理分为两个阶段：①Prefill（预填充）：并行处理输入 prompt 的所有 token，生成 KV Cache，计算密集（Compute-bound）；②Decode（解码）：自回归逐 token 生成输出，每步只处理一个新 token，内存带宽密集（Memory-bound）。两阶段性能瓶颈不同，需区别优化。",
+      "advanced": "Prefill 的延迟决定 TTFT（Time to First Token，首字延迟）；Decode 的速度决定 TPOT（Time Per Output Token）。分离式 Prefill-Decode（PD Disaggregation）将两个阶段部署在不同硬件上，独立扩容优化，是 LLM 服务的最新架构趋势。Chunked Prefill 将大 Prefill 请求切片，避免长时间占用 GPU 导致 Decode 请求排队延迟增加。"
+    },
+    "relatedTerms": [
+      "KV Cache",
+      "Continuous Batching",
+      "Batching"
+    ],
+    "contexts": [
+      "inference",
+      "llm"
+    ],
+    "emoji": "⏱️",
+    "difficulty": "hard"
+  },
+  "flash-attention": {
+    "term": "Flash Attention",
+    "aliases": [
+      "FlashAttention",
+      "Flash Attention 2",
+      "高效注意力"
+    ],
+    "category": "模型部署与推理",
+    "levels": {
+      "beginner": "让 Transformer 里最耗资源的「注意力计算」变快 2-4 倍、省一半内存的技术——大模型能处理更长文本全靠它。",
+      "intermediate": "Flash Attention 通过重新组织注意力计算的内存访问模式（减少 HBM 读写次数），将 Attention 的内存复杂度从 O(n²) 降至 O(n)，并提升计算效率。是现代 LLM 训练和推理的必备优化，已被 PyTorch、Hugging Face、vLLM 等广泛集成。",
+      "advanced": "Flash Attention 的核心思想：利用 GPU 的分层内存架构（SRAM 快但小，HBM 慢但大），通过 Tiling（分块计算）和在线 Softmax（Online Normalization）将整个 Attention 操作放在 SRAM 中完成，避免频繁的 HBM 读写。Flash Attention 2 进一步优化了并行化策略和非矩阵乘法运算。Flash Attention 3 针对 Hopper 架构（H100）优化了异步执行和精度。"
+    },
+    "relatedTerms": [
+      "Transformer",
+      "KV Cache",
+      "Mixed Precision Training",
+      "GPU"
+    ],
+    "contexts": [
+      "inference",
+      "efficiency"
+    ],
+    "emoji": "⚡",
+    "difficulty": "hard"
+  },
+  "model-pruning": {
+    "term": "Model Pruning",
+    "aliases": [
+      "模型剪枝",
+      "网络剪枝",
+      "Pruning"
+    ],
+    "category": "模型部署与推理",
+    "levels": {
+      "beginner": "把神经网络里「不重要」的连接删掉，让模型变小变快，就像修剪树枝让树长得更好。",
+      "intermediate": "模型剪枝（Pruning）通过识别并移除对输出贡献小的参数（权重）来压缩模型。分为：①非结构化剪枝（单个权重置零，稀疏化）②结构化剪枝（整个神经元/头/层剪除，直接降维，更易加速）。",
+      "advanced": "剪枝方法：magnitude-based（绝对值小的权重直接剪除，简单有效）；gradient-based（基于梯度的重要性评估）；movement pruning（训练中动态剪枝）。LLM 的结构化剪枝研究：Width Pruning（减少 Attention Head 数/FFN 宽度）+ Depth Pruning（去除整层）。Sheared-LLaMA 展示了对预训练 LLM 做结构化剪枝后再持续训练效果优于从头训练小模型。"
+    },
+    "relatedTerms": [
+      "Quantization",
+      "Knowledge Distillation",
+      "Model Serving"
+    ],
+    "contexts": [
+      "inference",
+      "efficiency"
+    ],
+    "emoji": "✂️",
+    "difficulty": "hard"
+  },
+  "inference-scaling": {
+    "term": "Inference-Time Compute",
+    "aliases": [
+      "推理时计算扩展",
+      "Test-Time Compute",
+      "TTC Scaling"
+    ],
+    "category": "模型部署与推理",
+    "levels": {
+      "beginner": "让 AI 在回答问题时「多想想」而不是直接输出——用更多的计算时间来提高答案质量，就像人类思考重要问题时会多权衡。",
+      "intermediate": "Inference-Time Compute（推理时计算扩展）是指在固定模型大小的情况下，通过增加推理时的计算量来提升输出质量。方法包括：Best-of-N（多次采样取最佳）、链式思考（Chain of Thought）、迭代精化（Self-refinement）。",
+      "advanced": "OpenAI o1/o3 系列模型展示了推理时计算扩展的潜力：通过内部「思考」（Extended Thinking）在回答前进行大量中间步骤推理，在数学、编程等复杂任务上超越了参数量大得多的模型。关键研究问题：哪些任务能从更多推理时计算中受益（答案可验证的任务效果最好）、如何设计 Reward Model 引导推理方向。"
+    },
+    "relatedTerms": [
+      "Chain of Thought",
+      "Speculative Decoding",
+      "RLHF"
+    ],
+    "contexts": [
+      "inference",
+      "reasoning"
+    ],
+    "emoji": "🧠",
+    "difficulty": "hard"
+  },
+  "tts-neural": {
+    "term": "Neural TTS",
+    "aliases": [
+      "神经网络 TTS",
+      "端到端 TTS",
+      "VITS",
+      "Tacotron"
+    ],
+    "category": "音视频 AI",
+    "levels": {
+      "beginner": "用神经网络合成的语音，比传统合成语音自然得多——现在的 AI 语音助手说话流畅像真人，就是靠这个技术。",
+      "intermediate": "神经 TTS 从文本直接生成自然语音。主流架构：Tacotron2（文本→Mel 频谱）+ WaveGlow（频谱→波形）；VITS（端到端，一步生成波形）；XTTS/F5-TTS（支持声音克隆的多说话人 TTS）。",
+      "advanced": "TTS 的评测指标：MOS（平均意见分）是人工评测的标准；客观指标包括 MCD（Mel Cepstral Distortion，频谱相似度）。现代 TTS 的三个维度：①自然度②表达力（情感、重音、语调）③克隆速度（从少量样本适应新说话人的效率）。Flow-matching 架构（如 VoiceBox、F5-TTS）在自然度上已超越 Diffusion TTS。"
+    },
+    "relatedTerms": [
+      "Text-to-Speech",
+      "Voice Clone",
+      "Speaker Diarization"
+    ],
+    "contexts": [
+      "audio-ai",
+      "speech"
+    ],
+    "emoji": "🔉",
+    "difficulty": "hard"
+  },
+  "digital-human": {
+    "term": "Digital Human",
+    "aliases": [
+      "数字人",
+      "虚拟主播",
+      "AI Avatar"
+    ],
+    "category": "音视频 AI",
+    "levels": {
+      "beginner": "用 AI 技术创建的虚拟人物，能够说话、表演、互动——各大平台上的虚拟主播都属于这类。",
+      "intermediate": "Digital Human（数字人）是结合 TTS、Lip Sync、3D/2D 人脸驱动等技术的综合 AI 应用。分为：①视频数字人（预先录制形象，实时驱动嘴型）②3D 数字人（实时渲染 3D 角色）③超写实数字人（以假乱真的高精度模型）。代表产品：HeyGen、D-ID、腾讯智影。",
+      "advanced": "数字人的技术栈：面部重建（3DMM/Neural Face）+ 动作驱动（Motion Retargeting）+ Lip Sync + 背景合成 + TTS。实时数字人的关键是端到端延迟（从文字输入到视频输出）控制在 1-2 秒内，需要 TTS 流式输出 + Lip Sync 流式处理。超写实数字人面临「恐怖谷效应」（Uncanny Valley）：接近但不完全真实的外观会让人感到不适。"
+    },
+    "relatedTerms": [
+      "Lip Sync",
+      "Voice Clone",
+      "Text-to-Video",
+      "Deepfake"
+    ],
+    "contexts": [
+      "audio-ai",
+      "video-ai"
+    ],
+    "emoji": "🤖",
+    "difficulty": "medium"
+  },
+  "audio-codec": {
+    "term": "Audio Codec",
+    "aliases": [
+      "音频编解码",
+      "EnCodec",
+      "SoundStream",
+      "Codec LM"
+    ],
+    "category": "音视频 AI",
+    "levels": {
+      "beginner": "音频的「压缩格式」，把音频压缩成更小的数字序列，方便传输和 AI 处理——就像把大文件压缩成 zip。",
+      "intermediate": "Neural Audio Codec 是用神经网络学习音频的紧凑表示，代表作：Meta EnCodec 和 Google SoundStream。通过向量量化（VQ-VAE）将音频压缩为离散 token 序列，压缩比达 100:1 以上，是 Audio LM 的基础。",
+      "advanced": "Neural Codec 的关键技术：RVQ（Residual Vector Quantization，残差向量量化）用多个码本逐步精细化音频表示，权衡压缩比和音质。EnCodec 的 8 个量化层（Codebooks）中，前 2-3 层捕捉语义/韵律，后几层捕捉音色细节。Codec LM 在 token 上做语言模型（VALL-E、MusicLM 等），将语音/音乐生成转化为序列预测问题，是音频生成的新范式。"
+    },
+    "relatedTerms": [
+      "Audio Generation",
+      "Voice Clone",
+      "Music Generation"
+    ],
+    "contexts": [
+      "audio-ai",
+      "infrastructure"
+    ],
+    "emoji": "🗜️",
+    "difficulty": "hard"
+  },
+  "emotion-recognition": {
+    "term": "Emotion Recognition",
+    "aliases": [
+      "情感识别",
+      "表情识别",
+      "情绪分析",
+      "Affective Computing"
+    ],
+    "category": "音视频 AI",
+    "levels": {
+      "beginner": "让 AI 通过声音、表情或文字判断一个人现在是高兴、悲伤还是愤怒。",
+      "intermediate": "情感识别（Emotion Recognition）通过多模态信号（人脸表情、语音韵律、文本语义）识别说话人的情绪状态。常见情感类别：Ekman 六基本情绪（高兴/悲伤/恐惧/愤怒/惊讶/厌恶）；维度模型（效价 Valence + 唤醒度 Arousal）。应用：客服质检、心理健康监测、人机交互。",
+      "advanced": "情感识别的挑战：①主观性强（同一人不同评标者标注可能不一致）②文化差异（不同文化中情感表达差异显著）③标签稀缺（情感标注成本高）。多模态融合（面部 + 语音 + 文本）显著优于单模态。隐私风险是情感识别最大争议点，欧盟 AI Act 将「公共场所情感识别」列为高风险/限制性应用。"
+    },
+    "relatedTerms": [
+      "ASR",
+      "Text-to-Speech",
+      "Video Understanding"
+    ],
+    "contexts": [
+      "audio-ai",
+      "multimodal"
+    ],
+    "emoji": "😊",
+    "difficulty": "medium"
+  },
+  "video-editing-ai": {
+    "term": "AI Video Editing",
+    "aliases": [
+      "AI 视频剪辑",
+      "自动剪辑",
+      "视频 AI"
+    ],
+    "category": "音视频 AI",
+    "levels": {
+      "beginner": "让 AI 自动剪辑视频——自动找精彩片段、去除沉默、加字幕、调色，把剪辑师的工作自动化。",
+      "intermediate": "AI 视频编辑工具涵盖：①自动剪辑（根据音频内容、高光时刻自动选片段）②脚本转视频（将文本稿自动剪辑成成品视频，如 Opus Clip）③视频修复（超分、去噪、补帧）④指令编辑（「把背景换成海滩」）。",
+      "advanced": "指令视频编辑（Instruction-based Video Editing）是前沿研究方向，通过文本指令精准修改视频内容（如 InstructPix2Pix 的视频版）。挑战在于：①时序一致性（修改帧间要连贯）②精确操控（只改指定部分，不影响其余内容）。视频基础模型（如 Sora、Runway Gen-3）的发展使编辑能力显著提升。"
+    },
+    "relatedTerms": [
+      "Video Generation",
+      "Text-to-Video",
+      "Image-to-Video"
+    ],
+    "contexts": [
+      "video-ai",
+      "tools"
+    ],
+    "emoji": "✂️",
+    "difficulty": "medium"
+  },
+  "multimodal-ai": {
+    "term": "Multimodal AI",
+    "aliases": [
+      "多模态 AI",
+      "多模态模型",
+      "视觉语言模型",
+      "VLM"
+    ],
+    "category": "音视频 AI",
+    "levels": {
+      "beginner": "能同时看图、听声音、读文字的 AI——不只会聊天，还能看图回答问题，理解视频内容。",
+      "intermediate": "多模态 AI 将不同类型的输入（文本、图像、音频、视频）统一处理。代表模型：GPT-4V/GPT-4o（文本+图像+音频）、Gemini Ultra（原生多模态）、Claude 3（文本+图像）。视觉语言模型（VLM）是其中最成熟的子领域。",
+      "advanced": "多模态 LLM 的架构设计：视觉编码器（CLIP、SigLIP）提取图像特征 → 投影层（MLP 或 Cross-Attention）将视觉特征对齐到文本空间 → LLM 联合推理。关键能力差距：细粒度空间理解（物体计数、相对位置）、图表/文档理解、长视频推理。评测基准：MMMU（大学知识多模态）、MMBench、DocVQA。"
+    },
+    "relatedTerms": [
+      "Vision Transformer",
+      "Video Understanding"
+    ],
+    "contexts": [
+      "audio-ai",
+      "llm"
+    ],
+    "emoji": "👁️",
+    "difficulty": "medium"
+  },
+  "regex": {
+    "term": "Regex",
+    "aliases": [
+      "正则表达式",
+      "Regular Expression",
+      "regexp"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "一种描述文本模式的「暗语」，用简短的符号描述你要找什么样的文字——比如所有的邮箱地址、所有的手机号。",
+      "intermediate": "正则表达式（Regular Expression）是文本模式匹配的标准工具，通过特定语法描述字符串规则。常用元字符：`.`（任意字符）`*`（0次以上）`+`（1次以上）`?`（0或1次）`[]`（字符集）`^$`（行首尾）`()`（分组）`|`（或）。",
+      "advanced": "正则引擎分为 NFA（Non-deterministic Finite Automaton，大多数编程语言）和 DFA（确定性有限自动机，更可预测）。NFA 引擎支持反向引用和环视（Lookahead/Lookbehind），但存在灾难性回溯（Catastrophic Backtracking）风险——精心构造的恶意输入可使正则匹配时间指数级增长（ReDoS 攻击）。"
+    },
+    "relatedTerms": [
+      "API",
+      "JSON",
+      "CLI"
+    ],
+    "contexts": [
+      "development",
+      "text-processing"
+    ],
+    "emoji": "🔍",
+    "difficulty": "medium"
+  },
+  "sql": {
+    "term": "SQL",
+    "aliases": [
+      "结构化查询语言",
+      "Structured Query Language",
+      "MySQL",
+      "PostgreSQL"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "和数据库「说话」的语言——用来查询、插入、修改、删除数据库里的数据，SELECT 是最常用的命令。",
+      "intermediate": "SQL（Structured Query Language）是关系型数据库的标准查询语言。核心命令：SELECT（查询）、INSERT（插入）、UPDATE（更新）、DELETE（删除），以及 JOIN（多表连接）、GROUP BY（分组聚合）、WHERE（过滤）。主流数据库：MySQL、PostgreSQL、SQLite。",
+      "advanced": "SQL 性能优化关键点：①索引设计（B-Tree vs Hash，覆盖索引，联合索引顺序）②查询优化（避免全表扫描，使用 EXPLAIN 分析执行计划）③连接优化（Nested Loop vs Hash Join vs Merge Join）。Text-to-SQL（自然语言转 SQL）是 LLM 的重要应用场景，可让非技术用户直接用自然语言查询数据库。"
+    },
+    "relatedTerms": [
+      "Database",
+      "Vector DB",
+      "API"
+    ],
+    "contexts": [
+      "development",
+      "data"
+    ],
+    "emoji": "🗃️",
+    "difficulty": "medium"
+  },
+  "cache": {
+    "term": "Cache",
+    "aliases": [
+      "缓存",
+      "Redis",
+      "CDN 缓存"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "把常用的东西「先存一份」放在触手可及的地方，下次要用就不用重新获取——就像厨师把常用调料放在操作台上。",
+      "intermediate": "Cache（缓存）是用高速存储（内存、SSD）临时保存频繁访问的数据，减少对慢速存储（数据库、远程 API）的请求。典型实现：Redis（内存数据库，支持多种数据结构）、Memcached（简单 KV 缓存）。缓存策略：LRU（最近最少使用）、TTL（过期时间）。",
+      "advanced": "缓存设计的核心问题：①缓存穿透（查询不存在的 key，击穿到 DB）→ Bloom Filter 预过滤；②缓存雪崩（大量 key 同时过期）→ TTL 随机化；③缓存击穿（热点 key 过期的瞬间）→ 互斥锁/逻辑过期；④一致性（缓存和 DB 数据同步）→ Write-through/Write-back/Cache-aside。在 LLM 服务中，KV Cache 是一种特殊形式的缓存。"
+    },
+    "relatedTerms": [
+      "Database",
+      "API",
+      "KV Cache"
+    ],
+    "contexts": [
+      "infrastructure",
+      "performance"
+    ],
+    "emoji": "⚡",
+    "difficulty": "medium"
+  },
+  "message-queue": {
+    "term": "Message Queue",
+    "aliases": [
+      "消息队列",
+      "MQ",
+      "Kafka",
+      "RabbitMQ"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "让程序之间「异步传话」的中间人——发送方把消息放进队列，接收方从队列里取，双方不需要同时在线。",
+      "intermediate": "Message Queue（消息队列）是异步通信的基础设施，解耦生产者和消费者。主要产品：Kafka（高吞吐日志流，持久化存储）、RabbitMQ（灵活路由，传统 MQ）、SQS（AWS 托管）。核心概念：Topic（主题）、Consumer Group（消费者组）、Offset（消费位置）。",
+      "advanced": "Kafka 的高吞吐量来源于：顺序写磁盘（比随机写快 3 个数量级）+ 零拷贝（sendfile 系统调用）+ 批量压缩（Gzip/LZ4/Snappy）+ 分区并行。在 AI Agent 场景中，消息队列用于：长任务异步处理（避免 HTTP 超时）、多 Agent 协调（事件驱动架构）、流水线解耦（每个处理步骤作为独立消费者）。"
+    },
+    "relatedTerms": [
+      "Webhook",
+      "API",
+      "Microservices"
+    ],
+    "contexts": [
+      "infrastructure",
+      "async"
+    ],
+    "emoji": "📬",
+    "difficulty": "medium"
+  },
+  "monitoring": {
+    "term": "Monitoring",
+    "aliases": [
+      "监控",
+      "可观测性",
+      "Prometheus",
+      "Grafana",
+      "Logging"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "实时监视系统运行状态的工具——就像汽车仪表盘，随时告诉你速度、油量、有没有报警。",
+      "intermediate": "可观测性（Observability）的三大支柱：①Metrics（指标，如 CPU 使用率、响应时间、错误率）②Logs（日志，结构化事件记录）③Traces（链路追踪，请求在微服务间的完整路径）。常用栈：Prometheus（指标采集）+ Grafana（可视化）+ ELK（日志分析）。",
+      "advanced": "AI 系统的可观测性有额外维度：①LLM 评估指标（回答质量、幻觉率、延迟分布 P50/P95/P99）②Token 使用量监控（成本控制）③Prompt/Response 采样（质量回溯）④模型漂移（生产环境输出质量随时间变化）。OpenLLMetry 和 LangSmith 等工具专门针对 LLM 应用提供可观测性支持。"
+    },
+    "relatedTerms": [
+      "Kubernetes",
+      "CI/CD",
+      "API",
+      "Model Serving"
+    ],
+    "contexts": [
+      "infrastructure",
+      "devops"
+    ],
+    "emoji": "📊",
+    "difficulty": "medium"
+  },
+  "microservices": {
+    "term": "Microservices",
+    "aliases": [
+      "微服务",
+      "微服务架构",
+      "Service Mesh"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "把一个大应用拆成很多小服务，每个服务只做一件事——就像把大工厂拆成专门做不同零件的小作坊。",
+      "intermediate": "微服务架构将单体应用拆分为独立部署、独立扩缩容的小服务，每个服务有自己的数据库、API 和技术栈。优点：独立部署、故障隔离、技术异构；缺点：运维复杂、网络延迟、分布式事务。",
+      "advanced": "微服务的治理工具：Service Mesh（如 Istio/Linkerd）在 sidecar 代理层处理服务间通信的负载均衡、熔断、追踪；API Gateway（如 Kong）统一入口、鉴权、限流；Service Discovery（如 Consul/etcd）动态注册和发现服务实例。在 AI 场景中，LLM 推理服务往往被设计为独立微服务，通过 API 暴露能力，独立扩缩容应对负载波动。"
+    },
+    "relatedTerms": [
+      "Kubernetes",
+      "API",
+      "Message Queue"
+    ],
+    "contexts": [
+      "architecture",
+      "cloud"
+    ],
+    "emoji": "🧩",
+    "difficulty": "hard"
+  },
+  "lmm": {
+    "term": "Large Multimodal Model",
+    "aliases": [
+      "LMM",
+      "大型多模态模型",
+      "GPT-4V",
+      "Gemini"
+    ],
+    "category": "AI 基础",
+    "levels": {
+      "beginner": "既能读文字、又能看图片、还能听声音的大型 AI 模型——像 GPT-4o 这种不只会聊天，还能分析图表、理解视频。",
+      "intermediate": "Large Multimodal Model（LMM）是能处理多种输入模态（文本、图像、音频、视频）的大型模型。代表：GPT-4V/GPT-4o（OpenAI）、Gemini 1.5 Pro（Google）、Claude 3.5 Sonnet（Anthropic，支持视觉）、LLaVA（开源视觉语言模型）。",
+      "advanced": "LMM 的架构设计：视觉编码器（CLIP、SigLIP）提取图像特征 → 投影层（MLP 或 Cross-Attention）将视觉特征对齐到文本空间 → LLM 联合推理。关键能力差距：细粒度空间理解（物体计数、相对位置）、图表/文档理解、长视频推理。评测基准：MMMU（大学知识多模态）、MMBench、DocVQA、MathVista（数学视觉推理）。"
+    },
+    "relatedTerms": [
+      "Vision Transformer",
+      "Multimodal AI",
+      "Embedding Model"
+    ],
+    "contexts": [
+      "ai-foundation",
+      "multimodal"
+    ],
+    "emoji": "🤖",
+    "difficulty": "medium"
+  },
+  "hitl": {
+    "term": "HITL",
+    "aliases": [
+      "Human-in-the-Loop",
+      "人机协同",
+      "人工干预"
+    ],
+    "category": "Agent",
+    "levels": {
+      "beginner": "在 AI 做决定的关键节点加入人工审核——AI 做大部分工作，遇到重要或不确定的情况停下来问人类怎么做。",
+      "intermediate": "Human-in-the-Loop（HITL）是在 AI 自动化流程中保留人工干预节点的设计模式。在 Agent 系统中常用于：高风险操作审批（如删除文件、支付）、低置信度决策确认、异常情况处理。是安全 AI 部署的重要原则。",
+      "advanced": "HITL 的设计维度：①触发条件（何时停下来问人）；②交互形式（同步确认 vs 异步审批）；③最小化打扰（只在真正需要时介入，降低人工负担）。在 Claude 的宪法 AI 设计中，HITL 是多层防护的最后一道——对于不可逆操作（删除、发送、支付），无论置信度多高，都应请求人工确认。随 AI 能力提升，HITL 的触发边界在逐步向高风险操作收窄。"
+    },
+    "relatedTerms": [
+      "Agent",
+      "Guardrail",
+      "AI Safety"
+    ],
+    "contexts": [
+      "agent",
+      "ai-safety"
+    ],
+    "emoji": "🤝",
+    "difficulty": "medium"
+  },
+  "computer-use": {
+    "term": "Computer Use",
+    "aliases": [
+      "计算机操控",
+      "Desktop Automation",
+      "GUI Agent"
+    ],
+    "category": "Agent",
+    "levels": {
+      "beginner": "让 AI 直接操控电脑——点击按钮、填表单、使用软件，就像遥控一样，AI 代替人类完成电脑操作。",
+      "intermediate": "Computer Use 是 AI Agent 通过视觉感知（截图）和动作执行（鼠标点击、键盘输入）直接操控计算机 GUI 的能力。Anthropic 在 Claude 3.5 Sonnet 中首次发布此功能，代表了 Agent 从「API 世界」向「人类界面世界」的扩展。",
+      "advanced": "Computer Use 的技术栈：截图 → 视觉模型理解界面元素 → 动作规划（点哪里、输入什么）→ 动作执行（xdotool/pyautogui）→ 循环观察结果。关键挑战：①分辨率和速度（高频截图的 token 成本）②错误恢复（点错了如何回退）③安全边界（防止 Agent 访问敏感信息或执行危险操作）。与 MCP 的关系：Computer Use 是 MCP 之外的另一种工具访问路径，适合没有 API 的遗留系统。"
+    },
+    "relatedTerms": [
+      "Agent",
+      "Tool Use",
+      "HITL",
+      "MCP"
+    ],
+    "contexts": [
+      "agent",
+      "automation"
+    ],
+    "emoji": "🖥️",
+    "difficulty": "hard"
+  },
+  "a2a-protocol": {
+    "term": "A2A Protocol",
+    "aliases": [
+      "Agent-to-Agent",
+      "A2A",
+      "智能体间通信协议"
+    ],
+    "category": "Agent",
+    "levels": {
+      "beginner": "让不同的 AI Agent 之间相互沟通的「通用语言」，就像人类之间有共同语言才能合作，AI Agent 之间也需要标准化的沟通方式。",
+      "intermediate": "A2A（Agent-to-Agent）Protocol 是 Google 发布的 Agent 间通信开放协议，定义了不同厂商、不同平台的 Agent 之间发现、协商和协作的标准方式。与 MCP（模型连接工具）互补——MCP 解决「Agent 连接工具」，A2A 解决「Agent 连接 Agent」。",
+      "advanced": "A2A 的核心设计：①Agent Card（Agent 的自描述，声明能力、输入输出格式、认证方式）；②Task Model（任务状态机：submitted→working→completed/failed）；③多模态消息格式（文本、文件、结构化数据）；④Server-Sent Events（流式更新 Task 状态）。与 MCP 的生态协同：MCP 建立「Host→Server」的工具调用标准，A2A 建立「Agent→Agent」的委托标准，两者共同构成 Agentic 互联网的基础协议栈。"
+    },
+    "relatedTerms": [
+      "Agent",
+      "MCP",
+      "Tool Use"
+    ],
+    "contexts": [
+      "agent",
+      "protocol"
+    ],
+    "emoji": "🔗",
+    "difficulty": "hard"
+  },
+  "reranking": {
+    "term": "Re-ranking",
+    "aliases": [
+      "重排序",
+      "Cross-encoder Reranking",
+      "二阶段检索"
+    ],
+    "category": "RAG 与检索",
+    "levels": {
+      "beginner": "搜索的「第二轮筛选」——先用快速方法找出一批候选，再用更精准但较慢的方法从中挑出最相关的。",
+      "intermediate": "Re-ranking 是 RAG 系统的关键优化：向量检索（Bi-encoder）快速召回 Top-K 候选，再用 Cross-encoder（对 Query+Document 联合编码）对候选进行精细打分和重新排序。Cross-encoder 比 Bi-encoder 准确率高，但速度慢、不能预计算。",
+      "advanced": "主流 Re-ranking 模型：Cohere Rerank、BGE-Reranker、Jina Reranker。ColBERT（Contextualized Late Interaction）是中间路线——为 Document 中每个 token 存储向量，通过 MaxSim 操作在检索时进行细粒度交互，实现接近 Cross-encoder 的准确率和接近 Bi-encoder 的速度。LLM-as-Reranker（用 LLM 直接判断文档相关性）是最新趋势，准确率最高但成本最大。"
+    },
+    "relatedTerms": [
+      "RAG",
+      "Semantic Search",
+      "Embedding Model",
+      "Vector DB"
+    ],
+    "contexts": [
+      "rag",
+      "retrieval"
+    ],
+    "emoji": "🔢",
+    "difficulty": "medium"
+  },
+  "hyde": {
+    "term": "HyDE",
+    "aliases": [
+      "Hypothetical Document Embeddings",
+      "假设文档嵌入"
+    ],
+    "category": "RAG 与检索",
+    "levels": {
+      "beginner": "一种提升搜索准确率的技巧：先让 AI 根据问题「假装写」一个可能的答案，再用这个假答案去搜索真实文档——用答案找答案。",
+      "intermediate": "HyDE（Hypothetical Document Embeddings）是 RAG 的查询增强方法：先用 LLM 根据用户 Query 生成一个假设性回答（即使可能不准确），再用这个假设文档的 Embedding 去检索，而不是直接用原始 Query。因为假设文档和真实相关文档的语义更接近，检索准确率通常更高。",
+      "advanced": "HyDE 的优势在于弥补了 Query 和 Document 之间的表示不对称问题：用户通常用简短关键词查询，而文档是详细描述——假设文档将 Query 扩展到与文档同等的语义层次。缺点：LLM 生成增加延迟和成本，且在假设文档与真实文档差异很大的领域效果可能不如预期。"
+    },
+    "relatedTerms": [
+      "RAG",
+      "Semantic Search",
+      "Embedding Model"
+    ],
+    "contexts": [
+      "rag",
+      "query-optimization"
+    ],
+    "emoji": "💡",
+    "difficulty": "hard"
+  },
+  "model-watermark-fp": {
+    "term": "Model Fingerprint",
+    "aliases": [
+      "模型指纹",
+      "Model Watermark",
+      "版权保护"
+    ],
+    "category": "安全与对齐",
+    "levels": {
+      "beginner": "在 AI 模型里嵌入隐藏标记，证明模型的来源归属——就像给软件加序列号，防止盗版和未授权使用。",
+      "intermediate": "Model Fingerprinting 通过在训练过程中嵌入隐藏的行为模式（后门触发器）来证明模型所有权：给定特定输入，已打水印的模型会产生特定的输出，未打水印的模型不会。可用于追踪模型是否被未授权使用或泄露。",
+      "advanced": "模型水印的两种路径：①白盒水印（需要访问权重，通过 Spread-spectrum 在参数中嵌入信号）；②黑盒水印（只需 API 访问，通过特定 Query-Answer 对的行为一致性验证）。抵抗攻击的挑战：模型蒸馏、微调、量化等操作可能破坏水印。与推理输出水印（AI Watermarking）相比，模型水印是所有权保护，而非内容标记。"
+    },
+    "relatedTerms": [
+      "AI Watermarking",
+      "AI Safety",
+      "AI 版权"
+    ],
+    "contexts": [
+      "ai-safety",
+      "ip-protection"
+    ],
+    "emoji": "🔐",
+    "difficulty": "hard"
+  },
+  "linting": {
+    "term": "Linting",
+    "aliases": [
+      "代码检查",
+      "Linter",
+      "ESLint",
+      "Pylint"
+    ],
+    "category": "开发工具",
+    "levels": {
+      "beginner": "自动检查代码里有没有低级错误和不规范写法的工具——就像拼写检查，但是检查代码质量。",
+      "intermediate": "Linter（代码检查工具）静态分析代码，发现潜在 bug、风格问题和安全漏洞，无需运行代码即可检测。常用工具：ESLint（JavaScript/TypeScript）、Pylint/flake8/ruff（Python）、golangci-lint（Go）。通常集成到 CI/CD 流水线，提交前强制检查。",
+      "advanced": "现代 Linter 分为两类：①语法/样式检查（统一代码风格，强制规范，通常与 Formatter 如 Prettier/Black 搭配）②语义检查（检测空指针解引用、SQL 注入、数据类型不匹配等真实 bug）。Ruff（Rust 实现的 Python Linter）比 Pylint 快 10-100 倍，正快速取代传统 Python Linter。"
+    },
+    "relatedTerms": [
+      "CI/CD",
+      "Code Review",
+      "GitHub",
+      "Testing"
+    ],
+    "contexts": [
+      "development",
+      "code-quality"
+    ],
+    "emoji": "🔍",
+    "difficulty": "low"
+  },
+  "testing": {
+    "term": "Testing",
+    "aliases": [
+      "测试",
+      "单元测试",
+      "集成测试",
+      "TDD"
+    ],
+    "category": "开发工具",
+    "levels": {
+      "beginner": "验证代码有没有 bug 的系统化方法——写代码前或写完后，专门测试代码是否按预期工作。",
+      "intermediate": "软件测试分层：①单元测试（Unit Test，测试单个函数/类，隔离依赖）②集成测试（Integration Test，测试多个组件的协作）③端到端测试（E2E Test，模拟真实用户行为）。TDD（测试驱动开发）先写测试、再写实现，是保证代码质量的有效实践。",
+      "advanced": "AI 系统的测试特殊性：LLM 输出不确定，传统 assert 测试难以直接使用。解决方案：①语义等价测试（用 LLM 评估输出是否与期望等价）；②行为测试（测试模型在特定场景下的行为模式）；③对比测试（A 版本 vs B 版本的相对质量比较）。PromptFoo、DeepEval 等工具专门针对 LLM 应用提供测试框架，支持批量 Prompt 测试和自动评估。"
+    },
+    "relatedTerms": [
+      "CI/CD",
+      "Code Review",
+      "Linting"
+    ],
+    "contexts": [
+      "development",
+      "code-quality"
+    ],
+    "emoji": "🧪",
+    "difficulty": "medium"
+  },
+  "rlhf-dpo": {
+    "term": "DPO",
+    "aliases": [
+      "Direct Preference Optimization",
+      "直接偏好优化"
+    ],
+    "category": "AI 基础",
+    "levels": {
+      "beginner": "训练 AI 更符合人类偏好的新方法，比传统方法简单很多——不需要额外的「评分 AI」，直接从人类的偏好数据学习。",
+      "intermediate": "DPO（Direct Preference Optimization）是 RLHF 的简化替代，绕过了显式 Reward Model 的训练和 PPO 强化学习的复杂流程，直接用偏好数据（「A 比 B 好」）通过一个简单的分类目标优化策略模型。实现更简单、更稳定，已被许多开源模型采用（Zephyr、Tulu 等）。",
+      "advanced": "DPO 的数学推导：利用策略和参考模型的 KL 散度约束，将 RLHF 的目标重写为只依赖策略和参考模型的分类问题，无需显式 Reward Model。DPO 变体：SimPO（去掉参考模型依赖）、IPO（防止过拟合偏好数据）、ORPO（在 SFT 中集成偏好学习）。DPO vs RLHF：DPO 更稳定、实现简单，但在最高性能要求场景（如 o1 推理）RLHF+PPO 仍有优势。"
+    },
+    "relatedTerms": [
+      "RLHF",
+      "Reward Model",
+      "Fine-tuning",
+      "Alignment"
+    ],
+    "contexts": [
+      "ai-foundation",
+      "alignment"
+    ],
+    "emoji": "🎯",
+    "difficulty": "hard"
+  },
+  "attention-mechanism": {
+    "term": "Attention Mechanism",
+    "aliases": [
+      "注意力机制",
+      "Self-Attention",
+      "Multi-head Attention"
+    ],
+    "category": "AI 基础",
+    "levels": {
+      "beginner": "让 AI 在处理文字时「专注」于重要的部分——就像你读文章时有些关键词会让你多看几眼，注意力机制让 AI 做同样的事。",
+      "intermediate": "Attention Mechanism 是 Transformer 的核心组件，允许模型在编码每个位置时动态关注输入序列的不同位置。Self-Attention 计算序列内部各位置之间的关联强度（Query × Key 的点积），用于加权聚合 Value。Multi-head Attention 并行运行多个注意力头，捕捉不同类型的依赖关系。",
+      "advanced": "Attention 的计算复杂度为 O(n²)（序列长度的平方），是长上下文的主要瓶颈。优化方向：Flash Attention（IO 效率优化）、Sparse Attention（只关注部分位置）、Linear Attention（用核函数近似降低复杂度）。GQA（Grouped Query Attention）是现代 LLM 的标配——将多个 Query Head 共享同一组 Key/Value Head，大幅减少 KV Cache 内存开销（Llama 3、Mistral 等均采用）。"
+    },
+    "relatedTerms": [
+      "Transformer",
+      "Flash Attention",
+      "KV Cache"
+    ],
+    "contexts": [
+      "ai-foundation",
+      "architecture"
+    ],
+    "emoji": "🎯",
+    "difficulty": "hard"
+  },
+  "computer-use-agent": {
+    "term": "Computer Use",
+    "aliases": [
+      "计算机操控",
+      "Desktop Automation",
+      "GUI Agent"
+    ],
+    "category": "Agent",
+    "levels": {
+      "beginner": "让 AI 直接操控电脑——点击按钮、填表单、使用软件，就像遥控一样，AI 代替人类完成电脑操作。",
+      "intermediate": "Computer Use 是 AI Agent 通过视觉感知（截图）和动作执行（鼠标点击、键盘输入）直接操控计算机 GUI 的能力。Anthropic 在 Claude 3.5 Sonnet 中首次发布此功能，代表了 Agent 从「API 世界」向「人类界面世界」的扩展。",
+      "advanced": "Computer Use 的技术栈：截图 → 视觉模型理解界面元素 → 动作规划（点哪里、输入什么）→ 动作执行（xdotool/pyautogui）→ 循环观察结果。关键挑战：①分辨率和速度（高频截图的 token 成本）②错误恢复（点错了如何回退）③安全边界（防止 Agent 访问敏感信息或执行危险操作）。与 MCP 的关系：Computer Use 是 MCP 之外的另一种工具访问路径，适合没有 API 的遗留系统。"
+    },
+    "relatedTerms": [
+      "Agent",
+      "Tool Use",
+      "HITL",
+      "MCP"
+    ],
+    "contexts": [
+      "agent",
+      "automation"
+    ],
+    "emoji": "🖥️",
+    "difficulty": "hard"
+  },
+  "llamaindex": {
+    "term": "LlamaIndex",
+    "aliases": [
+      "llama-index",
+      "GPT Index"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "专门帮你把私有数据接入 AI 的工具——不管你的数据是 PDF、数据库还是网页，LlamaIndex 都能帮你把它接入大模型。",
+      "intermediate": "LlamaIndex（前身 GPT Index）是专注于 RAG 和数据接入的 LLM 框架，提供：多种数据连接器（PDF、数据库、API、网页）、灵活的索引结构（向量索引、列表索引、知识图谱索引）、查询引擎和 Agent 工具。",
+      "advanced": "LlamaIndex 与 LangChain 的定位差异：LlamaIndex 更专注于「数据层」（如何高效组织和检索知识），LangChain 更专注于「逻辑层」（如何构建 LLM 调用链和 Agent）。LlamaIndex 的 Query Pipeline 允许构建复杂的查询处理图（路由器、多步骤检索、子问题分解），是复杂 RAG 系统的利器。Llama Cloud 是 LlamaIndex 的托管 SaaS 产品，提供企业级文档解析和检索服务。"
+    },
+    "relatedTerms": [
+      "RAG",
+      "LangChain",
+      "Vector DB",
+      "Embedding Model"
+    ],
+    "contexts": [
+      "ai-platform",
+      "rag"
+    ],
+    "emoji": "🦙",
+    "difficulty": "medium"
+  },
+  "huggingface": {
+    "term": "HuggingFace",
+    "aliases": [
+      "Hugging Face",
+      "HF"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "AI 模型的「GitHub」，有几十万个预训练模型可以免费下载使用，是 AI 工程师最常去的网站。",
+      "intermediate": "HuggingFace 是 AI 生态的核心平台，提供：①Hub（模型/数据集/Space 的托管和发现）②Transformers（统一的模型加载和推理库）③Datasets（标准化数据集库）④PEFT（LoRA 等高效微调工具）⑤Inference API（一键部署的推理服务）。",
+      "advanced": "HuggingFace 的 Transformers 库通过统一的 AutoModel/AutoTokenizer 接口抽象了数百种模型架构，极大降低了使用门槛。Model Card 是 HuggingFace 推广的模型文档标准。HuggingFace Hub 正在成为 AI 领域的「npm」——开发者依赖其分发经过验证的模型和数据集。Inference Endpoints 和 Spaces（基于 Gradio 的应用托管）构成了完整的 AI 开发-部署生态。"
+    },
+    "relatedTerms": [
+      "Fine-tuning",
+      "LoRA",
+      "Embedding Model",
+      "Model Card"
+    ],
+    "contexts": [
+      "ai-platform",
+      "open-source"
+    ],
+    "emoji": "🤗",
+    "difficulty": "low"
+  },
+  "service-mesh": {
+    "term": "Service Mesh",
+    "aliases": [
+      "服务网格",
+      "Istio",
+      "Sidecar Proxy"
+    ],
+    "category": "基础设施与部署",
+    "levels": {
+      "beginner": "管理微服务之间网络通信的「中间层」，自动处理服务发现、负载均衡、加密、追踪，让开发者不用手动实现这些复杂逻辑。",
+      "intermediate": "Service Mesh 是微服务架构的基础设施层，通过在每个服务旁注入 Sidecar 代理（如 Envoy）来管理所有服务间通信。代表框架：Istio（功能丰富，复杂度高）、Linkerd（轻量，Rust 实现）、Cilium（eBPF 实现，性能更好）。",
+      "advanced": "Service Mesh 的核心能力：①流量管理（金丝雀发布、A/B 测试、故障注入）②安全（mTLS 服务间加密认证）③可观测性（分布式追踪、服务拓扑、黄金指标自动收集）。Ambient Mesh（Istio 的新模式）去掉了 Sidecar，改用节点级别的 waypoint 代理，降低资源开销。在大规模 AI 推理集群中，Service Mesh 用于管理推理服务、模型版本切换和流量灰度。"
+    },
+    "relatedTerms": [
+      "Kubernetes",
+      "Microservices",
+      "Load Balancer"
+    ],
+    "contexts": [
+      "cloud",
+      "infrastructure"
+    ],
+    "emoji": "🕸️",
+    "difficulty": "hard"
+  },
+  "gpt-o1": {
+    "term": "GPT-o1",
+    "aliases": [
+      "o1 模型",
+      "Reasoning Model",
+      "推理模型"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "一种特别擅长先想清楚再回答的 AI 模型——遇到难题时，它会在脑子里反复推敲，再给出答案，准确率比普通模型高很多。",
+      "intermediate": "OpenAI o1 系列模型在生成答案前会进行链式思考推理，内部生成隐藏推理步骤，在数学、编程、逻辑等任务上超越 GPT-4。",
+      "advanced": "o1 通过强化学习训练推理策略，内部使用 scratchpad token 进行多步推理但不暴露给用户；推理 token 单独计费，延迟更高但准确率显著提升。"
+    },
+    "relatedTerms": [
+      "Chain of Thought",
+      "GPT-4",
+      "LLM",
+      "Benchmark"
+    ],
+    "contexts": [
+      "reasoning",
+      "inference"
+    ],
+    "emoji": "🧠",
+    "difficulty": "medium"
+  },
+  "cursor-ide": {
+    "term": "Cursor IDE",
+    "aliases": [
+      "Cursor",
+      "AI IDE",
+      "AI 代码编辑器"
+    ],
+    "category": "开发工具",
+    "levels": {
+      "beginner": "一个内置 AI 助手的代码编辑器——写代码时，AI 会自动补全、解释代码、帮你改 bug，像有个随时在线的程序员搭档。",
+      "intermediate": "Cursor 是基于 VSCode 深度改造的 AI 原生 IDE，支持 Tab 补全、自然语言改代码（Ctrl+K）、多文件上下文感知、Codebase 问答等功能，底层调用 Claude/GPT 等模型。",
+      "advanced": "Cursor 通过 .cursorrules 文件注入项目级系统提示，Composer 模式支持跨文件 agentic 编辑，Shadow Workspace 在后台验证 AI 修改，减少破坏性变更。"
+    },
+    "relatedTerms": [
+      "GitHub Copilot",
+      "Claude",
+      "Code Generation",
+      "LLM"
+    ],
+    "contexts": [
+      "ide",
+      "coding"
+    ],
+    "emoji": "⌨️",
+    "difficulty": "easy"
+  },
+  "multiagent-framework": {
+    "term": "Multi-Agent Framework",
+    "aliases": [
+      "多 Agent 框架",
+      "Agent 协作框架",
+      "多智能体框架"
+    ],
+    "category": "Agent",
+    "levels": {
+      "beginner": "让多个 AI 同时分工合作完成任务的框架——就像一个团队，有人负责搜索、有人负责写作、有人负责审核，最终合力完成复杂任务。",
+      "intermediate": "多 Agent 框架（如 AutoGen、CrewAI、LangGraph）定义 Agent 角色、通信协议和任务编排，支持并行执行、分工协作和结果汇总，适合单 Agent 难以完成的复杂工作流。",
+      "advanced": "多 Agent 框架需要解决通信拓扑（集中式 vs 去中心化）、状态共享（共享内存 vs 消息传递）、任务分配（静态 vs 动态）和一致性问题；工具调用、错误恢复和 deadlock 检测是生产级框架的关键挑战。"
+    },
+    "relatedTerms": [
+      "Agent Orchestration",
+      "LangGraph",
+      "Task Decomposition",
+      "LLM"
+    ],
+    "contexts": [
+      "agent",
+      "orchestration"
+    ],
+    "emoji": "🤝",
+    "difficulty": "hard"
+  },
+  "token-limit": {
+    "term": "Token Limit",
+    "aliases": [
+      "Token 预算",
+      "Context Limit",
+      "上下文限制",
+      "Token 上限"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "AI 一次能记住的内容量是有限的——超过这个限制，AI 就会忘记对话开头的内容，就像短期记忆满了一样。",
+      "intermediate": "Token Limit 指模型 Context Window 的最大 token 数，包含输入和输出。超出时模型会截断早期内容；提示工程需要合理分配 token 预算，避免关键信息被截断。",
+      "advanced": "不同模型有不同的 context window，大 context 下注意力质量下降（lost in the middle 问题）；RAG、压缩、摘要是应对 token limit 的常见策略，sliding window 则用于对话历史管理。"
+    },
+    "relatedTerms": [
+      "Context Window",
+      "Prompt Engineering",
+      "RAG",
+      "Chunking"
+    ],
+    "contexts": [
+      "prompting",
+      "inference"
+    ],
+    "emoji": "📏",
+    "difficulty": "easy"
+  },
+  "vector-search": {
+    "term": "Vector Search",
+    "aliases": [
+      "向量搜索",
+      "语义搜索",
+      "Semantic Search",
+      "ANN Search"
+    ],
+    "category": "RAG 与检索",
+    "levels": {
+      "beginner": "通过意思相近来搜索内容，而不是靠关键词匹配——搜怎么让猫咪开心，也能找到关于猫咪玩具推荐的文章。",
+      "intermediate": "向量搜索将文本转为向量后，通过计算余弦相似度或欧氏距离找出最相近的结果，使用 HNSW、IVF 等近似最近邻（ANN）算法在大规模向量库中实现毫秒级检索。",
+      "advanced": "向量搜索的核心权衡是精度（recall）vs 速度，通过调整 HNSW 的 ef_search、IVF 的 nprobe 参数控制；混合搜索（向量加关键词）在 RAG 中效果优于单一方式；量化（PQ、SQ）可压缩索引内存占用。"
+    },
+    "relatedTerms": [
+      "Embedding",
+      "FAISS",
+      "RAG",
+      "Cosine Similarity"
+    ],
+    "contexts": [
+      "retrieval",
+      "search"
+    ],
+    "emoji": "🔍",
+    "difficulty": "medium"
+  },
+  "prompt-optimization": {
+    "term": "Prompt Optimization",
+    "aliases": [
+      "提示词优化",
+      "Prompt Tuning",
+      "自动提示优化",
+      "APO"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "自动改进 AI 指令的方法——不用人工一遍遍试，让 AI 帮你找出效果最好的说法，提升输出质量。",
+      "intermediate": "提示词优化通过自动搜索（梯度优化、进化算法）或 LLM 反馈迭代改进提示词，代表方法包括 DSPy（声明式提示优化）、APE（Automatic Prompt Engineer）、TextGrad。",
+      "advanced": "DSPy 将提示词和少样本示例视为可优化参数，通过 teleprompter 算法（如 BootstrapFewShot、MIPRO）在验证集上迭代优化；梯度方法对白盒模型可用，但黑盒 API 只能靠采样和评分。"
+    },
+    "relatedTerms": [
+      "DSPy",
+      "Few-Shot Learning",
+      "Prompt Engineering",
+      "Chain of Thought"
+    ],
+    "contexts": [
+      "prompting",
+      "optimization"
+    ],
+    "emoji": "⚗️",
+    "difficulty": "hard"
+  },
+  "eval": {
+    "term": "LLM Evaluation",
+    "aliases": [
+      "模型评测",
+      "LLM 评估",
+      "Evals",
+      "Benchmark Testing"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "测试 AI 模型表现有多好的方法——就像给学生出卷子，看看它在各种题目上能答对多少。",
+      "intermediate": "LLM Evaluation 包括自动评测（基准测试如 MMLU、HumanEval）和人工评测（偏好标注），分为能力评估（推理、编程、知识）和安全评估（有害性、偏见、越狱抵抗）。",
+      "advanced": "评测设计的关键挑战是数据污染（训练集泄漏测试集）、评分标准主观性和分布外泛化；LLM-as-judge 通过让强模型打分降低人工成本，但存在自我偏好和位置偏差；MT-Bench、LMSYS Chatbot Arena 是主流对话能力评测框架。"
+    },
+    "relatedTerms": [
+      "Benchmark",
+      "RLHF",
+      "Red Teaming",
+      "Hallucination Detection"
+    ],
+    "contexts": [
+      "evaluation",
+      "quality"
+    ],
+    "emoji": "📊",
+    "difficulty": "medium"
+  },
+  "embedding-distance": {
+    "term": "Cosine Similarity",
+    "aliases": [
+      "余弦相似度",
+      "向量距离",
+      "Embedding Distance",
+      "语义相似度"
+    ],
+    "category": "AI 基础",
+    "levels": {
+      "beginner": "衡量两段文字意思有多像的数学方法——结果从 -1 到 1，越接近 1 说明意思越相近，常用于 AI 理解语义是否相似。",
+      "intermediate": "余弦相似度计算两个向量夹角的余弦值（dot product 除以模长之积），不受向量长度影响，适合比较文本 embedding 的语义距离；与欧氏距离相比，在高维空间中余弦相似度更稳定。",
+      "advanced": "在 RAG 和向量搜索中，余弦相似度是最常用的检索度量，但内积在归一化向量下等价且计算更快；当维度增加时，距离集中效应（concentration of measure）使相似度区分度下降，需要降维或使用更鲁棒的度量。"
+    },
+    "relatedTerms": [
+      "Embedding",
+      "Vector Search",
+      "FAISS",
+      "RAG"
+    ],
+    "contexts": [
+      "math",
+      "retrieval"
+    ],
+    "emoji": "📐",
+    "difficulty": "medium"
+  },
+  "llm-api": {
+    "term": "LLM API",
+    "aliases": [
+      "大模型 API",
+      "AI API",
+      "Model API",
+      "模型接口"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "通过网络调用 AI 能力的接口——开发者不用自己训练模型，直接发送请求就能得到 AI 的回答，按使用量付费。",
+      "intermediate": "LLM API（如 OpenAI API、Anthropic API）提供标准化的 HTTP 接口，支持 Chat Completion、Function Calling、Streaming 等功能，通过 token 计费；OpenAI 的接口格式已成为事实标准，众多模型提供兼容接口。",
+      "advanced": "LLM API 的生产级使用需要考虑速率限制（RPM/TPM）、重试策略（指数退避）、成本优化（模型选择、缓存）和延迟管理；代理层（如 LiteLLM）可统一多家提供商接口，实现 fallback 和负载均衡。"
+    },
+    "relatedTerms": [
+      "OpenAI",
+      "Anthropic",
+      "Function Calling",
+      "Token",
+      "Rate Limiting"
+    ],
+    "contexts": [
+      "api",
+      "development"
+    ],
+    "emoji": "🔌",
+    "difficulty": "easy"
   }
 }
