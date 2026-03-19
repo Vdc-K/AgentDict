@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgentDict</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__brand">
+      <span class="header__icon">📖</span>
+      <span class="header__title">AgentDict</span>
+    </div>
+    <div class="header__actions">
+      <button id="toggle-btn" class="toggle-btn" title="开启/关闭">
+        <span class="toggle-btn__dot"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="stats__item">
+      <span class="stats__value" id="stat-today">0</span>
+      <span class="stats__label">今日新词</span>
+    </div>
+    <div class="stats__item">
+      <span class="stats__value" id="stat-total">0</span>
+      <span class="stats__label">已查看</span>
+    </div>
+    <div class="stats__item">
+      <span class="stats__value" id="stat-mastered">0</span>
+      <span class="stats__label">已掌握</span>
+    </div>
+    <div class="stats__item">
+      <span class="stats__value" id="stat-days">0</span>
+      <span class="stats__label">学习天数</span>
+    </div>
+  </section>
+
+  <!-- Tabs -->
+  <nav class="tabs">
+    <button class="tabs__btn tabs__btn--active" data-tab="terms">📋 术语</button>
+    <button class="tabs__btn" data-tab="team">🧠 Team</button>
+    <button class="tabs__btn" data-tab="settings">⚙️ 设置</button>
+  </nav>
+
+  <!-- Tab: Terms List -->
+  <section class="tab-content tab-content--active" id="tab-terms">
+    <div class="search">
+      <input type="text" id="search-input" class="search__input" placeholder="搜索术语...">
+    </div>
+    <div class="term-list" id="term-list">
+      <!-- Dynamically populated -->
+    </div>
+  </section>
+
+  <!-- Tab: Team Dashboard -->
+  <section class="tab-content" id="tab-team">
+    <div class="pipeline">
+      <h3 class="pipeline__title">🔄 Pipeline 状态</h3>
+      <div class="pipeline__progress">
+        <div class="pipeline__bar" id="pipeline-bar" style="width: 0%"></div>
+      </div>
+      <div class="pipeline__tasks" id="pipeline-tasks">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+    <div class="agents" id="agents-list">
+      <!-- Dynamically populated -->
+    </div>
+  </section>
+
+  <!-- Tab: Settings -->
+  <section class="tab-content" id="tab-settings">
+    <div class="setting">
+      <span class="setting__label">默认解释级别</span>
+      <select id="setting-level" class="setting__select">
+        <option value="beginner">🟢 入门</option>
+        <option value="intermediate">🟡 进阶</option>
+        <option value="advanced">🔴 深入</option>
+      </select>
+    </div>
+    <div class="setting">
+      <span class="setting__label">主题</span>
+      <select id="setting-theme" class="setting__select">
+        <option value="auto">🌗 自动</option>
+        <option value="dark">🌙 暗色</option>
+        <option value="light">☀️ 亮色</option>
+      </select>
+    </div>
+    <div class="setting">
+      <span class="setting__label">当前站点</span>
+      <button id="toggle-site" class="setting__btn">启用中</button>
+    </div>
+    <div class="setting setting--info">
+      <span class="setting__label">版本</span>
+      <span class="setting__value" id="version-display"></span>
+    </div>
+    <div class="setting setting--info">
+      <span class="setting__label">词条数</span>
+      <span class="setting__value" id="term-count">0</span>
+    </div>
+    
+    <div style="margin-top: 16px; border-top: 1px solid #333; padding-top: 16px;">
+      <h4 style="margin: 0 0 12px 0; font-size: 13px; color: #a8b2d1;">☁️ 云端词库同步（可选）</h4>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <input type="text" id="sync-url" placeholder="填入自定义词库 URL 即可同步"
+               style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #444; background: #1a1a2e; color: #e0e0e0; font-size: 12px; box-sizing: border-box;"
+               value="" />
+        <button id="btn-sync-now" style="width: 100%; padding: 8px; background: #10b981; color: #fff; border: none; border-radius: 4px; font-weight: 500; cursor: pointer;">立刻同步 (Sync Now)</button>
+        <div id="sync-status" style="font-size: 11px; color: #888; text-align: center;">使用本地内置词库（193 条）</div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../utils/storage.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

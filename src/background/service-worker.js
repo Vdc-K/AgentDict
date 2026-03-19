@@ -1,0 +1,156 @@
+/**
+ * AgentDict — Service Worker (Background)
+ * 
+ * 🧠 Lead Agent 实现
+ * 
+ * 消息中枢，管理扩展生命周期和跨组件通信。
+ */
+
+// ─── 安装事件 ──────────────────────────────────────────
+
+// 启动时强制清除遗留 syncUrl（v2.0.1 迁移）
+chrome.storage.local.set({ syncUrl: '' });
+
+chrome.runtime.onInstalled.addListener((details) => {
+  if (details.reason === 'install') {
+    // 首次安装，初始化存储
+    chrome.storage.local.set({
+      enabled: true,
+      level: 'beginner',
+      theme: 'auto',
+      learnedTerms: {},
+      stats: {
+        totalViewed: 0,
+        totalLearned: 0,
+        streakDays: 0,
+        startDate: Date.now()
+      },
+      siteSettings: {},
+      syncUrl: '',
+      lastSync: null,
+      remoteTerms: {}
+    });
+    console.log('[AgentDict] 首次安装，已初始化数据');
+  }
+});
+
+// ─── 消息处理 ──────────────────────────────────────────
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  switch (message.type) {
+    case 'GET_ENABLED':
+      chrome.storage.local.get(['enabled', 'siteSettings'], (data) => {
+        const hostname = message.hostname || '';
+        const siteEnabled = data.siteSettings?.[hostname]?.enabled;
+        const globalEnabled = data.enabled !== false;
+        sendResponse({ enabled: siteEnabled !== undefined ? siteEnabled : globalEnabled });
+      });
+      return true; // 异步响应
+
+    case 'TOGGLE_ENABLED':
+      chrome.storage.local.get(['enabled'], (data) => {
+        const newState = !data.enabled;
+        chrome.storage.local.set({ enabled: newState });
+        // 通知所有 content script
+        chrome.tabs.query({}, (tabs) => {
+          tabs.forEach(tab => {
+            chrome.tabs.sendMessage(tab.id, { type: 'STATE_CHANGED', enabled: newState }).catch(() => {});
+          });
+        });
+        sendResponse({ enabled: newState });
+      });
+      return true;
+
+    case 'GET_STATS':
+      chrome.storage.local.get(['stats', 'learnedTerms'], (data) => {
+        const today = new Date().toDateString();
+        const todayNew = Object.values(data.learnedTerms || {}).filter(t => {
+          return new Date(t.firstSeen).toDateString() === today;
+        }).length;
+        sendResponse({
+          ...data.stats,
+          todayNew,
+          totalTerms: Object.keys(data.learnedTerms || {}).length
+        });
+      });
+      return true;
+
+    case 'MARK_MASTERED':
+      chrome.storage.local.get(['learnedTerms', 'stats'], (data) => {
+        const terms = data.learnedTerms || {};
+        const stats = data.stats || {};
+        if (terms[message.termId] && terms[message.termId].status !== 'mastered') {
+          terms[message.termId].status = 'mastered';
+          stats.totalLearned = (stats.totalLearned || 0) + 1;
+          chrome.storage.local.set({ learnedTerms: terms, stats });
+        }
+        sendResponse({ success: true });
+      });
+      return true;
+
+    case 'SYNC_DICTIONARY':
+      (async () => {
+        try {
+          const url = (message.url || '').trim();
+          if (!url) throw new Error("请先填入词库 URL");
+          
+          console.log(`[AgentDict] Fetching remote dictionary from: ${url}`);
+          const res = await fetch(url);
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          const remoteData = await res.json();
+          
+          if (typeof remoteData !== 'object' || Array.isArray(remoteData)) {
+            throw new Error("Invalid dictionary format, expected an object");
+          }
+
+          const timestamp = Date.now();
+          const count = Object.keys(remoteData).length;
+          
+          await chrome.storage.local.set({ 
+            remoteTerms: remoteData,
+            lastSync: timestamp
+          });
+          
+          console.log(`[AgentDict] Successfully synced ${count} terms`);
+          
+          // Broadcast to all content scripts to reload matcher
+          chrome.tabs.query({}, (tabs) => {
+            tabs.forEach(tab => {
+              chrome.tabs.sendMessage(tab.id, { type: 'TERMS_UPDATED' }).catch(() => {});
+            });
+          });
+          
+          sendResponse({ success: true, count, timestamp });
+        } catch (err) {
+          console.warn('[AgentDict] Sync skipped:', err.message);
+          sendResponse({ success: false, error: err.message });
+        }
+      })();
+      return true;
+
+    default:
+      sendResponse({ error: 'Unknown message type' });
+  }
+});
+
+// ─── Badge 更新 ────────────────────────────────────────
+
+// 定期更新 badge 显示已学词汇数
+function updateBadge() {
+  chrome.storage.local.get(['stats', 'enabled'], (data) => {
+    if (data.enabled === false) {
+      chrome.action.setBadgeText({ text: 'OFF' });
+      chrome.action.setBadgeBackgroundColor({ color: '#666' });
+    } else {
+      const count = data.stats?.totalLearned || 0;
+      chrome.action.setBadgeText({ text: count > 0 ? String(count) : '' });
+      chrome.action.setBadgeBackgroundColor({ color: '#533483' });
+    }
+  });
+}
+
+chrome.storage.onChanged.addListener(() => {
+  updateBadge();
+});
+
+updateBadge();

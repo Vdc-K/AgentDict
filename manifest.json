@@ -1,0 +1,87 @@
+{
+  "manifest_version": 3,
+  "name": "AgentDict — AI 术语词典",
+  "version": "2.0.0",
+  "description": "在使用 AI Agent 时，自动识别并解释技术术语，边用边学。零 Prompt 侵入，越用越安静。",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": [
+    "https://chat.openai.com/*",
+    "https://chatgpt.com/*",
+    "https://claude.ai/*",
+    "https://*.anthropic.com/*",
+    "https://*.typingmind.com/*",
+    "https://*.openclaw.com/*",
+    "https://*.openclaw.ai/*",
+    "https://gemini.google.com/*",
+    "https://poe.com/*",
+    "https://huggingface.co/*",
+    "https://github.com/*",
+    "https://stackoverflow.com/*",
+    "https://arxiv.org/*",
+    "https://medium.com/*",
+    "https://*.notion.so/*",
+    "https://platform.openai.com/*",
+    "https://openrouter.ai/*",
+    "https://www.perplexity.ai/*",
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*",
+        "https://claude.ai/*",
+        "https://*.anthropic.com/*",
+        "https://*.typingmind.com/*",
+        "https://*.openclaw.com/*",
+        "https://*.openclaw.ai/*",
+        "https://gemini.google.com/*",
+        "https://poe.com/*",
+        "https://huggingface.co/*",
+        "https://github.com/*",
+        "https://stackoverflow.com/*",
+        "https://arxiv.org/*",
+        "https://medium.com/*",
+        "https://*.notion.so/*",
+        "https://platform.openai.com/*",
+        "https://openrouter.ai/*",
+        "https://www.perplexity.ai/*",
+        "http://localhost/*",
+        "http://127.0.0.1/*"
+      ],
+      "js": [
+        "src/utils/storage.js",
+        "src/utils/matcher.js",
+        "src/content/highlighter.js",
+        "src/content/tooltip.js",
+        "src/panel/panel.js",
+        "src/content/scanner.js"
+      ],
+      "css": ["src/styles/content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["src/dictionary/terms.json", "src/dictionary/categories.json", "src/dictionary/relations.json"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "src/background/service-worker.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

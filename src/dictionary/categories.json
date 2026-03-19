@@ -1,0 +1,62 @@
+{
+  "AI 基础": {
+    "emoji": "🧠",
+    "description": "LLM、Transformer、Token、基础模型、模型评估等 AI 核心概念",
+    "color": "#8b5cf6"
+  },
+  "模型训练": {
+    "emoji": "🎓",
+    "description": "Fine-tuning、RLHF、量化、蒸馏、推理优化等训练与压缩技术",
+    "color": "#f59e0b"
+  },
+  "提示工程": {
+    "emoji": "✍️",
+    "description": "Prompt 设计、Chain-of-Thought、对话管理等提示技术",
+    "color": "#a78bfa"
+  },
+  "Agent": {
+    "emoji": "🤖",
+    "description": "ReAct、Tool Use、MCP、Agent 规划与编排等 Agent 核心技术",
+    "color": "#06b6d4"
+  },
+  "RAG 与检索": {
+    "emoji": "🔍",
+    "description": "向量数据库、Embedding、分块、混合检索等 RAG 核心技术",
+    "color": "#059669"
+  },
+  "安全与对齐": {
+    "emoji": "🛡️",
+    "description": "AI 对齐、护栏、越狱防护、API 密钥等安全与伦理相关",
+    "color": "#ef4444"
+  },
+  "网络与协议": {
+    "emoji": "🌐",
+    "description": "HTTP、WebSocket、SSE、REST、消息队列等通信协议与架构风格",
+    "color": "#10b981"
+  },
+  "基础设施与部署": {
+    "emoji": "🚀",
+    "description": "Kubernetes、Docker、CI/CD、云计算、系统可靠性等部署与运维",
+    "color": "#dc2626"
+  },
+  "开发工具": {
+    "emoji": "🔧",
+    "description": "npm、Git、JSON、YAML、前端框架等开发工具与数据格式",
+    "color": "#64748b"
+  },
+  "系统与环境": {
+    "emoji": "💻",
+    "description": "操作系统、端口、进程、API 等基础开发与系统环境概念",
+    "color": "#14b8a6"
+  },
+  "Web3": {
+    "emoji": "⛓️",
+    "description": "区块链、智能合约、DeFi、NFT 等 Web3 与去中心化概念",
+    "color": "#f97316"
+  },
+  "OpenClaw": {
+    "emoji": "🐾",
+    "description": "OpenClaw 平台的核心概念与架构",
+    "color": "#ec4899"
+  }
+}

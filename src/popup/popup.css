@@ -1,0 +1,396 @@
+/**
+ * AgentDict — Popup 样式
+ * 
+ * 🎨 UX Agent 设计
+ * 沉浸式翻译风格：暗色主题、紧凑布局、蓝紫渐变
+ */
+
+/* ─── Reset & Base ─────────────────────────────────── */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 360px;
+  max-height: 520px;
+  background: #0d0d1a;
+  color: #e0e0e0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-size: 13px;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 2px;
+}
+
+/* ─── Header ───────────────────────────────────────── */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: linear-gradient(135deg, #0f3460, #533483);
+  border-bottom: 1px solid #1a1a3e;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__icon {
+  font-size: 20px;
+}
+
+.header__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.toggle-btn {
+  width: 40px;
+  height: 22px;
+  border-radius: 11px;
+  background: #00d97e;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.toggle-btn__dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  transition: all 0.2s;
+}
+
+.toggle-btn--off {
+  background: #444;
+}
+
+.toggle-btn--off .toggle-btn__dot {
+  right: auto;
+  left: 2px;
+}
+
+/* ─── Stats ────────────────────────────────────────── */
+
+.stats {
+  display: flex;
+  padding: 12px 16px;
+  gap: 4px;
+  border-bottom: 1px solid #111;
+}
+
+.stats__item {
+  flex: 1;
+  text-align: center;
+}
+
+.stats__value {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.stats__label {
+  font-size: 11px;
+  color: #666;
+}
+
+/* ─── Tabs ─────────────────────────────────────────── */
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #111;
+  padding: 0 8px;
+}
+
+.tabs__btn {
+  flex: 1;
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 12px;
+  padding: 10px 4px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.tabs__btn:hover {
+  color: #aaa;
+}
+
+.tabs__btn--active {
+  color: #fff;
+  border-bottom-color: #533483;
+}
+
+/* ─── Tab Content ──────────────────────────────────── */
+
+.tab-content {
+  display: none;
+}
+
+.tab-content--active {
+  display: block;
+}
+
+/* ─── Search ───────────────────────────────────────── */
+
+.search {
+  padding: 10px 16px;
+}
+
+.search__input {
+  width: 100%;
+  background: #16213e;
+  border: 1px solid #1a3a5c;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #e0e0e0;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.15s;
+  font-family: inherit;
+}
+
+.search__input:focus {
+  border-color: #533483;
+}
+
+.search__input::placeholder {
+  color: #555;
+}
+
+/* ─── Term List ────────────────────────────────────── */
+
+.term-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.term-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.15s;
+  border-bottom: 1px solid #0a0a15;
+}
+
+.term-item:hover {
+  background: rgba(15, 52, 96, 0.3);
+}
+
+.term-item__emoji {
+  font-size: 18px;
+  width: 28px;
+  text-align: center;
+}
+
+.term-item__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.term-item__name {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ddd;
+}
+
+.term-item__category {
+  font-size: 11px;
+  color: #555;
+}
+
+.term-item__status {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.term-item__status--unseen {
+  color: #555;
+}
+
+.term-item__status--new {
+  background: rgba(0, 255, 255, 0.1);
+  color: #0ff;
+}
+
+.term-item__status--faded {
+  background: rgba(100, 160, 255, 0.1);
+  color: #64a0ff;
+}
+
+.term-item__status--mastered {
+  background: rgba(0, 217, 126, 0.1);
+  color: #00d97e;
+}
+
+.empty {
+  padding: 24px;
+  text-align: center;
+  color: #555;
+}
+
+/* ─── Pipeline / Team ──────────────────────────────── */
+
+.pipeline {
+  padding: 12px 16px;
+  border-bottom: 1px solid #111;
+}
+
+.pipeline__title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+.pipeline__progress {
+  height: 4px;
+  background: #111;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.pipeline__bar {
+  height: 100%;
+  background: linear-gradient(90deg, #0f3460, #533483);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.pipeline__task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 12px;
+  color: #888;
+}
+
+.pipeline__task--done {
+  color: #00d97e;
+}
+
+.pipeline__task--active {
+  color: #fff;
+}
+
+.pipeline__agent {
+  font-size: 11px;
+  color: #555;
+}
+
+.agents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  padding: 12px 16px;
+}
+
+.agent-card {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  background: #111;
+  border-radius: 8px;
+  border: 1px solid #1a1a2e;
+}
+
+.agent-card--active {
+  border-color: #533483;
+  background: rgba(83, 52, 131, 0.1);
+}
+
+.agent-card__emoji {
+  font-size: 16px;
+}
+
+.agent-card__name {
+  font-size: 11px;
+  color: #aaa;
+  flex: 1;
+}
+
+.agent-card__status {
+  font-size: 10px;
+  color: #555;
+}
+
+/* ─── Settings ─────────────────────────────────────── */
+
+.setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #0a0a15;
+}
+
+.setting__label {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.setting__select {
+  background: #16213e;
+  border: 1px solid #1a3a5c;
+  border-radius: 6px;
+  padding: 4px 8px;
+  color: #ddd;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.setting__btn {
+  background: #16213e;
+  border: 1px solid #1a3a5c;
+  border-radius: 6px;
+  padding: 4px 12px;
+  color: #00d97e;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.setting__value {
+  font-size: 12px;
+  color: #555;
+}

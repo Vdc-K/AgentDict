@@ -1,0 +1,774 @@
+{
+  "websocket": {
+    "prerequisites": ["http", "api"],
+    "related": ["sse", "streaming", "webhook", "mcp"]
+  },
+  "mcp": {
+    "prerequisites": ["api", "json", "llm"],
+    "related": ["tool-use", "agent", "a2a", "tool-registry"]
+  },
+  "webhook": {
+    "prerequisites": ["http", "api"],
+    "related": ["webhook-callback", "event-driven", "idempotency", "rest"]
+  },
+  "api": {
+    "prerequisites": [],
+    "related": ["rest", "http", "json", "endpoint", "api-key"]
+  },
+  "api-key": {
+    "prerequisites": ["api"],
+    "related": ["env", "auth", "token", "ssh"]
+  },
+  "token": {
+    "prerequisites": [],
+    "related": ["llm", "prompt", "context-window", "tokenizer"]
+  },
+  "prompt": {
+    "prerequisites": [],
+    "related": ["system-prompt", "few-shot", "chain-of-thought", "prompt-engineering", "llm"]
+  },
+  "llm": {
+    "prerequisites": ["token", "transformer"],
+    "related": ["prompt", "agent", "inference", "context-window", "fine-tuning"]
+  },
+  "sse": {
+    "prerequisites": ["http", "api"],
+    "related": ["websocket", "streaming", "agent"]
+  },
+  "streaming": {
+    "prerequisites": ["sse", "token"],
+    "related": ["websocket", "latency", "stop-sequence", "max-tokens"]
+  },
+  "agent": {
+    "prerequisites": ["llm", "prompt"],
+    "related": ["tool-use", "react", "planning", "multi-agent", "agentic-workflow"]
+  },
+  "tool-use": {
+    "prerequisites": ["llm", "api"],
+    "related": ["function-calling", "mcp", "agent", "react", "tool-registry"]
+  },
+  "context-window": {
+    "prerequisites": ["token", "llm"],
+    "related": ["context-length", "context-compression", "rag", "agent-memory"]
+  },
+  "rag": {
+    "prerequisites": ["embedding", "vector-database", "llm"],
+    "related": ["chunking", "re-ranking", "knowledge-base", "hybrid-search", "grounding"]
+  },
+  "embedding": {
+    "prerequisites": ["token", "llm"],
+    "related": ["vector-database", "similarity-search", "rag", "embedding-model"]
+  },
+  "env": {
+    "prerequisites": [],
+    "related": ["api-key", "git", "docker", "cli"]
+  },
+  "json": {
+    "prerequisites": [],
+    "related": ["api", "rest", "yaml", "structured-output"]
+  },
+  "http": {
+    "prerequisites": [],
+    "related": ["api", "rest", "websocket", "cors", "endpoint"]
+  },
+  "hallucination": {
+    "prerequisites": ["llm"],
+    "related": ["rag", "grounding", "temperature", "prompt-engineering"]
+  },
+  "temperature": {
+    "prerequisites": ["llm", "token"],
+    "related": ["top-p", "logits", "softmax", "inference"]
+  },
+  "fine-tuning": {
+    "prerequisites": ["llm", "pre-training"],
+    "related": ["lora", "rlhf", "synthetic-data", "knowledge-distillation"]
+  },
+  "docker": {
+    "prerequisites": ["cli"],
+    "related": ["kubernetes", "cicd", "sandbox", "container-registry", "model-serving"]
+  },
+  "git": {
+    "prerequisites": [],
+    "related": ["cli", "cicd", "github-actions", "env"]
+  },
+  "rest": {
+    "prerequisites": [],
+    "related": ["api", "http", "json", "endpoint", "graphql"]
+  },
+  "endpoint": {
+    "prerequisites": [],
+    "related": ["api", "rest", "http", "gateway"]
+  },
+  "system-prompt": {
+    "prerequisites": ["prompt", "llm"],
+    "related": ["few-shot", "guardrails", "prompt-injection", "conversation-history"]
+  },
+  "npm": {
+    "prerequisites": [],
+    "related": ["cli", "json", "git"]
+  },
+  "cors": {
+    "prerequisites": [],
+    "related": ["http", "api", "proxy", "rest"]
+  },
+  "yaml": {
+    "prerequisites": [],
+    "related": ["json", "docker", "kubernetes", "github-actions"]
+  },
+  "cli": {
+    "prerequisites": [],
+    "related": ["npm", "git", "docker", "ssh", "curl"]
+  },
+  "daemon": {
+    "prerequisites": ["cli", "port"],
+    "related": ["gateway", "heartbeat", "docker", "kubernetes"]
+  },
+  "gateway": {
+    "prerequisites": ["api", "http"],
+    "related": ["api-gateway", "reverse-proxy", "load-balancer", "proxy"]
+  },
+  "proxy": {
+    "prerequisites": ["http"],
+    "related": ["gateway", "cors", "reverse-proxy", "tailscale"]
+  },
+  "localhost": {
+    "prerequisites": [],
+    "related": ["port", "endpoint", "tailscale", "docker"]
+  },
+  "port": {
+    "prerequisites": [],
+    "related": ["localhost", "docker", "ssh", "endpoint"]
+  },
+  "ssh": {
+    "prerequisites": [],
+    "related": ["cli", "api-key", "tailscale", "env"]
+  },
+  "sandbox": {
+    "prerequisites": ["docker"],
+    "related": ["code-interpreter", "webassembly", "agent", "guardrails"]
+  },
+  "heartbeat": {
+    "prerequisites": ["websocket", "http"],
+    "related": ["daemon", "gateway", "retry-logic"]
+  },
+  "auth": {
+    "prerequisites": ["api-key", "token"],
+    "related": ["api-key", "cors", "ssh", "api-gateway"]
+  },
+  "tailscale": {
+    "prerequisites": ["ssh", "proxy"],
+    "related": ["localhost", "port", "ssh", "reverse-proxy"]
+  },
+  "curl": {
+    "prerequisites": [],
+    "related": ["cli", "http", "api", "rest"]
+  },
+  "persistent-memory": {
+    "prerequisites": ["rag", "agent", "vector-database"],
+    "related": ["agent-memory", "context-window", "knowledge-base"]
+  },
+  "transformer": {
+    "prerequisites": ["attention", "deep-learning"],
+    "related": ["llm", "bert", "gpt", "attention"]
+  },
+  "attention": {
+    "prerequisites": ["deep-learning", "neural-network"],
+    "related": ["transformer", "llm", "context-window", "softmax"]
+  },
+  "inference": {
+    "prerequisites": ["llm", "token"],
+    "related": ["latency", "throughput", "model-serving", "quantization", "speculative-decoding"]
+  },
+  "quantization": {
+    "prerequisites": ["llm", "inference"],
+    "related": ["lora", "knowledge-distillation", "model-serving", "open-source-llm"]
+  },
+  "rlhf": {
+    "prerequisites": ["llm", "fine-tuning"],
+    "related": ["alignment", "reward-model", "constitutional-ai", "dpo"]
+  },
+  "chain-of-thought": {
+    "prerequisites": ["prompt", "llm"],
+    "related": ["react", "few-shot", "planning", "in-context-learning"]
+  },
+  "few-shot": {
+    "prerequisites": ["prompt"],
+    "related": ["zero-shot", "in-context-learning", "prompt-engineering", "chain-of-thought"]
+  },
+  "zero-shot": {
+    "prerequisites": ["prompt", "llm"],
+    "related": ["few-shot", "in-context-learning", "prompt-engineering"]
+  },
+  "grounding": {
+    "prerequisites": ["rag", "llm"],
+    "related": ["hallucination", "rag", "web-browsing", "knowledge-base"]
+  },
+  "react": {
+    "prerequisites": ["agent", "tool-use", "llm"],
+    "related": ["chain-of-thought", "planning", "reflection", "agentic-workflow"]
+  },
+  "a2a": {
+    "prerequisites": ["agent", "mcp", "api"],
+    "related": ["multi-agent", "orchestrator", "agent-card", "mcp"]
+  },
+  "guardrails": {
+    "prerequisites": ["llm", "prompt"],
+    "related": ["prompt-injection", "alignment", "jailbreak", "system-prompt"]
+  },
+  "multi-agent": {
+    "prerequisites": ["agent", "llm"],
+    "related": ["orchestrator", "a2a", "planning", "agentic-workflow"]
+  },
+  "orchestrator": {
+    "prerequisites": ["agent", "multi-agent"],
+    "related": ["planning", "task-decomposition", "multi-agent", "agentic-workflow"]
+  },
+  "planning": {
+    "prerequisites": ["agent", "llm"],
+    "related": ["react", "chain-of-thought", "task-decomposition", "orchestrator"]
+  },
+  "chunking": {
+    "prerequisites": ["token", "embedding"],
+    "related": ["rag", "text-splitter", "vector-database", "document-loader"]
+  },
+  "vector-database": {
+    "prerequisites": ["embedding"],
+    "related": ["rag", "similarity-search", "indexing", "pinecone", "qdrant"]
+  },
+  "similarity-search": {
+    "prerequisites": ["embedding", "vector-database"],
+    "related": ["cosine-similarity", "dense-retrieval", "re-ranking", "faiss"]
+  },
+  "re-ranking": {
+    "prerequisites": ["rag", "similarity-search"],
+    "related": ["hybrid-search", "embedding", "dense-retrieval", "multi-query-retriever"]
+  },
+  "gpu": {
+    "prerequisites": [],
+    "related": ["inference", "cuda", "quantization", "model-serving", "kubernetes"]
+  },
+  "kubernetes": {
+    "prerequisites": ["docker", "yaml"],
+    "related": ["cicd", "helm", "model-serving", "load-balancer", "container-registry"]
+  },
+  "cicd": {
+    "prerequisites": ["git", "docker"],
+    "related": ["github-actions", "kubernetes", "helm", "container-registry"]
+  },
+  "model-serving": {
+    "prerequisites": ["inference", "docker", "api"],
+    "related": ["vllm", "gpu", "kubernetes", "load-balancer"]
+  },
+  "vllm": {
+    "prerequisites": ["inference", "gpu"],
+    "related": ["model-serving", "quantization", "speculative-decoding", "ollama"]
+  },
+  "lora": {
+    "prerequisites": ["fine-tuning", "llm"],
+    "related": ["quantization", "knowledge-distillation", "model-merging", "open-source-llm"]
+  },
+  "top-p": {
+    "prerequisites": ["token", "llm"],
+    "related": ["temperature", "logits", "inference"]
+  },
+  "context-length": {
+    "prerequisites": [],
+    "related": ["context-window", "token", "rag", "context-compression"]
+  },
+  "tokenizer": {
+    "prerequisites": ["token"],
+    "related": ["llm", "bert", "gpt", "logits"]
+  },
+  "serverless": {
+    "prerequisites": ["api", "docker"],
+    "related": ["edge-function", "kubernetes", "cdn", "supabase"]
+  },
+  "benchmark": {
+    "prerequisites": ["llm"],
+    "related": ["evaluation", "llm-as-judge", "scaling-law", "emergent-ability"]
+  },
+  "alignment": {
+    "prerequisites": ["rlhf", "llm"],
+    "related": ["constitutional-ai", "reward-model", "guardrails", "red-teaming"]
+  },
+  "multimodal": {
+    "prerequisites": ["llm", "transformer"],
+    "related": ["embedding", "attention", "bert"]
+  },
+  "agentic-workflow": {
+    "prerequisites": ["agent", "tool-use"],
+    "related": ["planning", "multi-agent", "orchestrator", "human-in-the-loop"]
+  },
+  "human-in-the-loop": {
+    "prerequisites": ["agent"],
+    "related": ["guardrails", "autonomous-agent", "agentic-workflow", "fallback-strategy"]
+  },
+  "autonomous-agent": {
+    "prerequisites": ["agent", "planning", "tool-use"],
+    "related": ["human-in-the-loop", "agentic-workflow", "multi-agent"]
+  },
+  "knowledge-base": {
+    "prerequisites": ["rag", "vector-database"],
+    "related": ["embedding", "document-loader", "chunking", "persistent-memory"]
+  },
+  "hybrid-search": {
+    "prerequisites": ["dense-retrieval", "sparse-retrieval"],
+    "related": ["bm25", "re-ranking", "rag", "similarity-search"]
+  },
+  "prompt-engineering": {
+    "prerequisites": ["prompt", "llm"],
+    "related": ["few-shot", "chain-of-thought", "system-prompt", "zero-shot"]
+  },
+  "structured-output": {
+    "prerequisites": ["json", "llm"],
+    "related": ["response-format", "function-calling", "tool-use", "api"]
+  },
+  "in-context-learning": {
+    "prerequisites": ["prompt", "llm"],
+    "related": ["few-shot", "zero-shot", "chain-of-thought", "prompt-engineering"]
+  },
+  "latency": {
+    "prerequisites": [],
+    "related": ["throughput", "inference", "streaming", "edge-function"]
+  },
+  "throughput": {
+    "prerequisites": ["latency"],
+    "related": ["inference", "load-balancer", "vllm", "model-serving"]
+  },
+  "evaluation": {
+    "prerequisites": ["llm", "benchmark"],
+    "related": ["llm-as-judge", "benchmark", "rag", "red-teaming"]
+  },
+  "agent-memory": {
+    "prerequisites": ["agent", "context-window"],
+    "related": ["persistent-memory", "rag", "context-compression", "multi-turn"]
+  },
+  "reflection": {
+    "prerequisites": ["agent", "llm"],
+    "related": ["react", "planning", "chain-of-thought", "autonomous-agent"]
+  },
+  "function-calling": {
+    "prerequisites": ["llm", "api"],
+    "related": ["tool-use", "structured-output", "mcp", "agent"]
+  },
+  "load-balancer": {
+    "prerequisites": ["http", "api"],
+    "related": ["kubernetes", "gateway", "model-router", "retry-logic"]
+  },
+  "rate-limit": {
+    "prerequisites": [],
+    "related": ["api", "retry-logic", "fallback-strategy", "api-key"]
+  },
+  "webhook-agent": {
+    "prerequisites": ["agent", "tool-use", "react"],
+    "related": ["react", "planning", "reflection", "agentic-workflow"]
+  },
+  "embedding-model": {
+    "prerequisites": ["embedding", "llm"],
+    "related": ["rag", "vector-database", "similarity-search", "chunking"]
+  },
+  "prompt-injection": {
+    "prerequisites": ["prompt", "llm"],
+    "related": ["guardrails", "jailbreak", "system-prompt", "red-teaming"]
+  },
+  "cosine-similarity": {
+    "prerequisites": ["embedding"],
+    "related": ["similarity-search", "vector-database", "dense-retrieval"]
+  },
+  "llm-as-judge": {
+    "prerequisites": ["llm", "evaluation"],
+    "related": ["evaluation", "benchmark", "rlhf", "reward-model"]
+  },
+  "ollama": {
+    "prerequisites": ["llm", "cli"],
+    "related": ["open-source-llm", "vllm", "inference", "quantization"]
+  },
+  "langchain": {
+    "prerequisites": ["llm", "agent", "rag"],
+    "related": ["rag", "tool-use", "vector-database", "agent-memory"]
+  },
+  "context-compression": {
+    "prerequisites": ["context-window", "token", "llm"],
+    "related": ["agent-memory", "rag", "multi-turn", "context-length"]
+  },
+  "smart-contract": {
+    "prerequisites": ["blockchain"],
+    "related": ["dapp", "decentralized", "web3-wallet", "blockchain"]
+  },
+  "blockchain": {
+    "prerequisites": [],
+    "related": ["smart-contract", "decentralized", "web3-wallet", "dapp"]
+  },
+  "decentralized": {
+    "prerequisites": ["blockchain"],
+    "related": ["blockchain", "smart-contract", "dapp", "web3-wallet"]
+  },
+  "web3-wallet": {
+    "prerequisites": ["blockchain"],
+    "related": ["smart-contract", "dapp", "decentralized", "auth"]
+  },
+  "dapp": {
+    "prerequisites": ["blockchain", "smart-contract", "web3-wallet"],
+    "related": ["decentralized", "graphql", "web3-wallet", "api"]
+  },
+  "graphql": {
+    "prerequisites": ["api", "rest"],
+    "related": ["rest", "endpoint", "grpc", "json"]
+  },
+  "grpc": {
+    "prerequisites": ["api", "http"],
+    "related": ["rest", "graphql", "microservice", "api-gateway"]
+  },
+  "webassembly": {
+    "prerequisites": ["cli"],
+    "related": ["edge-function", "serverless", "sandbox", "docker"]
+  },
+  "edge-function": {
+    "prerequisites": ["serverless", "api"],
+    "related": ["cdn", "latency", "webassembly", "serverless"]
+  },
+  "supabase": {
+    "prerequisites": [],
+    "related": ["vector-database", "rag", "embedding", "serverless"]
+  },
+  "red-teaming": {
+    "prerequisites": ["llm", "prompt-injection"],
+    "related": ["jailbreak", "alignment", "guardrails", "prompt-injection"]
+  },
+  "jailbreak": {
+    "prerequisites": ["llm", "prompt"],
+    "related": ["red-teaming", "prompt-injection", "guardrails", "alignment"]
+  },
+  "data-poisoning": {
+    "prerequisites": ["fine-tuning", "llm"],
+    "related": ["red-teaming", "alignment", "synthetic-data", "benchmark"]
+  },
+  "model-collapse": {
+    "prerequisites": ["fine-tuning", "synthetic-data"],
+    "related": ["synthetic-data", "data-poisoning", "benchmark", "scaling-law"]
+  },
+  "synthetic-data": {
+    "prerequisites": ["llm", "fine-tuning"],
+    "related": ["model-collapse", "knowledge-distillation", "rlhf", "data-augmentation"]
+  },
+  "constitutional-ai": {
+    "prerequisites": ["rlhf", "alignment", "llm"],
+    "related": ["alignment", "reward-model", "guardrails", "dpo"]
+  },
+  "dpo": {
+    "prerequisites": ["rlhf", "fine-tuning"],
+    "related": ["rlhf", "reward-model", "alignment", "constitutional-ai"]
+  },
+  "reward-model": {
+    "prerequisites": ["rlhf", "llm", "fine-tuning"],
+    "related": ["rlhf", "dpo", "alignment", "constitutional-ai"]
+  },
+  "scaling-law": {
+    "prerequisites": ["llm", "inference"],
+    "related": ["emergent-ability", "benchmark", "mixture-of-experts", "pre-training"]
+  },
+  "emergent-ability": {
+    "prerequisites": ["llm", "scaling-law"],
+    "related": ["scaling-law", "chain-of-thought", "benchmark", "in-context-learning"]
+  },
+  "mixture-of-experts": {
+    "prerequisites": ["transformer", "inference"],
+    "related": ["transformer", "scaling-law", "inference", "speculative-decoding"]
+  },
+  "speculative-decoding": {
+    "prerequisites": ["inference", "llm"],
+    "related": ["vllm", "latency", "throughput", "quantization"]
+  },
+  "knowledge-distillation": {
+    "prerequisites": ["llm", "fine-tuning"],
+    "related": ["lora", "quantization", "synthetic-data", "model-merging"]
+  },
+  "model-merging": {
+    "prerequisites": ["fine-tuning", "lora"],
+    "related": ["lora", "knowledge-distillation", "open-source-llm"]
+  },
+  "open-source-llm": {
+    "prerequisites": [],
+    "related": ["ollama", "lora", "quantization", "model-merging"]
+  },
+  "agent-card": {
+    "prerequisites": ["agent", "a2a"],
+    "related": ["a2a", "multi-agent", "orchestrator", "mcp"]
+  },
+  "task-decomposition": {
+    "prerequisites": ["planning", "agent"],
+    "related": ["planning", "orchestrator", "react", "chain-of-thought"]
+  },
+  "tool-registry": {
+    "prerequisites": ["tool-use", "mcp"],
+    "related": ["tool-use", "function-calling", "mcp", "agent"]
+  },
+  "code-interpreter": {
+    "prerequisites": ["sandbox", "tool-use"],
+    "related": ["sandbox", "agent", "function-calling", "tool-use"]
+  },
+  "web-browsing": {
+    "prerequisites": ["tool-use", "rag"],
+    "related": ["rag", "grounding", "prompt-injection", "agent"]
+  },
+  "multi-turn": {
+    "prerequisites": [],
+    "related": ["conversation-history", "context-window", "context-compression", "agent-memory"]
+  },
+  "conversation-history": {
+    "prerequisites": [],
+    "related": ["multi-turn", "context-window", "system-message", "context-compression"]
+  },
+  "system-message": {
+    "prerequisites": [],
+    "related": ["system-prompt", "prompt-engineering", "user-message", "conversation-history"]
+  },
+  "user-message": {
+    "prerequisites": [],
+    "related": ["system-message", "assistant-message", "conversation-history", "multi-turn"]
+  },
+  "assistant-message": {
+    "prerequisites": [],
+    "related": ["user-message", "system-message", "function-calling", "structured-output"]
+  },
+  "stop-sequence": {
+    "prerequisites": [],
+    "related": ["streaming", "structured-output", "max-tokens", "token"]
+  },
+  "max-tokens": {
+    "prerequisites": [],
+    "related": ["token", "context-window", "stop-sequence", "latency"]
+  },
+  "response-format": {
+    "prerequisites": [],
+    "related": ["structured-output", "json", "function-calling", "tool-use"]
+  },
+  "model-router": {
+    "prerequisites": ["llm", "gateway"],
+    "related": ["load-balancer", "fallback-strategy", "gateway", "inference"]
+  },
+  "fallback-strategy": {
+    "prerequisites": ["retry-logic"],
+    "related": ["retry-logic", "model-router", "rate-limit", "human-in-the-loop"]
+  },
+  "retry-logic": {
+    "prerequisites": ["http", "api"],
+    "related": ["fallback-strategy", "rate-limit", "idempotency", "webhook-callback"]
+  },
+  "idempotency": {
+    "prerequisites": ["api", "http"],
+    "related": ["retry-logic", "webhook", "fallback-strategy", "webhook-callback"]
+  },
+  "webhook-callback": {
+    "prerequisites": ["webhook", "api"],
+    "related": ["webhook", "event-driven", "idempotency", "retry-logic"]
+  },
+  "event-driven": {
+    "prerequisites": ["api", "webhook"],
+    "related": ["pub-sub", "webhook", "webhook-callback", "multi-agent"]
+  },
+  "pub-sub": {
+    "prerequisites": ["event-driven"],
+    "related": ["event-driven", "webhook", "multi-agent", "streaming"]
+  },
+  "document-loader": {
+    "prerequisites": [],
+    "related": ["rag", "chunking", "text-splitter", "knowledge-base"]
+  },
+  "text-splitter": {
+    "prerequisites": ["chunking", "token"],
+    "related": ["chunking", "document-loader", "embedding", "parent-document-retriever"]
+  },
+  "metadata-filtering": {
+    "prerequisites": ["vector-database", "rag"],
+    "related": ["rag", "similarity-search", "hybrid-search", "sparse-retrieval"]
+  },
+  "dense-retrieval": {
+    "prerequisites": ["embedding", "similarity-search"],
+    "related": ["sparse-retrieval", "hybrid-search", "faiss", "similarity-search"]
+  },
+  "sparse-retrieval": {
+    "prerequisites": ["tf-idf"],
+    "related": ["bm25", "dense-retrieval", "hybrid-search", "similarity-search"]
+  },
+  "bm25": {
+    "prerequisites": ["tf-idf"],
+    "related": ["tf-idf", "sparse-retrieval", "hybrid-search", "re-ranking"]
+  },
+  "tf-idf": {
+    "prerequisites": ["token"],
+    "related": ["bm25", "sparse-retrieval", "embedding", "similarity-search"]
+  },
+  "indexing": {
+    "prerequisites": ["vector-database", "embedding"],
+    "related": ["rag", "faiss", "vector-database", "chunking"]
+  },
+  "faiss": {
+    "prerequisites": ["vector-database", "similarity-search"],
+    "related": ["vector-database", "indexing", "pinecone", "dense-retrieval"]
+  },
+  "pinecone": {
+    "prerequisites": [],
+    "related": ["vector-database", "faiss", "weaviate", "qdrant"]
+  },
+  "weaviate": {
+    "prerequisites": ["vector-database", "embedding"],
+    "related": ["vector-database", "pinecone", "qdrant", "hybrid-search"]
+  },
+  "chroma": {
+    "prerequisites": [],
+    "related": ["vector-database", "faiss", "qdrant", "pinecone"]
+  },
+  "qdrant": {
+    "prerequisites": ["vector-database", "embedding"],
+    "related": ["vector-database", "weaviate", "faiss", "sparse-retrieval"]
+  },
+  "parent-document-retriever": {
+    "prerequisites": ["rag", "text-splitter"],
+    "related": ["chunking", "re-ranking", "multi-query-retriever", "similarity-search"]
+  },
+  "multi-query-retriever": {
+    "prerequisites": ["rag", "llm"],
+    "related": ["parent-document-retriever", "re-ranking", "hybrid-search", "similarity-search"]
+  },
+  "perplexity": {
+    "prerequisites": ["llm", "cross-entropy"],
+    "related": ["benchmark", "tokenizer", "loss-function", "evaluation"]
+  },
+  "bert": {
+    "prerequisites": ["transformer", "pre-training"],
+    "related": ["gpt", "transformer", "embedding", "fine-tuning"]
+  },
+  "gpt": {
+    "prerequisites": ["transformer", "pre-training"],
+    "related": ["bert", "llm", "transformer", "rlhf"]
+  },
+  "softmax": {
+    "prerequisites": [],
+    "related": ["logits", "temperature", "attention", "cross-entropy"]
+  },
+  "logits": {
+    "prerequisites": ["neural-network"],
+    "related": ["softmax", "temperature", "top-p", "tokenizer"]
+  },
+  "backpropagation": {
+    "prerequisites": ["neural-network", "loss-function"],
+    "related": ["gradient-descent", "deep-learning", "overfitting", "batch-size"]
+  },
+  "gradient-descent": {
+    "prerequisites": ["loss-function"],
+    "related": ["backpropagation", "overfitting", "batch-size", "epoch"]
+  },
+  "overfitting": {
+    "prerequisites": [],
+    "related": ["underfitting", "dropout", "fine-tuning", "benchmark"]
+  },
+  "underfitting": {
+    "prerequisites": [],
+    "related": ["overfitting", "neural-network", "deep-learning", "loss-function"]
+  },
+  "dropout": {
+    "prerequisites": ["neural-network"],
+    "related": ["overfitting", "deep-learning", "batch-size", "fine-tuning"]
+  },
+  "batch-size": {
+    "prerequisites": [],
+    "related": ["gradient-descent", "epoch", "overfitting", "gpu"]
+  },
+  "epoch": {
+    "prerequisites": [],
+    "related": ["batch-size", "gradient-descent", "overfitting", "fine-tuning"]
+  },
+  "loss-function": {
+    "prerequisites": ["neural-network"],
+    "related": ["backpropagation", "cross-entropy", "gradient-descent", "overfitting"]
+  },
+  "cross-entropy": {
+    "prerequisites": ["softmax", "loss-function"],
+    "related": ["loss-function", "perplexity", "logits", "backpropagation"]
+  },
+  "neural-network": {
+    "prerequisites": [],
+    "related": ["deep-learning", "backpropagation", "dropout", "loss-function"]
+  },
+  "deep-learning": {
+    "prerequisites": [],
+    "related": ["neural-network", "transformer", "backpropagation", "gpu"]
+  },
+  "pre-training": {
+    "prerequisites": ["deep-learning", "neural-network"],
+    "related": ["bert", "gpt", "fine-tuning", "transfer-learning"]
+  },
+  "transfer-learning": {
+    "prerequisites": ["pre-training", "fine-tuning"],
+    "related": ["fine-tuning", "pre-training", "bert", "lora"]
+  },
+  "distillation": {
+    "prerequisites": ["knowledge-distillation"],
+    "related": ["knowledge-distillation", "quantization", "lora", "synthetic-data"]
+  },
+  "data-augmentation": {
+    "prerequisites": [],
+    "related": ["overfitting", "synthetic-data", "fine-tuning", "benchmark"]
+  },
+  "helm": {
+    "prerequisites": ["kubernetes", "yaml"],
+    "related": ["kubernetes", "cicd", "terraform", "docker"]
+  },
+  "terraform": {
+    "prerequisites": ["cli", "yaml"],
+    "related": ["helm", "kubernetes", "cicd", "docker"]
+  },
+  "github-actions": {
+    "prerequisites": [],
+    "related": ["cicd", "git", "docker", "kubernetes"]
+  },
+  "container-registry": {
+    "prerequisites": [],
+    "related": ["docker", "kubernetes", "cicd", "model-serving"]
+  },
+  "microservice": {
+    "prerequisites": ["api", "docker"],
+    "related": ["monolith", "api-gateway", "grpc", "kubernetes"]
+  },
+  "monolith": {
+    "prerequisites": [],
+    "related": ["microservice", "docker", "api", "kubernetes"]
+  },
+  "api-gateway": {
+    "prerequisites": ["api", "gateway"],
+    "related": ["gateway", "load-balancer", "reverse-proxy", "microservice"]
+  },
+  "reverse-proxy": {
+    "prerequisites": ["http", "proxy"],
+    "related": ["proxy", "gateway", "api-gateway", "load-balancer"]
+  },
+  "cdn": {
+    "prerequisites": [],
+    "related": ["edge-function", "edge-computing", "latency", "serverless"]
+  },
+  "edge-computing": {
+    "prerequisites": ["cdn"],
+    "related": ["edge-function", "cdn", "serverless", "latency"]
+  },
+  "cuda": {
+    "prerequisites": ["gpu"],
+    "related": ["gpu", "inference", "quantization", "tensorrt"]
+  },
+  "tensorrt": {
+    "prerequisites": ["gpu", "inference"],
+    "related": ["cuda", "onnx", "inference", "model-serving"]
+  },
+  "onnx": {
+    "prerequisites": ["deep-learning", "inference"],
+    "related": ["tensorrt", "quantization", "model-serving", "inference"]
+  },
+  "a-b-testing": {
+    "prerequisites": ["evaluation"],
+    "related": ["evaluation", "canary-deployment", "benchmark", "llm-as-judge"]
+  },
+  "canary-deployment": {
+    "prerequisites": ["docker", "kubernetes"],
+    "related": ["a-b-testing", "kubernetes", "cicd", "model-serving"]
+  }
+}
