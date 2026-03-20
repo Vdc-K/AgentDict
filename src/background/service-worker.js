@@ -31,6 +31,8 @@ chrome.runtime.onInstalled.addListener((details) => {
       remoteTerms: {}
     });
     console.log('[AgentDict] 首次安装，已初始化数据');
+    // 首次安装后自动同步最新词库
+    autoSync();
   } else {
     // 更新时：修正旧版空 URL 或占位符 URL
     chrome.storage.local.get(['syncUrl'], (data) => {
@@ -161,3 +163,24 @@ chrome.storage.onChanged.addListener(() => {
 });
 
 updateBadge();
+
+// ─── 自动同步词库 ─────────────────────────────────────
+
+async function autoSync() {
+  try {
+    const { syncUrl } = await chrome.storage.local.get(['syncUrl']);
+    const url = syncUrl || GITHUB_TERMS_URL;
+    console.log('[AgentDict] 自动同步词库:', url);
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    if (typeof data !== 'object' || Array.isArray(data)) throw new Error('格式错误');
+    await chrome.storage.local.set({ remoteTerms: data, lastSync: Date.now() });
+    console.log('[AgentDict] 自动同步成功:', Object.keys(data).length, '条');
+  } catch (e) {
+    console.warn('[AgentDict] 自动同步跳过:', e.message);
+  }
+}
+
+// 每次 service worker 启动时静默同步
+autoSync();

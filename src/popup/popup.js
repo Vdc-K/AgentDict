@@ -229,53 +229,6 @@ function bindEvents() {
     chrome.storage.local.set({ theme: e.target.value });
   });
   
-  // Cloud Sync
-  const syncUrlInput = document.getElementById('sync-url');
-  syncUrlInput.addEventListener('change', (e) => {
-    chrome.storage.local.set({ syncUrl: e.target.value });
-  });
-
-  const syncBtn = document.getElementById('btn-sync-now');
-  syncBtn.addEventListener('click', async () => {
-    syncBtn.disabled = true;
-    syncBtn.textContent = '同步中...';
-    
-    try {
-      let url = syncUrlInput.value.trim();
-      // 输入框为空时从 storage 读默认 URL
-      if (!url) {
-        const data = await new Promise(r => chrome.storage.local.get(['syncUrl'], r));
-        url = (data.syncUrl || '').trim();
-        if (url) syncUrlInput.value = url;
-      }
-      if (url) chrome.storage.local.set({ syncUrl: url });
-      
-      const response = await new Promise(resolve => {
-        chrome.runtime.sendMessage({ type: 'SYNC_DICTIONARY', url }, resolve);
-      });
-      
-      if (response && response.success) {
-        syncBtn.style.background = '#059669';
-        syncBtn.textContent = `成功! 更新了 ${response.count} 个词条`;
-        updateSyncStatus(response.timestamp);
-        setTimeout(loadTermsList, 1000);
-      } else {
-        syncBtn.style.background = '#dc2626';
-        const errMsg = response?.error || '未知错误';
-        syncBtn.textContent = '失败: ' + errMsg;
-        // 同时显示在状态栏
-        const statusEl = document.getElementById('sync-status');
-        if (statusEl) statusEl.textContent = 'URL: ' + (url || '空') + ' | 错误: ' + errMsg;
-      }
-    } catch (e) {
-      syncBtn.style.background = '#dc2626';
-      syncBtn.textContent = '通信失败: ' + e.message;
-    } finally {
-      setTimeout(() => {
-        syncBtn.disabled = false;
-        syncBtn.style.background = '#10b981';
-        syncBtn.textContent = '立刻同步 (Sync Now)';
-      }, 3000);
-    }
+  // 云端同步已改为自动（service worker 启动时静默同步），无需手动 UI
   });
 }
