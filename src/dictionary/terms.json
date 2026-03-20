@@ -11434,5 +11434,892 @@
     ],
     "emoji": "🔌",
     "difficulty": "easy"
+  },
+  "llama-cpp": {
+    "term": "llama.cpp",
+    "aliases": [
+      "llama cpp",
+      "gguf"
+    ],
+    "category": "模型部署与推理",
+    "levels": {
+      "beginner": "一个能让你在自己电脑上运行大语言模型的开源工具，就像把 AI 装进你的笔记本，不需要联网也能用。",
+      "intermediate": "由 Georgi Gerganov 开发的高效 LLM 推理引擎，使用纯 C/C++ 实现，支持 GGUF 格式模型量化，可在 CPU 上运行（也支持 GPU 加速），是本地化部署开源模型的主流方案。",
+      "advanced": "llama.cpp 通过 k-quant 量化（Q4_K_M、Q8_0 等）大幅压缩模型体积。底层利用 BLAS、Metal（Apple Silicon）、CUDA 等硬件加速库，支持 continuous batching 和多 LoRA 并发。Ollama 等工具基于此构建。"
+    },
+    "relatedTerms": [
+      "Ollama",
+      "GGUF",
+      "Quantization",
+      "Model Serving",
+      "Open Source LLM"
+    ],
+    "contexts": [
+      "local-inference",
+      "deployment"
+    ],
+    "emoji": "🦙",
+    "difficulty": "medium"
+  },
+  "feature-selection": {
+    "term": "Feature Selection",
+    "aliases": [
+      "特征选择",
+      "特征筛选"
+    ],
+    "category": "数据科学基础",
+    "levels": {
+      "beginner": "从一堆数据字段里挑出真正有用的那几个，就像做菜只用关键食材，去掉多余的，让模型更聪明、更快。",
+      "intermediate": "从原始特征集中选择对模型预测最有帮助的子集，减少维度灾难和过拟合风险。常用方法：过滤法（相关系数/卡方检验）、包装法（RFE）、嵌入法（L1 正则化）。",
+      "advanced": "特征选择与特征工程协同工作。Lasso 回归通过 L1 惩罚将不重要特征系数压缩为 0；基于树的模型（Random Forest、XGBoost）可输出 feature_importance；互信息法适用于非线性关系。过度过滤可能丢失信号，需结合交叉验证评估。"
+    },
+    "relatedTerms": [
+      "Feature Engineering",
+      "PCA",
+      "Overfitting",
+      "Dimensionality Reduction"
+    ],
+    "contexts": [
+      "machine-learning",
+      "data-science"
+    ],
+    "emoji": "🎯",
+    "difficulty": "medium"
+  },
+  "north-star-metric": {
+    "term": "North Star Metric",
+    "aliases": [
+      "北极星指标",
+      "NSM"
+    ],
+    "category": "商业与产品",
+    "levels": {
+      "beginner": "一个产品最核心的衡量指标，就像北极星一样给全团队指引方向，所有人都围绕它努力，比如微信的「月活用户数」。",
+      "intermediate": "North Star Metric 是能最好体现产品核心价值、预测长期增长的单一关键指标。它必须同时满足：反映用户获得价值、可量化、能被全团队影响。例如：Airbnb 是「预定夜晚数」，Slack 是「已发消息数」。",
+      "advanced": "NSM 的选择需要避免虚荣指标（如注册量），聚焦于能反映真实价值交付的行为指标。需配合输入指标树（Input Metrics Tree）分解为各团队可操作的子指标。增长实验、功能优先级和 OKR 都应以 NSM 为锚点对齐。"
+    },
+    "relatedTerms": [
+      "DAU/MAU",
+      "Retention",
+      "Conversion Rate",
+      "PMF"
+    ],
+    "contexts": [
+      "product",
+      "growth"
+    ],
+    "emoji": "⭐",
+    "difficulty": "medium"
+  },
+  "monorepo": {
+    "term": "Monorepo",
+    "aliases": [
+      "mono repo",
+      "单一仓库"
+    ],
+    "category": "开源与社区",
+    "levels": {
+      "beginner": "把所有项目代码都放在一个大仓库里，就像一家公司把所有产品都放在同一栋楼里管理，方便统一协调。",
+      "intermediate": "将多个相关项目/包放在单一 Git 仓库中管理的架构模式。优点：共享依赖、原子化提交、便于跨包重构。代表工具：Turborepo、Nx、pnpm workspaces。Google、Meta 均使用 Monorepo。",
+      "advanced": "Monorepo 在大规模下需要增量构建（只构建变更的包）和分布式缓存来解决性能问题。Turborepo 使用任务依赖图 + remote cache；Nx 支持受影响分析（affected graph）。与 Polyrepo 的权衡主要在：团队自治度 vs. 统一治理成本。"
+    },
+    "relatedTerms": [
+      "Git",
+      "CI/CD",
+      "Package Manager",
+      "Semantic Versioning"
+    ],
+    "contexts": [
+      "development",
+      "open-source"
+    ],
+    "emoji": "🏛️",
+    "difficulty": "medium"
+  },
+  "datasheets-for-datasets": {
+    "term": "Datasheets for Datasets",
+    "aliases": [
+      "数据集说明书",
+      "数据集数据表"
+    ],
+    "category": "AI 伦理与治理",
+    "levels": {
+      "beginner": "给 AI 训练数据附上一份「出生证明」，说清楚这些数据是哪来的、有什么偏见、适合用在哪里，让使用者知情。",
+      "intermediate": "由 Timnit Gebru 等人提出的数据集文档规范，要求记录数据集的：动机、组成、采集过程、预处理、用途、分发与维护等信息。类似于硬件的技术规格表，旨在提升 AI 供应链透明度。",
+      "advanced": "Datasheets for Datasets 是对抗数据偏见和滥用的重要机制。与 Model Card 共同构成 AI 系统的可解释性文档体系。在监管层面，EU AI Act 要求高风险系统必须提供数据文档。HuggingFace 的 Dataset Card 是其实践落地形态。"
+    },
+    "relatedTerms": [
+      "Model Card",
+      "AI 治理",
+      "Bias & Fairness",
+      "Responsible AI"
+    ],
+    "contexts": [
+      "ai-ethics",
+      "governance"
+    ],
+    "emoji": "📋",
+    "difficulty": "medium"
+  },
+  "dual-use": {
+    "term": "Dual Use",
+    "aliases": [
+      "双重用途",
+      "两用技术"
+    ],
+    "category": "AI 伦理与治理",
+    "levels": {
+      "beginner": "一种技术既能用来做好事也能用来做坏事，比如 AI 既能帮医生诊病，也可能被用来生成虚假信息。",
+      "intermediate": "Dual Use 指 AI 技术或研究成果可同时用于有益（医疗、科研）和有害（武器、监控、误导）目的。是 AI 安全领域的核心议题，影响模型发布策略、能力限制和访问控制设计。",
+      "advanced": "Dual Use 风险评估需要考虑「阈值效应」—— 当某项能力超过某个阈值后，有害使用的边际成本骤降。OpenAI 和 Anthropic 的 Usage Policy 均对 CBRN（化学/生物/放射/核）信息设有严格限制。负责任披露（Responsible Disclosure）和阶段性发布（Staged Rollout）是常见应对策略。"
+    },
+    "relatedTerms": [
+      "AI Safety",
+      "Red Teaming",
+      "Guardrail",
+      "Constitutional AI"
+    ],
+    "contexts": [
+      "ai-ethics",
+      "safety"
+    ],
+    "emoji": "⚔️",
+    "difficulty": "high"
+  },
+  "rouge": {
+    "term": "ROUGE",
+    "aliases": [
+      "ROUGE score",
+      "rouge-l",
+      "rouge-n"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "评价 AI 写的摘要质量的打分工具，看 AI 写的内容和标准答案有多少词重叠，重叠越多分越高。",
+      "intermediate": "Recall-Oriented Understudy for Gisting Evaluation，是文本摘要和机器翻译的自动评估指标。ROUGE-N 计算 n-gram 召回率，ROUGE-L 基于最长公共子序列（LCS）。与 BLEU（侧重精确率）互补。",
+      "advanced": "ROUGE 系列指标在摘要评估中仍是基线，但存在明显局限：对语义等价的改写不敏感（词不同但意思相同得低分）。BERTScore 通过语义向量匹配解决了部分问题。在 RAG 系统评估中，ROUGE 常与 Faithfulness、Context Recall 等指标组合使用。"
+    },
+    "relatedTerms": [
+      "BLEU",
+      "Perplexity",
+      "Summarization",
+      "Evaluation"
+    ],
+    "contexts": [
+      "nlp",
+      "evaluation"
+    ],
+    "emoji": "📊",
+    "difficulty": "medium"
+  },
+  "dependency-parsing": {
+    "term": "Dependency Parsing",
+    "aliases": [
+      "依存句法分析",
+      "依存分析"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "分析句子里每个词之间的关系，比如「猫追了老鼠」里，「猫」是主语、「老鼠」是宾语，画出一张词语关系图。",
+      "intermediate": "NLP 中的句法分析任务，识别句子中词语之间的语法依存关系，输出有向图（依存树）。每条边表示一个词依存于另一个词，边的标签表示依存关系类型（nsubj, dobj, amod 等）。",
+      "advanced": "主流方法有：基于转移的（Transition-based，如 arc-eager）和基于图的（Graph-based，如 Biaffine Parser）。Universal Dependencies（UD）项目提供了跨语言的统一标注框架，支持 100+ 种语言。在信息抽取、问答、机器翻译中是重要预处理步骤。"
+    },
+    "relatedTerms": [
+      "NLP",
+      "POS Tagging",
+      "Named Entity Recognition",
+      "Coreference Resolution"
+    ],
+    "contexts": [
+      "nlp",
+      "linguistics"
+    ],
+    "emoji": "🌳",
+    "difficulty": "high"
+  },
+  "pos-tagging": {
+    "term": "POS Tagging",
+    "aliases": [
+      "词性标注",
+      "Part-of-Speech Tagging",
+      "词类标注"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "给句子里的每个词贴上「名词」「动词」「形容词」等标签，帮助电脑理解词在句子中的角色。",
+      "intermediate": "Part-of-Speech Tagging（词性标注），为文本中的每个词分配词性标签（名词 NN、动词 VB、形容词 JJ 等）。是 NLP 流水线的基础步骤，为句法分析、命名实体识别等下游任务提供信息。",
+      "advanced": "早期方法（HMM、CRF）依赖手工特征和转移概率；现代方法用预训练语言模型（BERT 系列）进行序列标注，准确率在 Penn Treebank 上超过 97%。中文词性标注面临额外的分词歧义挑战，通常与分词联合处理。"
+    },
+    "relatedTerms": [
+      "NLP",
+      "Dependency Parsing",
+      "Named Entity Recognition",
+      "Tokenization"
+    ],
+    "contexts": [
+      "nlp",
+      "linguistics"
+    ],
+    "emoji": "🏷️",
+    "difficulty": "medium"
+  },
+  "lemmatization": {
+    "term": "Lemmatization",
+    "aliases": [
+      "词形还原",
+      "词元化"
+    ],
+    "category": "NLP",
+    "levels": {
+      "beginner": "把单词还原成最基本的形式，比如把「running」「ran」「runs」都变成「run」，这样电脑处理时就知道它们是同一个词。",
+      "intermediate": "将词的各种变形（时态、单复数、比较级等）还原为词典基本形式（lemma）。与词干提取（Stemming）相比，词形还原考虑词性和语义，结果是真实存在的词。例如：「better」→「good」（考虑词性为形容词）。",
+      "advanced": "词形还原需要词性信息（POS）作为输入，因此通常在 POS Tagging 之后进行。WordNet 是英语词形还原的重要语义资源；spaCy 等库内置了基于规则和查表的词形还原器。在中文中无需词形还原，但需要词干化处理。BPE 分词使 Transformer 模型基本绕过了此步骤。"
+    },
+    "relatedTerms": [
+      "NLP",
+      "Tokenization",
+      "Stemming",
+      "POS Tagging"
+    ],
+    "contexts": [
+      "nlp",
+      "text-processing"
+    ],
+    "emoji": "🔤",
+    "difficulty": "medium"
+  },
+  "u-net": {
+    "term": "U-Net",
+    "aliases": [
+      "UNet",
+      "U Net"
+    ],
+    "category": "计算机视觉",
+    "levels": {
+      "beginner": "一种专门用来给图片「染色」的 AI 网络，能精确标出图片里每个区域属于什么（比如医疗图像里哪里是肿瘤），连细节都不放过。",
+      "intermediate": "U-Net 是一种编码器-解码器架构的卷积神经网络，专为图像分割设计。其 U 形结构通过跳跃连接（skip connections）将编码器的细节特征直接传递给解码器，解决了上采样过程中细节丢失的问题。最初用于医学图像分割。",
+      "advanced": "U-Net 的跳跃连接机制使模型同时具有全局语义理解和局部细节保留能力。在扩散模型（Diffusion Model）中，U-Net 被广泛用作噪声预测网络（如 Stable Diffusion）。变体包括 U-Net++（嵌套结构）、Attention U-Net（注意力门控）和 3D U-Net（体积数据）。"
+    },
+    "relatedTerms": [
+      "Image Segmentation",
+      "Diffusion Model",
+      "Convolutional Neural Network",
+      "Computer Vision"
+    ],
+    "contexts": [
+      "computer-vision",
+      "medical-imaging"
+    ],
+    "emoji": "🔬",
+    "difficulty": "high"
+  },
+  "3d-reconstruction": {
+    "term": "3D Reconstruction",
+    "aliases": [
+      "三维重建",
+      "三维建模",
+      "3D建模"
+    ],
+    "category": "计算机视觉",
+    "levels": {
+      "beginner": "用普通照片或视频让 AI 重建出物体的三维模型，就像用几张照片还原出一个立体雕塑。",
+      "intermediate": "从 2D 图像或点云数据恢复场景的三维结构。传统方法：Structure from Motion（SfM）+ Multi-View Stereo（MVS）。近年深度学习方法：NeRF（神经辐射场）用隐式表示，Gaussian Splatting 用显式高斯点表示，速度更快。",
+      "advanced": "NeRF 将场景编码为 MLP，输入 5D 坐标（位置+视角），输出颜色和密度，通过体积渲染合成新视角。3D Gaussian Splatting 改用可微分的显式点表示，渲染速度达到实时（100+ FPS）。两者都需要多视角图像作为输入，在 AR/VR、自动驾驶、数字孪生中有广泛应用。"
+    },
+    "relatedTerms": [
+      "Gaussian Splatting",
+      "NeRF",
+      "Computer Vision",
+      "Optical Flow"
+    ],
+    "contexts": [
+      "computer-vision",
+      "3d"
+    ],
+    "emoji": "🏔️",
+    "difficulty": "high"
+  },
+  "curriculum-learning": {
+    "term": "Curriculum Learning",
+    "aliases": [
+      "课程学习",
+      "渐进式学习"
+    ],
+    "category": "模型训练",
+    "levels": {
+      "beginner": "先给 AI 学简单的例子，再慢慢让它学难的，就像教小孩先学加法再学乘法，循序渐进地训练模型。",
+      "intermediate": "一种训练策略，模仿人类学习由易到难的过程：先用简单或高质量样本训练模型，再逐步引入难样本。优点：更快收敛、更好泛化。难点：如何定义「难度」（损失大小、模型置信度、人工标注等）。",
+      "advanced": "Curriculum Learning 由 Bengio 等人 2009 年提出。难度调度策略包括：Baby Steps（固定阶段）、自步学习（Self-Paced Learning，模型自动选样本）、对抗课程（Adversarial Curriculum）。在 RLHF 中，对 reward 较差样本的训练顺序也有类似设计。与数据采样和 Importance Weighting 密切相关。"
+    },
+    "relatedTerms": [
+      "Training Data",
+      "Fine-tuning",
+      "Data Augmentation",
+      "RLHF"
+    ],
+    "contexts": [
+      "model-training",
+      "optimization"
+    ],
+    "emoji": "📚",
+    "difficulty": "high"
+  },
+  "meta-prompting": {
+    "term": "Meta-Prompting",
+    "aliases": [
+      "元提示",
+      "元提示工程"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "让 AI 帮你写提示词，就像让厨师帮你设计菜单，再按菜单做菜。用 AI 优化自己给 AI 的指令。",
+      "intermediate": "Meta-Prompting 是用 LLM 生成或优化提示词的方法，让模型充当「提示词工程师」。包括：让模型自动改写任务指令、生成 few-shot 示例、或将复杂任务分解为子提示。本质上是把提示工程本身自动化。",
+      "advanced": "Meta-Prompting 的一种高级形态是 Stanford 的 Meta-Prompting 框架：使用单个 LLM 作为指挥官，动态生成专家角色的系统提示，然后调用这些专家协作完成任务。与 APO（Automatic Prompt Optimization）结合后，可形成基于梯度或强化学习的提示搜索机制。"
+    },
+    "relatedTerms": [
+      "Prompt Engineering",
+      "In-context Learning",
+      "Chain of Thought",
+      "Auto-GPT"
+    ],
+    "contexts": [
+      "prompt-engineering",
+      "automation"
+    ],
+    "emoji": "🪄",
+    "difficulty": "high"
+  },
+  "chain-of-verification": {
+    "term": "Chain of Verification",
+    "aliases": [
+      "验证链",
+      "CoVe"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "让 AI 回答完之后再自己检查一遍答案，发现错误就纠正，就像写完作文自己校对，减少胡说八道的概率。",
+      "intermediate": "Chain of Verification（CoVe）是 Meta 提出的减少幻觉的提示技术。流程：①生成初始答案 ②生成验证问题（对答案中的关键事实提问）③独立回答验证问题 ④根据验证结果修正最终答案。通过自我质疑降低幻觉率。",
+      "advanced": "CoVe 的关键在于「独立」验证——验证问题的回答不应受到初始答案的影响，因此通常需要分离上下文或使用不同 prompt。实验表明 CoVe 在列表类事实性问题上效果显著（如「列举拿过奥斯卡的演员」）。与 Self-Consistency 的区别：CoVe 针对事实性，SC 针对推理一致性。"
+    },
+    "relatedTerms": [
+      "Hallucination",
+      "Self-Consistency",
+      "Chain of Thought",
+      "Reflection"
+    ],
+    "contexts": [
+      "prompt-engineering",
+      "reliability"
+    ],
+    "emoji": "✅",
+    "difficulty": "high"
+  },
+  "least-to-most": {
+    "term": "Least-to-Most Prompting",
+    "aliases": [
+      "最少到最多提示",
+      "L2M"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "把一个复杂问题拆成几个小问题，从最简单的开始一步一步解决，就像解数学应用题先搞懂每个条件再算最终答案。",
+      "intermediate": "Least-to-Most Prompting（L2M）由 Google 提出，分两阶段：①问题分解（将原问题分解为子问题序列）②顺序求解（把前一个子问题的答案作为下一个的上下文）。在组合推理和符号推理任务上优于 Chain of Thought。",
+      "advanced": "L2M 的核心优势是系统性地构建「推理脚手架」，使模型能解决训练时未见过的新组合问题（泛化能力）。在 SCAN 基准（语言到动作映射）上，L2M 将 CoT 的准确率从 ~16% 提升到 ~99.7%。适用于具有明确分解结构的任务；对于模糊或开放性问题分解效果有限。"
+    },
+    "relatedTerms": [
+      "Chain of Thought",
+      "Task Decomposition",
+      "Prompt Engineering",
+      "Planning"
+    ],
+    "contexts": [
+      "prompt-engineering",
+      "reasoning"
+    ],
+    "emoji": "📶",
+    "difficulty": "high"
+  },
+  "self-ask": {
+    "term": "Self-Ask",
+    "aliases": [
+      "自我提问",
+      "self ask prompting"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "让 AI 在回答问题之前先自问自答几个相关的小问题，把需要的信息都搞清楚了再给出最终答案，像思考过程外显化。",
+      "intermediate": "Self-Ask 是一种提示技术，让模型显式地提出并回答「跟进问题」（follow-up questions），再综合这些答案得出最终结论。与思维链的区别：Self-Ask 的中间步骤是问答对，更易于接入外部搜索工具（搜索引擎回答跟进问题）。",
+      "advanced": "Self-Ask 可与工具调用（Tool Use）结合：模型提出的跟进问题可以触发实际的 web search 或知识库查询，实现 Retrieval-Augmented 推理。这是 ReAct（Reasoning + Acting）框架的前身思想。在多跳问答（Multi-hop QA）任务上表现优异。"
+    },
+    "relatedTerms": [
+      "Chain of Thought",
+      "ReAct",
+      "Tool Use",
+      "RAG"
+    ],
+    "contexts": [
+      "prompt-engineering",
+      "reasoning"
+    ],
+    "emoji": "❓",
+    "difficulty": "medium"
+  },
+  "maieutic-prompting": {
+    "term": "Maieutic Prompting",
+    "aliases": [
+      "苏格拉底式提示",
+      "助产式提示"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "像苏格拉底一样通过不断追问「为什么」来帮 AI 理清逻辑，让它把自己的推理说清楚，检验答案是否自洽。",
+      "intermediate": "Maieutic Prompting 灵感来自苏格拉底的助产术。方法：让模型给出答案并解释原因，然后递归地追问每个解释，构建推理树，最后选择内部逻辑最一致的答案。通过「自我一致性」过滤错误推理。",
+      "advanced": "Maieutic Prompting 会递归展开解释树，直到叶节点（无需进一步解释的公理），然后通过投票找出最自洽的根节点答案。这与 Tree of Thought（ToT）有相似之处，但更强调逻辑一致性检验而非搜索。在常识推理基准（如 StrategyQA）上有显著提升。计算成本较高，适合高精度场景。"
+    },
+    "relatedTerms": [
+      "Chain of Thought",
+      "Tree of Thought",
+      "Self-Consistency",
+      "Prompt Engineering"
+    ],
+    "contexts": [
+      "prompt-engineering",
+      "reasoning"
+    ],
+    "emoji": "🏛️",
+    "difficulty": "high"
+  },
+  "directional-stimulus": {
+    "term": "Directional Stimulus Prompting",
+    "aliases": [
+      "方向性刺激提示",
+      "DSP"
+    ],
+    "category": "提示工程",
+    "levels": {
+      "beginner": "在提示词里加一些「关键词提示」，像给 AI 一点点暗示，让它往你想要的方向思考，而不是漫无目的地回答。",
+      "intermediate": "Directional Stimulus Prompting（DSP）通过在输入中插入小型「刺激信号」（hints/keywords）来引导 LLM 的输出方向，无需改变主任务描述。刺激信号可以手工设计或通过小型策略模型（Policy LM）自动生成，结合强化学习优化刺激词。",
+      "advanced": "DSP 框架包含两个模型：①小型 Policy LM（如 GPT-2 量级）负责生成刺激词，用 RL 根据大模型输出质量来优化；②大型冻结 LLM 接收刺激词后生成答案。这种解耦设计使得在不微调大模型的情况下，仍可通过训练小型策略模型来控制输出。在摘要和对话任务上效果显著。"
+    },
+    "relatedTerms": [
+      "Prompt Engineering",
+      "RLHF",
+      "In-context Learning",
+      "Fine-tuning"
+    ],
+    "contexts": [
+      "prompt-engineering",
+      "optimization"
+    ],
+    "emoji": "💡",
+    "difficulty": "high"
+  },
+  "xml": {
+    "term": "XML",
+    "aliases": [
+      "Extensible Markup Language",
+      "xml"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "用尖括号标签来描述数据的文字格式，就像给每段内容加上开始和结束的书签，让电脑知道每块数据是什么意思。比如 `<姓名>张三</姓名>`。",
+      "intermediate": "Extensible Markup Language（可扩展标记语言），一种用于存储和传输结构化数据的文本格式。与 HTML 类似但更通用——你可以自定义标签。广泛用于配置文件（Maven pom.xml）、数据交换（SOAP）、文档格式（Office XML）。",
+      "advanced": "XML 支持命名空间（Namespace）避免标签冲突，支持 XML Schema（XSD）定义文档结构约束，以及 XSLT 进行样式转换和数据提取。在现代 Web API 中已基本被 JSON 取代，但在企业集成（ESB、EDI）和 Claude 的 prompt 格式规范中仍广泛使用（Anthropic 推荐用 XML 标签结构化 prompt）。"
+    },
+    "relatedTerms": [
+      "JSON",
+      "YAML",
+      "API",
+      "Prompt Engineering"
+    ],
+    "contexts": [
+      "development",
+      "data-format"
+    ],
+    "emoji": "🏷️",
+    "difficulty": "low"
+  },
+  "markdown": {
+    "term": "Markdown",
+    "aliases": [
+      "md",
+      "Markdown 格式"
+    ],
+    "category": "通用 IT",
+    "levels": {
+      "beginner": "一种用简单符号排版文字的方式，比如用 `**粗体**` 表示粗体，`# 标题` 表示大标题，写完就能自动变成好看的格式。",
+      "intermediate": "Markdown 是由 John Gruber 设计的轻量级标记语言，用于将纯文本转换为 HTML 或其他富文本格式。语法简洁直观（标题 `#`、列表 `-`、链接 `[]()` 等）。GitHub、Notion、Obsidian、AI 工具的回复输出都大量使用 Markdown。",
+      "advanced": "标准 Markdown 由 CommonMark 规范化，GitHub Flavored Markdown（GFM）扩展了表格、任务列表、代码围栏等功能。在 LLM 应用中，模型输出默认使用 Markdown 格式，前端渲染时需使用 react-markdown 等库。过度使用 Markdown（如在 system prompt 中）可能影响模型遵循指令的准确性。"
+    },
+    "relatedTerms": [
+      "README",
+      "Documentation",
+      "GitHub",
+      "Prompt Engineering"
+    ],
+    "contexts": [
+      "development",
+      "documentation"
+    ],
+    "emoji": "📝",
+    "difficulty": "low"
+  },
+  "nosql": {
+    "term": "NoSQL",
+    "aliases": [
+      "非关系型数据库",
+      "NoSQL 数据库"
+    ],
+    "category": "数据库",
+    "levels": {
+      "beginner": "不用表格存数据的数据库，可以像存 JSON 文件一样灵活存各种格式的数据，不需要提前定好列名。",
+      "intermediate": "NoSQL（Not Only SQL）是一类非关系型数据库的统称，不强制使用固定表结构。按数据模型分为：文档型（MongoDB）、键值型（Redis）、列族型（Cassandra）、图数据库（Neo4j）。优点：水平扩展容易、schema 灵活；缺点：事务支持较弱。",
+      "advanced": "NoSQL 数据库通常以 CAP 定理为设计依据，在一致性（Consistency）、可用性（Availability）、分区容错（Partition Tolerance）中取舍。MongoDB 4.0+ 支持多文档 ACID 事务；Redis Cluster 提供分片和主从复制。在 AI 系统中，NoSQL 常用于存储非结构化的对话历史、用户行为日志和向量检索元数据。"
+    },
+    "relatedTerms": [
+      "SQL",
+      "MongoDB",
+      "Redis",
+      "Vector Database",
+      "Database"
+    ],
+    "contexts": [
+      "database",
+      "backend"
+    ],
+    "emoji": "🗄️",
+    "difficulty": "medium"
+  },
+  "redis": {
+    "term": "Redis",
+    "aliases": [
+      "redis",
+      "Redis Cache"
+    ],
+    "category": "数据库",
+    "levels": {
+      "beginner": "一个超快的内存数据库，就像计算机的「便利贴」，把常用的数据放在最容易拿到的地方，读写速度是普通数据库的几百倍。",
+      "intermediate": "Remote Dictionary Server，一种开源的内存数据结构存储，支持字符串、哈希、列表、集合、有序集合等多种数据结构。常用场景：缓存（减少数据库查询）、会话存储、消息队列（Pub/Sub）、排行榜（ZSet）。",
+      "advanced": "Redis 的持久化机制有 RDB（快照）和 AOF（日志追加）两种。Redis Cluster 通过哈希槽（16384 个）实现数据分片；Sentinel 提供高可用主从切换。在 AI 系统中，Redis 常用于缓存 LLM API 响应（语义缓存）、存储 Agent 会话状态和实现速率限制（Rate Limiting）。"
+    },
+    "relatedTerms": [
+      "Cache",
+      "NoSQL",
+      "Message Queue",
+      "Rate Limiting"
+    ],
+    "contexts": [
+      "database",
+      "caching"
+    ],
+    "emoji": "⚡",
+    "difficulty": "medium"
+  },
+  "postgresql": {
+    "term": "PostgreSQL",
+    "aliases": [
+      "Postgres",
+      "PG",
+      "postgres"
+    ],
+    "category": "数据库",
+    "levels": {
+      "beginner": "一个功能强大的免费数据库，像个可靠的档案室，可以存各种类型的数据，而且支持很复杂的查询和分析。",
+      "intermediate": "PostgreSQL 是企业级开源关系型数据库，支持完整的 ACID 事务、复杂 SQL 查询、JSON/JSONB 数据类型、全文搜索和地理空间查询（PostGIS）。以稳定性和标准合规性著称，是 Supabase 的底层数据库。",
+      "advanced": "PostgreSQL 支持表继承、自定义数据类型、触发器和扩展生态（pgvector 用于向量存储、pg_partman 用于分区）。pgvector 扩展让 PostgreSQL 可以直接存储和检索向量，成为轻量级 RAG 系统的一站式数据库选择，避免引入独立向量数据库的运维复杂度。"
+    },
+    "relatedTerms": [
+      "SQL",
+      "Supabase",
+      "Vector Database",
+      "NoSQL"
+    ],
+    "contexts": [
+      "database",
+      "backend"
+    ],
+    "emoji": "🐘",
+    "difficulty": "medium"
+  },
+  "mongodb": {
+    "term": "MongoDB",
+    "aliases": [
+      "mongo",
+      "Mongo DB"
+    ],
+    "category": "数据库",
+    "levels": {
+      "beginner": "一个可以直接存 JSON 文件的数据库，不需要提前设计好表格结构，想存什么格式就存什么格式，非常灵活。",
+      "intermediate": "MongoDB 是最流行的文档型 NoSQL 数据库，以 BSON（Binary JSON）格式存储数据，每条记录称为「文档」（Document），类似 JSON 对象，无需固定 schema。支持丰富的查询语法、聚合管道和水平分片（Sharding）。",
+      "advanced": "MongoDB 的 Change Streams 可以实时监听数据变更，适合事件驱动架构。Atlas Vector Search 提供内置向量检索能力，与 LangChain 深度集成。聚合管道（Aggregation Pipeline）是其核心分析能力，支持 $lookup（类 JOIN）、$group、$match 等阶段操作。事务支持需要 Replica Set 或 Sharded Cluster 环境。"
+    },
+    "relatedTerms": [
+      "NoSQL",
+      "Document Database",
+      "JSON",
+      "Vector Database"
+    ],
+    "contexts": [
+      "database",
+      "backend"
+    ],
+    "emoji": "🍃",
+    "difficulty": "medium"
+  },
+  "db-index": {
+    "term": "Database Index",
+    "aliases": [
+      "索引",
+      "数据库索引",
+      "Index"
+    ],
+    "category": "数据库",
+    "levels": {
+      "beginner": "给数据库加的「目录」，就像书的目录让你快速找到某章节，有了索引数据库不用翻完所有数据就能找到你要的内容。",
+      "intermediate": "数据库索引是一种加速查询的数据结构，本质是用空间换时间。常见类型：B-Tree 索引（适合范围查询）、Hash 索引（适合等值查询）、GIN 索引（适合全文搜索）、HNSW/IVF 索引（适合向量相似搜索）。",
+      "advanced": "索引的代价：占额外存储空间，写操作（INSERT/UPDATE/DELETE）需要维护索引，降低写性能。查询优化器会决定是否使用索引（小表全扫往往更快）。在向量数据库中，HNSW（Hierarchical Navigable Small World）是主流近似最近邻索引，在精度和速度之间取得平衡，Pinecone、Qdrant、pgvector 均支持。"
+    },
+    "relatedTerms": [
+      "SQL",
+      "Vector Database",
+      "Query Optimization",
+      "PostgreSQL"
+    ],
+    "contexts": [
+      "database",
+      "performance"
+    ],
+    "emoji": "📇",
+    "difficulty": "medium"
+  },
+  "query-optimization": {
+    "term": "Query Optimization",
+    "aliases": [
+      "查询优化",
+      "SQL 优化",
+      "慢查询优化"
+    ],
+    "category": "数据库",
+    "levels": {
+      "beginner": "让数据库查询跑得更快的技巧，就像找路一样选最短的路线，而不是每次都走弯路把全部数据翻一遍。",
+      "intermediate": "Query Optimization 指通过优化 SQL 语句或数据库配置来提升查询性能。常用手段：合理建立索引、避免全表扫描（SELECT *）、优化 JOIN 顺序、使用 EXPLAIN 分析执行计划、分区大表。数据库查询优化器会自动选择执行计划，但有时需要手动干预。",
+      "advanced": "高级优化包括：查询重写（等价变换为更高效形式）、物化视图（预计算复杂聚合）、分区裁剪（只扫描相关分区）和读写分离。在 AI 系统的 RAG 场景中，向量检索的参数调优（HNSW 的 ef_construction、ef_search，IVF 的 nprobe）是一种特殊的查询优化形式，影响召回率与延迟的平衡。"
+    },
+    "relatedTerms": [
+      "Database Index",
+      "SQL",
+      "PostgreSQL",
+      "Vector Database"
+    ],
+    "contexts": [
+      "database",
+      "performance"
+    ],
+    "emoji": "🚀",
+    "difficulty": "high"
+  },
+  "anthropic": {
+    "term": "Anthropic",
+    "aliases": [
+      "anthropic ai"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "做 Claude 的 AI 公司，由前 OpenAI 团队成员创立，专注于研究如何让 AI 更安全、更有用。",
+      "intermediate": "Anthropic 是一家 AI 安全公司，成立于 2021 年。核心产品是 Claude 系列大语言模型，研究方向包括 Constitutional AI（宪法 AI）、可解释性（Interpretability）和 AI 对齐（Alignment）。由 Dario Amodei 和 Daniela Amodei 等前 OpenAI 成员创立。",
+      "advanced": "Anthropic 在技术上的代表性贡献：Constitutional AI（RLAIF 的先驱实现）、Responsible Scaling Policy（RSP，基于能力阈值的发布政策）、MCP 协议标准。Claude 3.5 Sonnet/Claude 3 Opus 等模型在编程、推理和安全性上有突出表现。Anthropic 也是最早公开对 AI 存在风险持严肃态度的头部实验室之一。"
+    },
+    "relatedTerms": [
+      "Claude",
+      "Constitutional AI",
+      "AI Safety",
+      "OpenAI"
+    ],
+    "contexts": [
+      "company",
+      "ai-lab"
+    ],
+    "emoji": "🤖",
+    "difficulty": "low"
+  },
+  "openai": {
+    "term": "OpenAI",
+    "aliases": [
+      "Open AI",
+      "openai"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "做 ChatGPT 和 GPT-4 的 AI 公司，是最早把 AI 聊天带给大众的公司，也是当前最知名的 AI 实验室之一。",
+      "intermediate": "OpenAI 成立于 2015 年（初为非营利），核心产品包括 GPT 系列 LLM、DALL-E 图像生成、Whisper 语音识别和 Codex 代码模型。ChatGPT 于 2022 年 11 月发布后迅速成为史上增长最快的消费级应用，推动了整个 AI 行业的爆发。",
+      "advanced": "OpenAI 的技术突破包括：InstructGPT（RLHF 对齐）、GPT-4 多模态、o1/o3 系列的推理时扩展（Inference Scaling）。商业模式上通过 API（按 token 计费）和 ChatGPT Plus 订阅双轨运营。与 Microsoft 深度绑定（微软投资 130 亿美元并独家集成 Azure）。近年开始向 for-profit 结构转型，引发治理争议。"
+    },
+    "relatedTerms": [
+      "GPT",
+      "ChatGPT",
+      "DALL-E",
+      "Anthropic",
+      "Claude"
+    ],
+    "contexts": [
+      "company",
+      "ai-lab"
+    ],
+    "emoji": "🌐",
+    "difficulty": "low"
+  },
+  "google-deepmind": {
+    "term": "Google DeepMind",
+    "aliases": [
+      "DeepMind",
+      "Google AI",
+      "GDM"
+    ],
+    "category": "AI 产品与平台",
+    "levels": {
+      "beginner": "谷歌旗下的 AI 研究机构，做出了下围棋的 AlphaGo、预测蛋白质结构的 AlphaFold，以及 Gemini 系列大语言模型。",
+      "intermediate": "Google DeepMind 由 Google Brain 和 DeepMind 于 2023 年合并而成。代表性成果：AlphaGo/AlphaZero（棋类博弈）、AlphaFold2（蛋白质结构预测）、Gemini 系列多模态大模型。在强化学习和科学 AI（Scientific AI）领域有深厚积累。",
+      "advanced": "DeepMind 的研究影响力体现在：Transformer 架构的早期应用（WaveNet、AlphaStar）、Gemini Ultra 在多模态推理上超越 GPT-4 的基准表现、Veo/Lyria 分别布局视频和音乐生成。AlphaFold 被认为是近年最重大的科学突破之一，已解析超 2 亿个蛋白质结构。与 OpenAI 和 Anthropic 共同构成 AGI 研究三强格局。"
+    },
+    "relatedTerms": [
+      "Gemini",
+      "OpenAI",
+      "Anthropic",
+      "Foundation Model",
+      "Reinforcement Learning"
+    ],
+    "contexts": [
+      "company",
+      "ai-lab"
+    ],
+    "emoji": "🔬",
+    "difficulty": "low"
+  },
+  "weights-biases": {
+    "term": "Weights & Biases",
+    "aliases": [
+      "W&B",
+      "wandb",
+      "Weights and Biases"
+    ],
+    "category": "开发工具",
+    "levels": {
+      "beginner": "一个帮你记录 AI 模型训练过程的工具，就像运动员记录每次训练数据的日志本，帮你看清楚模型是在进步还是退步。",
+      "intermediate": "Weights & Biases（W&B）是 MLOps 工具，提供：实验追踪（自动记录超参数/指标/代码版本）、可视化 Dashboard、模型版本管理（Artifacts）和超参数搜索（Sweeps）。与 PyTorch、TensorFlow、HuggingFace Transformers 无缝集成。",
+      "advanced": "W&B 的 Weave 产品专为 LLM 应用设计，支持追踪每次推理调用（prompt/response/token 用量/延迟）、评估流水线和数据集版本管理。与 MLflow 的对比：W&B 生态更完整、UI 更好，但需要联网（云服务）；MLflow 完全开源可私有部署。在 RLHF 训练中，W&B 常用于监控 reward 变化和 KL 散度。"
+    },
+    "relatedTerms": [
+      "MLflow",
+      "Experiment Tracking",
+      "Fine-tuning",
+      "Training Data"
+    ],
+    "contexts": [
+      "ml-ops",
+      "development"
+    ],
+    "emoji": "📈",
+    "difficulty": "medium"
+  },
+  "mlflow": {
+    "term": "MLflow",
+    "aliases": [
+      "ml flow",
+      "mlflow tracking"
+    ],
+    "category": "开发工具",
+    "levels": {
+      "beginner": "一个管理 AI 模型整个生命周期的开源工具，帮你记录实验、保存模型、部署模型，就像一个 AI 项目的档案管理系统。",
+      "intermediate": "MLflow 是 Databricks 推出的开源 MLOps 平台，包含四个核心组件：Tracking（记录实验参数/指标）、Projects（可复现的代码打包）、Models（统一模型格式）、Registry（模型版本管理和阶段管理）。支持 Python、R 等多种语言。",
+      "advanced": "MLflow 2.x 引入了 LLM 评估能力（mlflow.evaluate 支持 OpenAI、HuggingFace 模型），以及 Prompt Engineering UI。与 W&B 相比，MLflow 完全开源可本地部署（适合数据合规要求高的场景），但 UI 和生态成熟度相对较弱。在企业 MLOps 栈中，MLflow 常与 Spark（Databricks）、Kubeflow 或 SageMaker 配合使用。"
+    },
+    "relatedTerms": [
+      "Weights & Biases",
+      "Experiment Tracking",
+      "Model Serving",
+      "Fine-tuning"
+    ],
+    "contexts": [
+      "ml-ops",
+      "development"
+    ],
+    "emoji": "🔬",
+    "difficulty": "medium"
+  },
+  "gradio": {
+    "term": "Gradio",
+    "aliases": [
+      "gradio app",
+      "gradio demo"
+    ],
+    "category": "开发工具",
+    "levels": {
+      "beginner": "一个用几行 Python 代码就能给 AI 模型做出网页界面的工具，让你可以马上在浏览器里测试自己的模型，不用懂前端。",
+      "intermediate": "Gradio 是 HuggingFace 旗下的开源 Python 库，用于快速构建机器学习模型的 Web Demo。支持文本输入/输出、图像、音频、视频等多种组件，几行代码即可生成可分享的 Web 界面。HuggingFace Spaces 基于 Gradio 构建，是社区分享 AI Demo 的主要平台。",
+      "advanced": "Gradio 的 Blocks API 支持构建复杂的多组件交互界面（含状态管理、事件处理）。通过 `gr.ChatInterface` 可一行代码搭建聊天机器人界面。Gradio 的共享功能（`share=True`）通过 Frp 隧道生成临时公网 URL，便于快速展示。与 Streamlit 的主要差异：Gradio 更专注 ML 模型演示，Streamlit 更通用于数据应用。"
+    },
+    "relatedTerms": [
+      "Streamlit",
+      "HuggingFace",
+      "Jupyter Notebook",
+      "Model Serving"
+    ],
+    "contexts": [
+      "ml-tools",
+      "development"
+    ],
+    "emoji": "🖥️",
+    "difficulty": "low"
+  },
+  "streamlit": {
+    "term": "Streamlit",
+    "aliases": [
+      "streamlit app"
+    ],
+    "category": "开发工具",
+    "levels": {
+      "beginner": "一个让 Python 程序员不用学前端就能做出好看网页应用的工具，特别适合做数据分析和 AI 小工具的展示界面。",
+      "intermediate": "Streamlit 是开源 Python 框架，让数据科学家和 ML 工程师快速将脚本转化为交互式 Web 应用。核心理念：脚本从上到下运行，每次用户交互都重新执行。支持数据可视化（Plotly/Altair）、文件上传、状态管理（st.session_state）等功能。",
+      "advanced": "Streamlit 的响应式模型虽然简单，但对复杂状态管理有一定挑战（需要 st.session_state 手动维护）。st.cache_data 和 st.cache_resource 提供计算结果缓存。Streamlit Cloud 提供一键部署。与 Gradio 的差异：Streamlit 更通用（适合数据应用/BI 工具），Gradio 更专注 ML 模型演示。在 LLM 应用开发中，两者都可快速搭建 RAG 或聊天应用的 Prototype。"
+    },
+    "relatedTerms": [
+      "Gradio",
+      "Python",
+      "Data Visualization",
+      "Prototype"
+    ],
+    "contexts": [
+      "development",
+      "data-science"
+    ],
+    "emoji": "🌊",
+    "difficulty": "low"
+  },
+  "jupyter": {
+    "term": "Jupyter Notebook",
+    "aliases": [
+      "Jupyter",
+      "Colab",
+      "jupyter notebook",
+      "ipynb"
+    ],
+    "category": "开发工具",
+    "levels": {
+      "beginner": "一种可以把代码、运行结果和文字说明混在一起的文档工具，就像一本「活的笔记本」，可以一块一块地运行代码并立即看到结果。",
+      "intermediate": "Jupyter Notebook 是基于网页的交互式计算环境，以 Cell（单元格）为基本单位，支持 Python、R、Julia 等多种内核。文件格式为 .ipynb（JSON）。Google Colab 是免费的云端版本（提供 GPU），是 ML 研究和教学的事实标准工具。",
+      "advanced": "Jupyter 的架构分为前端（浏览器）和内核（Kernel，独立进程）。JupyterHub 提供多用户部署能力，JupyterLab 是新一代 IDE 界面。在 LLM 应用开发中，Jupyter 常用于 prompt 实验、数据探索和 RAG 管道调试；但其非线性执行特性（Cell 乱序运行）可能引发状态混乱，生产代码仍需迁移到脚本/模块。nbformat 和 nbconvert 可将 Notebook 转化为可执行脚本或 HTML 报告。"
+    },
+    "relatedTerms": [
+      "Python",
+      "Google Colab",
+      "Data Science",
+      "Gradio"
+    ],
+    "contexts": [
+      "development",
+      "data-science"
+    ],
+    "emoji": "📓",
+    "difficulty": "low"
   }
 }

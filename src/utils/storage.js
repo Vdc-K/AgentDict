@@ -21,7 +21,7 @@ const AgentDictStorage = {
       startDate: null
     },
     siteSettings: {},      // { hostname: { enabled: boolean } }
-    syncUrl: '',
+    syncUrl: 'https://raw.githubusercontent.com/Vdc-K/AgentDict/main/src/dictionary/terms.json',
     lastSync: null,
     remoteTerms: {},
     quietMode: {

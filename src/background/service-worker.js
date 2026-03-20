@@ -8,8 +8,13 @@
 
 // ─── 安装事件 ──────────────────────────────────────────
 
-// 启动时强制清除遗留 syncUrl（v2.0.1 迁移）
-chrome.storage.local.set({ syncUrl: '' });
+// 设置默认 syncUrl 指向 GitHub 仓库（旧版占位符 URL 自动修正）
+const GITHUB_TERMS_URL = 'https://raw.githubusercontent.com/Vdc-K/AgentDict/main/src/dictionary/terms.json';
+chrome.storage.local.get(['syncUrl'], (data) => {
+  if (!data.syncUrl || data.syncUrl.includes('user/AgentDict')) {
+    chrome.storage.local.set({ syncUrl: GITHUB_TERMS_URL });
+  }
+});
 
 chrome.runtime.onInstalled.addListener((details) => {
   if (details.reason === 'install') {
