@@ -182,5 +182,8 @@ async function autoSync() {
   }
 }
 
-// 每次 service worker 启动时静默同步
-autoSync();
+// 定时同步：每 12 小时一次
+chrome.alarms.create('auto-sync', { periodInMinutes: 720 });
+chrome.alarms.onAlarm.addListener((alarm) => {
+  if (alarm.name === 'auto-sync') autoSync();
+});
