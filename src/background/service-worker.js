@@ -8,7 +8,8 @@
 
 // ─── 安装事件 ──────────────────────────────────────────
 
-const GITHUB_TERMS_URL = 'https://raw.githubusercontent.com/Vdc-K/AgentDict/main/src/dictionary/terms.json';
+// jsDelivr CDN（国内有节点，比 raw.githubusercontent.com 可靠）
+const GITHUB_TERMS_URL = 'https://cdn.jsdelivr.net/gh/Vdc-K/AgentDict@main/src/dictionary/terms.json';
 
 chrome.runtime.onInstalled.addListener((details) => {
   if (details.reason === 'install') {
