@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "AgentDict — AI 术语词典",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "在使用 AI Agent 时，自动识别并解释技术术语，边用边学。零 Prompt 侵入，越用越安静。",
   "permissions": ["storage", "activeTab"],
   "host_permissions": [

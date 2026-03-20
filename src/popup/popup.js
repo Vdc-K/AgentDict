@@ -241,8 +241,14 @@ function bindEvents() {
     syncBtn.textContent = '同步中...';
     
     try {
-      const url = syncUrlInput.value.trim();
-      chrome.storage.local.set({ syncUrl: url });
+      let url = syncUrlInput.value.trim();
+      // 输入框为空时从 storage 读默认 URL
+      if (!url) {
+        const data = await new Promise(r => chrome.storage.local.get(['syncUrl'], r));
+        url = (data.syncUrl || '').trim();
+        if (url) syncUrlInput.value = url;
+      }
+      if (url) chrome.storage.local.set({ syncUrl: url });
       
       const response = await new Promise(resolve => {
         chrome.runtime.sendMessage({ type: 'SYNC_DICTIONARY', url }, resolve);
