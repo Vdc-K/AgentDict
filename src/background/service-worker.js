@@ -8,17 +8,11 @@
 
 // ─── 安装事件 ──────────────────────────────────────────
 
-// 设置默认 syncUrl 指向 GitHub 仓库（旧版占位符 URL 自动修正）
 const GITHUB_TERMS_URL = 'https://raw.githubusercontent.com/Vdc-K/AgentDict/main/src/dictionary/terms.json';
-chrome.storage.local.get(['syncUrl'], (data) => {
-  if (!data.syncUrl || data.syncUrl.includes('user/AgentDict')) {
-    chrome.storage.local.set({ syncUrl: GITHUB_TERMS_URL });
-  }
-});
 
 chrome.runtime.onInstalled.addListener((details) => {
   if (details.reason === 'install') {
-    // 首次安装，初始化存储
+    // 首次安装，初始化存储（syncUrl 直接指向 GitHub）
     chrome.storage.local.set({
       enabled: true,
       level: 'beginner',
@@ -31,11 +25,18 @@ chrome.runtime.onInstalled.addListener((details) => {
         startDate: Date.now()
       },
       siteSettings: {},
-      syncUrl: '',
+      syncUrl: GITHUB_TERMS_URL,
       lastSync: null,
       remoteTerms: {}
     });
     console.log('[AgentDict] 首次安装，已初始化数据');
+  } else {
+    // 更新时：修正旧版空 URL 或占位符 URL
+    chrome.storage.local.get(['syncUrl'], (data) => {
+      if (!data.syncUrl || data.syncUrl.includes('user/AgentDict')) {
+        chrome.storage.local.set({ syncUrl: GITHUB_TERMS_URL });
+      }
+    });
   }
 });
 
