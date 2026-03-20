@@ -87,11 +87,11 @@ const AgentDictPanel = {
       <div id="panel-tab-settings" class="panel-tab-content" style="display: none; padding: 16px;">
         <h4 style="margin: 0 0 12px 0; font-size: 13px; color: #a8b2d1;">☁️ 云端词库同步</h4>
         <div style="display: flex; flex-direction: column; gap: 8px;">
-          <input type="text" id="panel-sync-url" placeholder="自定义词库 URL" 
+          <input type="text" id="panel-sync-url" placeholder="词库 URL（默认从 GitHub 同步）"
                  style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #444; background: #1a1a2e; color: #e0e0e0; font-size: 12px; box-sizing: border-box;"
-                 value="https://raw.githubusercontent.com/user/AgentDict/main/src/dictionary/terms.json" />
+                 value="" />
           <button id="panel-btn-sync" style="width: 100%; padding: 8px; background: #10b981; color: #fff; border: none; border-radius: 4px; font-weight: 500; cursor: pointer;">立刻同步 (Sync Now)</button>
-          <div id="panel-sync-status" style="font-size: 11px; color: #888; text-align: center;">最近同步：未同步</div>
+          <div id="panel-sync-status" style="font-size: 11px; color: #888; text-align: center;">内置 480 条 · 点击同步获取最新</div>
         </div>
       </div>
     `;

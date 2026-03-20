@@ -258,15 +258,18 @@ function bindEvents() {
         syncBtn.style.background = '#059669';
         syncBtn.textContent = `成功! 更新了 ${response.count} 个词条`;
         updateSyncStatus(response.timestamp);
-        // Refresh local count
         setTimeout(loadTermsList, 1000);
       } else {
         syncBtn.style.background = '#dc2626';
-        syncBtn.textContent = '同步失败，请检查网络或格式';
+        const errMsg = response?.error || '未知错误';
+        syncBtn.textContent = '失败: ' + errMsg;
+        // 同时显示在状态栏
+        const statusEl = document.getElementById('sync-status');
+        if (statusEl) statusEl.textContent = 'URL: ' + (url || '空') + ' | 错误: ' + errMsg;
       }
     } catch (e) {
       syncBtn.style.background = '#dc2626';
-      syncBtn.textContent = '扩展通信失败';
+      syncBtn.textContent = '通信失败: ' + e.message;
     } finally {
       setTimeout(() => {
         syncBtn.disabled = false;
